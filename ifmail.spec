@@ -65,12 +65,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %pre
 if [ "$1" = "1" ]; then
-	%{_sbindir}/useradd -g uucp -d /usr/lib/ifmail -u 63 -s /bin/true ifmail 2> /dev/null
+	/usr/sbin/useradd -g uucp -d /usr/lib/ifmail -u 63 -s /bin/true ifmail 2> /dev/null
 fi
 
 %postun
 if [ "$1" = "0" ]; then
-	%{_sbindir}/userdel ifmail 2> /dev/null
+	/usr/sbin/userdel ifmail 2> /dev/null
 fi
 
 %files -f %{name}.lang
