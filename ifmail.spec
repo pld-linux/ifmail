@@ -1,3 +1,4 @@
+# TODO: standardize %pre
 Summary:	FIDO <=> INTERNET Gateway
 Summary(pl):	Bramka FIDO <=> INTERNET
 Name:		ifmail
@@ -5,13 +6,15 @@ Version:	3.03
 Release:	0.2
 License:	GPL
 Group:		Networking
-Source0:	http://prdownloads.sourceforge.net/ifmail/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/ifmail/%{name}-%{version}.tar.gz
 Source1:	%{name}-config
 Source2:	%{name}-Areas
 URL:		http://www.average.org/ifmail/
-Buildrequires:	flex
-Buildrequires:  gdbm-devel
-Buildrequires:  mawk
+BuildRequires:	flex
+BuildRequires:  gdbm-devel
+BuildRequires:  mawk
+Requires(pre):	/usr/sbin/useradd
+Requires(postun):	/usr/sbin/userdel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 	
 %description
@@ -22,7 +25,6 @@ Bramka FIDO <=> INTERNET.
 
 %prep
 %setup -q
-#%patch -p1
 
 %build
 %configure2_13 --libexecdir=%{_libexecdir}/%{name}
