@@ -42,7 +42,7 @@ gzip -9nf misc/{FAQ,README}
 
 %pre
 if [ $1 = 1 ]; then
-	%{_sbindir}/useradd -g uucp -m -d /usr/lib/ifmail -u 63 -s /bin/true ifmail 2> /dev/null
+	%{_sbindir}/useradd -g uucp -d /usr/lib/ifmail -u 63 -s /bin/true ifmail 2> /dev/null
 fi
 
 %postun
