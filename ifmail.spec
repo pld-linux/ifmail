@@ -12,8 +12,8 @@ Source1:	%{name}-config
 Source2:	%{name}-Areas
 URL:		http://www.average.org/ifmail/
 BuildRequires:	flex
-BuildRequires:  gdbm-devel
-BuildRequires:  mawk
+BuildRequires:	gdbm-devel
+BuildRequires:	mawk
 Requires(pre):	/usr/sbin/useradd
 Requires(postun):	/usr/sbin/userdel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
