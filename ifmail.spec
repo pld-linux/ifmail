@@ -20,14 +20,14 @@ FIDO <=> INTERNET Gateway
 %patch -p1
 
 %build
-make CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_libdir}/%{name},%{_sysconfdir}/%{name},/var/log/%{name}}
 install -d $RPM_BUILD_ROOT/var/spool/%{name}/{inb,outb}
 
-make install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 install misc/inouttabs/*	$RPM_BUILD_ROOT%{_libdir}/%{name}
 install misc/getnodelist	$RPM_BUILD_ROOT%{_libdir}/%{name}
