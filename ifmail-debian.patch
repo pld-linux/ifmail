@@ -1,0 +1,4478 @@
+--- ifmail-2.14tx8.10.orig/misc/maptabs/cp866__koi8-r
++++ ifmail-2.14tx8.10/misc/maptabs/cp866__koi8-r
+@@ -0,0 +1,131 @@
++#       Channel map for translation cp866 (PC-alternate) codes to koi8-r codes
++#       (Russian language) according to RFC 1489
++#in  out
++0x80 0xE1
++0x81 0xE2
++0x82 0xF7
++0x83 0xE7
++0x84 0xE4
++0x85 0xE5
++0x86 0xF6
++0x87 0xFA
++0x88 0xE9
++0x89 0xEA
++0x8A 0xEB
++0x8B 0xEC
++0x8C 0xED
++0x8D 0xEE
++0x8E 0xEF
++0x8F 0xF0
++0x90 0xF2
++0x91 0xF3
++0x92 0xF4
++0x93 0xF5
++0x94 0xE6
++0x95 0xE8
++0x96 0xE3
++0x97 0xFE
++0x98 0xFB
++0x99 0xFD
++0x9A 0xFF
++0x9B 0xF9
++0x9C 0xF8
++0x9D 0xFC
++0x9E 0xE0
++0x9F 0xF1
++0xA0 0xC1
++0xA1 0xC2
++0xA2 0xD7
++0xA3 0xC7
++0xA4 0xC4
++0xA5 0xC5
++0xA6 0xD6
++0xA7 0xDA
++0xA8 0xC9
++0xA9 0xCA
++0xAA 0xCB
++0xAB 0xCC
++0xAC 0xCD
++0xAD 0xCE
++0xAE 0xCF
++0xAF 0xD0
++0xB0 0x90
++0xB1 0x91
++0xB2 0x92
++0xB3 0x81
++0xB4 0x87
++0xB5 0xB2
++0xB6 0xB4
++0xB7 0xA7
++0xB8 0xA6
++0xB9 0xB5
++0xBA 0xA1
++0xBB 0xA8
++0xBC 0xAE
++0xBD 0xAD
++0xBE 0xAC
++0xBF 0x83
++0xC0 0x84
++0xC1 0x89
++0xC2 0x88
++0xC3 0x86
++0xC4 0x80
++0xC5 0x8A
++0xC6 0xAF
++0xC7 0xB0
++0xC8 0xAB
++0xC9 0xA5
++0xCA 0xBB
++0xCB 0xB8
++0xCC 0xB1
++0xCD 0xA0
++0xCE 0xBE
++0xCF 0xB9
++0xD0 0xBA
++0xD1 0xB6
++0xD2 0xB7
++0xD3 0xAA
++0xD4 0xA9
++0xD5 0xA2
++0xD6 0xA4
++0xD7 0xBD
++0xD8 0xBC
++0xD9 0x85
++0xDA 0x82
++0xDB 0x8D
++0xDC 0x8C
++0xDD 0x8E
++0xDE 0x8F
++0xDF 0x8B
++0xE0 0xD2
++0xE1 0xD3
++0xE2 0xD4
++0xE3 0xD5
++0xE4 0xC6
++0xE5 0xC8
++0xE6 0xC3
++0xE7 0xDE
++0xE8 0xDB
++0xE9 0xDD
++0xEA 0xDF
++0xEB 0xD9
++0xEC 0xD8
++0xED 0xDC
++0xEE 0xC0
++0xEF 0xD1
++0xF0 0xB3
++0xF1 0xA3
++0xF2 0x99
++0xF3 0x98
++0xF4 0x93
++0xF5 0x9B
++0xF6 0x9F
++0xF7 0x97
++0xF8 0x9C
++0xF9 0x95
++0xFA 0x9E
++0xFB 0x96
++0xFC 0xBF
++0xFD 0x9D
++0xFE 0x94
++0xFF 0x9A
+--- ifmail-2.14tx8.10.orig/misc/maptabs/koi8-r__cp866
++++ ifmail-2.14tx8.10/misc/maptabs/koi8-r__cp866
+@@ -0,0 +1,134 @@
++#       Channel map for translation koi8-r codes to cp866 (PC-alternative)
++#       codes (Russian language) according to RFC 1489 expect
++#       due to fidonet wieredness, capital Russian EN translates to
++#       latin 'H' (0x8D code is soft CR in fidonet).
++#in  out
++0x80 0xC4
++0x81 0xB3
++0x82 0xDA
++0x83 0xBF
++0x84 0xC0
++0x85 0xD9
++0x86 0xC3
++0x87 0xB4
++0x88 0xC2
++0x89 0xC1
++0x8A 0xC5
++0x8B 0xDF
++0x8C 0xDC
++0x8D 0xDB
++0x8E 0xDD
++0x8F 0xDE
++0x90 0xB0
++0x91 0xB1
++0x92 0xB2
++0x93 0xF4
++0x94 0xFE
++0x95 0xF9
++0x96 0xFB
++0x97 0xF7
++0x98 0xF3
++0x99 0xF2
++0x9A 0xFF
++0x9B 0xF5
++0x9C 0xF8
++0x9D 0xFD
++0x9E 0xFA
++0x9F 0xF6
++0xA0 0xCD
++0xA1 0xBA
++0xA2 0xD5
++0xA3 0xF1
++0xA4 0xD6
++0xA5 0xC9
++0xA6 0xB8
++0xA7 0xB7
++0xA8 0xBB
++0xA9 0xD4
++0xAA 0xD3
++0xAB 0xC8
++0xAC 0xBE
++0xAD 0xBD
++0xAE 0xBC
++0xAF 0xC6
++0xB0 0xC7
++0xB1 0xCC
++0xB2 0xB5
++0xB3 0xF0
++0xB4 0xB6
++0xB5 0xB9
++0xB6 0xD1
++0xB7 0xD2
++0xB8 0xCB
++0xB9 0xCF
++0xBA 0xD0
++0xBB 0xCA
++0xBC 0xD8
++0xBD 0xD7
++0xBE 0xCE
++0xBF 0xFC
++0xC0 0xEE
++0xC1 0xA0
++0xC2 0xA1
++0xC3 0xE6
++0xC4 0xA4
++0xC5 0xA5
++0xC6 0xE4
++0xC7 0xA3
++0xC8 0xE5
++0xC9 0xA8
++0xCA 0xA9
++0xCB 0xAA
++0xCC 0xAB
++0xCD 0xAC
++0xCE 0xAD
++0xCF 0xAE
++0xD0 0xAF
++0xD1 0xEF
++0xD2 0xE0
++0xD3 0xE1
++0xD4 0xE2
++0xD5 0xE3
++0xD6 0xA6
++0xD7 0xA2
++0xD8 0xEC
++0xD9 0xEB
++0xDA 0xA7
++0xDB 0xE8
++0xDC 0xED
++0xDD 0xE9
++0xDE 0xE7
++0xDF 0xEA
++0xE0 0x9E
++0xE1 0x80
++0xE2 0x81
++0xE3 0x96
++0xE4 0x84
++0xE5 0x85
++0xE6 0x94
++0xE7 0x83
++0xE8 0x95
++0xE9 0x88
++0xEA 0x89
++0xEB 0x8A
++0xEC 0x8B
++0xED 0x8C
++# 0xEE 0x8D
++0xEE 0x48
++0xEF 0x8E
++0xF0 0x8F
++0xF1 0x9F
++0xF2 0x90
++0xF3 0x91
++0xF4 0x92
++0xF5 0x93
++0xF6 0x86
++0xF7 0x82
++0xF8 0x9C
++0xF9 0x9B
++0xFA 0x87
++0xFB 0x98
++0xFC 0x9D
++0xFD 0x99
++0xFE 0x97
++0xFF 0x9A
+--- ifmail-2.14tx8.10.orig/misc/config
++++ ifmail-2.14tx8.10/misc/config
+@@ -13,13 +13,14 @@
+ verbose		0
+ 
+ # Main address:
+-address		2:5020/230@fidonet
++address			2:999/999
++#address		2:5020/230@fidonet
+ 
+ # AKAs:
+-address		2:5020/6.14@fidonet
+-address		2:5020/23.14@fidonet
+-address		2:5020/49.14@fidonet
+-address		100:5020/23.14@dummynet
++#address		2:5020/6.14@fidonet
++#address		2:5020/23.14@fidonet
++#address		2:5020/49.14@fidonet
++#address		100:5020/23.14@dummynet
+ 
+ # Passwords for connections. checked by ifcico.
+ # Inserted into EMSI and yoohoo packets.
+@@ -48,7 +49,7 @@
+ # "jsmith:	John.Smith@p89.f567.n234.z1.fidonet.org"
+ # and fqdn value is "pccross.msk.su", then the resulting message will
+ # contain a line: "Reply-To: jsmith@pccross.msk.su".
+-sysalias	/usr/lib/smail/aliases
++sysalias	/etc/ifmail/aliases
+ 
+ # This host fully qualified domain name to add to the alias above
+ myfqdn		pccross.msk.su
+@@ -62,17 +63,15 @@
+ magicname       UUCP
+ 
+ # Directory for incoming packets/files:
+-inbound		/var/spool/ifmail/inb
++inbound		/var/spool/ftn/inb
+ # Directories for "listed" and "protected" sessions
+-listinbound	/var/spool/ifmail/inb
+-protinbound	/var/spool/ifmail/inb
++listinbound	/var/spool/ftn/inb
++protinbound	/var/spool/ftn/inb
+ 
+ # Directory for outgoing packets (default domain and zone):
+ # other zones will be like "/usr/spool/ifmail/outb.003",
+ # other domains will be like "/usr/spool/ifmail/<domain>.<zone>"
+-# I prefer to name the default outbound as "fidonet", so it is consistent
+-# with the naming pattern of the other domains.
+-outbound	/var/spool/ifmail/fidonet
++outbound	/var/spool/ftn/outb
+ 
+ # If you specify this, outgoing arcmail files will go to `outbound',
+ # but be reffered as being in `dosoutbound' in the .flo files
+@@ -88,7 +87,7 @@
+ # to many shortnames without problems.  If one shortname points to many
+ # fullnames, all matches are sent. The files are sent under their 
+ # shortnames.
+-reqmap		/usr/local/lib/fnet/reqmap
++#reqmap		/etc/ifmail/reqmap
+ 
+ # Directory with executables to satisfy "magic" file requests
+ # if requested a file present in this directory, it will be
+@@ -96,18 +95,18 @@
+ # is not executable, it is read line by line and the lines are
+ # processed as if they were received file requests (recusively).
+ # Execution of commands may compromize security!  You are warned.
+-magic		/usr/lib/ifmail/magic
++#magic		/usr/local/lib/ifmail/magic
+ 
+ # Primary nodelist (serves "outbound" directory and domain from the
+ # first "address" statement). Name expanded with ".NNN" if neccessary.
+-nodelist	/var/spool/ifmail/nl.d/nodelist
++nodelist	/var/spool/ftn/nl.d/nodelist
+ 
+ # Secondary nodelists and nodelists for other domains.
+ # use directory name from the first "nodelist" statement.
+ #		filename	originating address
+ #nodelist	pnt5020.ndl	2:5020/0@fidonet
+ #nodelist	chatlist	100:0/0@chateaunet
+-nodelist	private.ndl	2:5020/0@fidonet
++#nodelist	private.ndl	2:5020/0@fidonet
+ 
+ # domain translations, just context substitution.  Leading dot recommended.
+ # May contain '@'-sign too.  First matching used.
+@@ -116,8 +115,8 @@
+ # explicitly as a last line.
+ #		FTN side		Internet side
+ # fidonet (zones 1 -> 6 )
+-domtrans	.n5020.z2.fidonet	.fido.pccross.msk.su
+-domtrans	.n5030.z2.fidonet	.fido.tctube.spb.su
++#domtrans	.n5020.z2.fidonet	.fido.pccross.msk.su
++#domtrans	.n5030.z2.fidonet	.fido.tctube.spb.su
+ domtrans        .z1.fidonet             .z1.fidonet.org
+ domtrans        .z2.fidonet             .z2.fidonet.org
+ domtrans        .z3.fidonet             .z3.fidonet.org
+@@ -125,34 +124,34 @@
+ domtrans        .z5.fidonet             .z5.fidonet.org
+ domtrans        .z6.fidonet             .z6.fidonet.org
+ # domain names
+-domtrans        .beginnet               .beginnet.ftn
+-domtrans        .n320.z101.francom      .belgique.fm.alphanet.ch
+-domtrans        .n352.z101.francom      .luxembourg.fm.alphanet.ch
++#domtrans        .beginnet               .beginnet.ftn
++#domtrans        .n320.z101.francom      .belgique.fm.alphanet.ch
++#domtrans        .n352.z101.francom      .luxembourg.fm.alphanet.ch
+ # zone numbers (fidonet is added by default)
+-domtrans        .n320.z101.fidonet      .belgique.fm.alphanet.ch
+-domtrans        .n352.z101.fidonet      .luxembourg.fm.alphanet.ch
+-domtrans	.z140.fidonet		.z140.beginnet.ftn
++#domtrans        .n320.z101.fidonet      .belgique.fm.alphanet.ch
++#domtrans        .n352.z101.fidonet      .luxembourg.fm.alphanet.ch
++#domtrans	.z140.fidonet		.z140.beginnet.ftn
+ # default (the rest)
+ domtrans	.fidonet		.ftn
+ 
+ # Automatically updated alias database.  If omitted or inaccessible,
+ # ^aREPLYADDR and ^aREPLYTO kludges are generated in fido messages.
+-database	/var/spool/ifmail/ifdbm
++database	/var/spool/ftn/ifdbm
+ 
+ # Sequencer file (used to generate unique IDs)
+-sequencer	/var/spool/ifmail/seq
++sequencer	/var/spool/ftn/seq
+ 
+ # Areas file (format: "AREA newsgroup distribution")
+ areas		/etc/ifmail/Areas
+ 
+ # Bad groups prefixes - do not pass to fido if appear in Newsgroups header
+ # This is NOT the same as "!news.group" in the cnews "sys" file.
+-badgroup	relcom.ads.
+-badgroup	relcom.commerce.
++#badgroup	relcom.ads.
++#badgroup	relcom.commerce.
+ 
+ # Groups for which the Gatebau-style of MSGID<-->Message-ID conversion
+ # must be done. Same syntax as badgroup lines. *** USE WHITH CARE ***
+-gatebaugroup	fido.ger.
++gatebaugroup	fido.
+ #gatebaugroup	de.
+ 
+ # Maximum allowed number of groups in the Newsgroups header, article will
+@@ -201,7 +200,7 @@
+ # Transport programs for mail and news, used by iftoss
+ # for sendmail, $F expands to "from" address, $T - to "to" address.
+ sendmail	/usr/sbin/sendmail -oi -f $F $T
+-rnews		/usr/lib/news/rnews
++rnews		/usr/bin/rnews
+ 
+ # Toss program, used by ifunpack
+ iftoss		/usr/lib/ifmail/iftoss
+@@ -209,11 +208,11 @@
+ # Unpackers, used by ifunpack. 
+ # $F expands to archive file name
+ unzip		/usr/bin/unzip -Lojq $F
+-unarj		/usr/lib/ifmail/unarj e $F
++unarj		/usr/bin/unarj e $F 2> /dev/null
+ unlzh		/usr/bin/lha xiq $F
+ unarc		/usr/bin/arc x $F
+ unzoo		/usr/bin/zoo -extract $F
+-unrar		/usr/lib/ifmail/unrar e $F
++unrar		/usr/bin/unrar e $F 2> /dev/null
+ 
+ # Packer program, used by ifpack
+ # $F expands to archieve file name, $P - to list of packet names
+@@ -225,24 +224,19 @@
+ # Maximum packet size, ifmail/ifnews will start new packet if exeeds.
+ # *.?ut files are NOT created if nonzero specified, you must run ifpack
+ # to make packets go out.
+-maxpsize	30000
++maxpsize	300000
+ 
+ # Maximum message size when splitting big messages of usenet origin
+-# default is 12300 bytes
+-maxmsize 12300
++maxmsize 123000
+ 
+ # Flavors that should not be subject to packet size limiting.  These
+ # flavors will be put into `ready to send' packets and not packed
+ # by ifpack.  Special flavor 'm' means "all netmail".
+-nonpacked	cm
++#nonpacked	cm
+ 
+ # cnews log file and (temporary) database for seen-bys
+-newslog		/usr/lib/news/log
+-msgidbm		/tmp/ifmsgids
+-
+-# MSGID <-> Message-ID database, for creating correct References when gating
+-# if commented out this feature isn't activated
+-refdbm		/tmp/ref_db
++newslog		/var/log/news/log
++msgidbm		/var/spool/ftn/ifmsgids
+ 
+ # From this line on, values may be prefixed by a logical expression in
+ # round brackets. Operators are: '!', '&', '|', 'Xor'.
+@@ -260,7 +254,7 @@
+ #         e.g. "phone 7-095-"
+ 
+ # Dialing parameters
+-# of multiple "ModemPort", "ModemReset", "ModemDial", "ModemHangup" lines, 
++# of multiple "ModemPort", "ModemReset", "ModemDial", lines, 
+ # first matching is used.
+ # of multiple "PhoneTrans", "ModemConnect", "ModemError" lines, all matching 
+ # are used.
+@@ -283,7 +277,7 @@
+ # actual speed is taken from the nodelist.  If speed is omitted (or set
+ # to zero), previous port speed is not changed.
+ #ModemPort	(time Any0000-0900,Sat,Sun) cua0
+-ModemPort	ttyS1:L38400
++ModemPort	modem:L57600
+ 
+ # PhoneTrans lines provide rules to change phone prefixes to make local
+ # or long-distance calls.  In the example below, my country code is 7,
+@@ -299,11 +293,10 @@
+ PhoneTrans	32-	/	0
+ PhoneTrans		/	00
+ ModemReset	ATZ\r
+-ModemDial	(time Any0800-2200 & address 2:5020/49) AT&M5&N4DP\T\r
+-ModemDial	(address 2:5020/49) AT&M5&N6DP\T\r
+-ModemDial	(speed < 4800) AT&N3DP\T\r
+-ModemDial		ATDP\T\r
+-ModemHangup	ATZ\r
++#ModemDial	(time Any0800-2200 & address 2:5020/49) AT&M5&N4DP\T\r
++#ModemDial	(address 2:5020/49) AT&M5&N6DP\T\r
++#ModemDial	(speed < 4800) AT&N3DP\T\r
++ModemDial	ATDP\T\r
+ ModemOK		OK
+ ModemConnect	CONNECT
+ ModemError	BUSY
+@@ -311,6 +304,7 @@
+ ModemError	NO\sDIAL
+ ModemError	RING\r
+ ModemError	ERROR
++ModemError	VOICE
+ 
+ # Timeouts to wait for "OK" and "CONNECT", cannot be prefixed by logical
+ # expression.
+@@ -342,9 +336,9 @@
+ 
+ # EMSI data for this node
+ # From this line on values CANNOT be prefixed with logical expression
+-Name		== Oriental BBS ==
+-Location	LiХge Belgium
+-SysOp		Pablo Saratxaga
+-Phone		32-4-3445020
++Name		== A Debian GNU/Linux BBS ==
++Location	Unknown
++SysOp		User Name
++Phone		xx-xx-xxxxxxxx
+ Speed		14400
+ Flags		XA,V32B,V42B
+--- ifmail-2.14tx8.10.orig/misc/Areas
++++ ifmail-2.14tx8.10/misc/Areas
+@@ -27,162 +27,13 @@
+ 
+  COMERZ  fido.commerz world iso-8859-1 CP437 fro:Jan.Smith@f1.n2.z3.fidonet.org
+ 
++ You have to write here the tag conversions, probably one by one.
+ 
+- ### [ There is the list I use for belgian newsgroups ]
+- ### [ I don't use Distribution field, I see no need to add one... ]
+- ### [ only for a few fido-only distributed areas ]
+-
+- ########### be.*
+-BE.ANNOUNCE		be.announce  		
+-BE.COMMERCIAL		be.commercial 		
+-BE.COMP			be.comp   		
+-BE.FORSALE		be.forsale 		
+-BE.JOBS			be.jobs 		
+-BE.MISC			be.misc                		
+-BE.POLITICS		be.politics              		
+-BE.SCIENCE		be.science                 		
+-BE.TV			be.tv       		
+-
+- ########### fido.belg.*
+-3DSTUDIO.B		fido.belg.3dstudio		
+-AIDS.B			fido.belg.aids		
+-ALLFIX.B		fido.belg.allfix.general		
+-ALLFIX_SUP.B		fido.belg.allfix.support		
+-AMIGA.B			fido.belg.amiga		
+-ASTRONOM.B		fido.belg.astronomy		
+-AUTO.B			fido.belg.auto		
+-AVONTUUR.B		fido.belg.avontuur		
+-BABEL.B			fido.belg.babel		
+-BACKBONE.B		fido.belg.backbone     		
+-FAKEUSER.B		fido.belg.bbs.fake-users		
+-BBSADV.B		fido.belg.bbsadv       		
+-BEER.B			fido.belg.beer		
+-BEURS.B			fido.belg.beurs		
+-BEURS-DATA.B		fido.belg.beurs-data		
+-BIJBEL.B		fido.belg.bijbel		
+-BOEKEN.B		fido.belg.boeken		
+-CDROM.B			fido.belg.cdrom		
+-CLIPPER.B		fido.belg.clipper		
+-CLUBS.B			fido.belg.clubs		
+-COMICS.B		fido.belg.comics		
+-DBHULP.B		fido.belg.dbridge.support		
+-DVNET.B			fido.belg.dvnet		
+-ELEKTRON.B		fido.belg.electron		
+-FILES.B			fido.belg.files		
+-
+- ########### fido.belg.fra.*
+-ASM-TUTORIAL.BF		fido.belg.fra.asm-tutorial		
+-AUTOMOBILE.BF		fido.belg.fra.automobile		
+-C_ECHO.BF		fido.belg.fra.c		
+-CLIPPER.BF		fido.belg.fra.clipper		
+-COMMERCE.BF		fido.belg.fra.commerce		
+-COMMS.BF		fido.belg.fra.communications		
+-COMPNEWS.B		fido.belg.fra.compuserve.news		
+-ED-MSG.BF		fido.belg.fra.editeurs_msg		
+-FIDONET.BF		fido.belg.fra.fidonet		
+-FILE-SEARCH.B		fido.belg.fra.files.search		
+-FILE-SEARCH.B		fido.belg.fra.files.search		
+-FILM.BF			fido.belg.fra.film		
+-GENEALOGY.BF		fido.belg.fra.genealogy		
+-GENERAL.B		fido.belg.fra.general		
+-HARD.BF			fido.belg.fra.hardware		
+-INTERNET.BF		fido.belg.fra.internet		
+-ISDN.BF			fido.belg.fra.isdn		
+-LINUX.BF		fido.belg.fra.linux		
+-MAXIMUS.BF		fido.belg.fra.maximus		
+-OCCASES.BF		fido.belg.fra.occases		
+-OS2.BF			fido.belg.fra.os2		
+-RELIGION.BF		fido.belg.fra.religion		
+-RTFM			fido.belg.fra.rtfm		
+-SCIENCES.BF		fido.belg.fra.sciences		
+-SOFT.BF			fido.belg.fra.soft		
+-SONS.BF			fido.belg.fra.sons  		
+-SYSTEMES.BF		fido.belg.fra.systemen		
+-WIN.BF			fido.belg.fra.windows		
+-
+- ########### fido.belg.* (2)
+-FDHELP.B		fido.belg.frontdoor.support		
+-FRUSTRATIE.B		fido.belg.frustratie		
+-FSFAN.B			fido.belg.fsfan		
+-FUNPROG.B		fido.belg.funprog		
+-GAMING.B		fido.belg.gaming		
+-GOLDED.B		fido.belg.golded		
+-HAM.B			fido.belg.ham		
+-HOUSE.B			fido.belg.house		
+-HP48.B			fido.belg.hp48		
+-INTERNET.B		fido.belg.internet		
+-JOB.B			fido.belg.jobs		
+-KEUKEN.B		fido.belg.keuken		
+-KINDEREN.B		fido.belg.kinderen		
+-K.U.LEUVEN		fido.belg.kuleuven		
+-LAN.BF			fido.belg.lan
+-LASERDISC.B		fido.belg.laserdiscs		
+-LINUX.B			fido.belg.linux		
+-SIMENON.B		fido.belg.literature.simenon		
+-LOSTKIDS.B		fido.belg.lostkids		
+-LOTTO.B			fido.belg.lotto		
+-LUKRAAK.B		fido.belg.lukraak		
+-MACBEL.B		fido.belg.macbel		
+-MATH.B			fido.belg.math		
+-MAX.B			fido.belg.maximus		
+-MEDIA.B			fido.belg.media		
+-MODEL_MAKING.B		fido.belg.model_making		
+-MODEM.B			fido.belg.modem		
+-MODERATORS.B		fido.belg.moderators		
+-MUZIEK.B		fido.belg.music		
+-NATSYSOP.B		fido.belg.natsysop		fido
+-
+- ########### fido.belg.ned.*
+-ALGEMEEN.B		fido.belg.ned.algemeen		
+-ALLES.BN		fido.belg.ned.alles		
+-DIER.B			fido.belg.ned.animals		
+-DAMES.B			fido.belg.ned.computer.widows		
+-COMPUTER&RECHT		fido.belg.ned.computer_recht		
+-DWARZ.B			fido.belg.ned.dragon.warz		
+-FILM.B			fido.belg.ned.films		
+-GRAP.B			fido.belg.ned.grappen		
+-HANDEL.B		fido.belg.ned.handel		
+-FOTO.B			fido.belg.ned.photography		
+-PROBOARD.B		fido.belg.ned.proboard		
+-SYSTEMEN.BN		fido.belg.ned.systemen		
+-WINDOWS.BN		fido.belg.ned.windows		
+-
+- ########### fido.belg.* (3)
+-OS2.B			fido.belg.os2		
+-OS2COM.B		fido.belg.os2com		
+-OUWEZAK.B		fido.belg.ouwezak		
+-P-DOMAIN.B		fido.belg.p-domain		
+-PARAVISIE.B		fido.belg.paravisie		
+-PGP.B			fido.belg.pgp		
+-POINTS.B		fido.belg.points		
+-POLITIC.B		fido.belg.politics		
+-PROBOARD.029		fido.belg.proboard		
+-PROJECT.B		fido.belg.project		
+-QB.B			fido.belg.quickbasic		
+-RA_SUP.B		fido.belg.ra.support		
+-RAM.B			fido.belg.ram		
+-RAY_FRA_ANI.B		fido.belg.ray_fra_ani		
+-RECHT.B			fido.belg.recht		
+-RPG.B			fido.belg.rpg		
+-SATELLITE.B		fido.belg.satellite		
+-SEX.B			fido.belg.sex		
+-SJACHEL.B		fido.belg.sjachel		
+-SOUND_CORNER.B		fido.belg.sound_corner		
+-STUDENTEN.B		fido.belg.studenten		
+-TABOE			fido.belg.taboe		
+-RAIL.B			fido.belg.trains		
+-UFO.B			fido.belg.ufo		
+-UITGAAN.B		fido.belg.uitgaan		
+-UNIX.B			fido.belg.unix		
+-VIRTUAL.B		fido.belg.virtual_reality		
+-VIRUS.B			fido.belg.virus		
+-VUB			fido.belg.vub		
+-BNET.B			fido.belg.vzw.bnet		
+-IMPACT			fido.belg.vzw.impact		
+-WAPEN.B			fido.belg.wapen		
+-WELZIJN.B		fido.belg.welzijn		
+-WETENSCHAP.B		fido.belg.wetenschap		
+-ZYXEL.B			fido.belg.zyxel        		
++ An international area
++NET_DEV               fido.int.net_dev
++ An italian area
++RC&REC_NEWS.033       fido.ita.033.rc&rec_news
++ Etc...
+ 
+   Line with a single '*' in the "newsgroup" field defines default areatag.
+   '*' in the "AREA" field, if present, is expanded to the original
+@@ -198,7 +49,7 @@
+   and distribution.  '*' in the "newsgroup" field, if present, is expanded
+   to the original areatag (converted to lowcase).
+ 
+-*                       fido.*                  	fido
++*                       fido.*                  	#fido
+ 
+   You can specify a line with a single asterisk in the "AREA" field and
+   a single asterisk in the "newsgroup" field.  It will cause a reversible
+--- ifmail-2.14tx8.10.orig/misc/contrib/ifinfo.pl
++++ ifmail-2.14tx8.10/misc/contrib/ifinfo.pl
+@@ -14,8 +14,7 @@
+ # changed by Andreas Jellinghaus, 2:246/8112.16
+ 
+ # *** EDIT the next LINE to the right path!!! ***
+-$listpath = '/var/spool/fnet/Nodelist/[A-Za-z]*.[0-9][0-9][0-9]
+-			/var/spool/fnet/Nodelist/[a-z]*.bln';
++$listpath = '/var/spool/ftn/nl.d/[A-Za-z]*.[0-9][0-9][0-9]';
+ 
+ # default domain
+ $domain = "fidonet.org";
+--- ifmail-2.14tx8.10.orig/misc/FILES
++++ ifmail-2.14tx8.10/misc/FILES
+@@ -1,3 +1,4 @@
++#!/bin/sh -e
+ # This is a sample "magic" file request processor
+ 
+ echo Dear $1!
+--- ifmail-2.14tx8.10.orig/debian/ifmail.docs
++++ ifmail-2.14tx8.10/debian/ifmail.docs
+@@ -0,0 +1,4 @@
++Credits.TX
++README
++misc/DEBUG
++misc/FAQ
+--- ifmail-2.14tx8.10.orig/debian/ifgate.docs
++++ ifmail-2.14tx8.10/debian/ifgate.docs
+@@ -0,0 +1,3 @@
++README.access-list
++README.charset
++misc/maptabs/README.cz_and_sk
+--- ifmail-2.14tx8.10.orig/debian/ifmail.postinst
++++ ifmail-2.14tx8.10/debian/ifmail.postinst
+@@ -0,0 +1,38 @@
++#!/bin/sh -e
++
++if ! id ftn >/dev/null 2>&1; then
++  adduser --system --home /var/spool/ftn --group --uid 64000 \
++    --disabled-password --gecos Fidonet ftn
++  chsh -s /bin/bash ftn
++fi
++
++chown -R ftn.ftn /var/spool/ftn/
++chown -R ftn.adm /var/log/ifmail/
++
++
++if ! egrep -q '^(ftn:|#-- ifmail)' /etc/aliases; then
++  cat >>/etc/aliases <<EOF
++
++#-- ifmail begin
++ftn:    root
++sysop:  root
++#-- ifmail end
++EOF
++  newaliases || echo "newaliases command not available."
++fi
++
++
++if [ "$action" = install ]; then
++cat <<'EOF'
++WARNING!
++
++You MUST configure /etc/ifmail/config and probably /etc/ifmail/Areas,
++otherwise you will generate messages with a wrong origin address.
++
++Press Enter key to continue.
++EOF
++read junk
++fi
++
++#DEBHELPER#
++
+--- ifmail-2.14tx8.10.orig/debian/ifmail.dirs
++++ ifmail-2.14tx8.10/debian/ifmail.dirs
+@@ -0,0 +1,6 @@
++/etc/ifmail
++/etc/cron.weekly
++/usr/lib/ifmail
++/var/log/ifmail
++/var/spool/ftn/BAK
++/var/spool/ftn/nl.d
+--- ifmail-2.14tx8.10.orig/debian/copyright
++++ ifmail-2.14tx8.10/debian/copyright
+@@ -0,0 +1,59 @@
++This is the debianized version of the ifmail-tx package (by Eugene Crosser
++and Pablo Saratxaga).
++This package was debianized by Marco d'Itri <md@linux.it>.
++
++It was downloaded from ftp://ftp.z2.fidonet.org/pub/linux/Fido/
++
++For details about the modifications I made to the source please read the
++file README.debian
++
++
++This is the copyright notice of the original ifmail:
++
++You may do virtually what you wish with this software, as long as the
++explicit reference to its original author is retained:
++
++Eugene G. Crosser <crosser@average.org>, 2:5020/230@FidoNet
++
++THIS SOFTWARE IS PROVIDED AS IS AND COME WITH NO WARRANTY OF ANY KIND,
++EITHER EXPRESSED OR IMPLIED.  IN NO EVENT WILL THE COPYRIGHT HOLDER BE
++LIABLE FOR ANY DAMAGES RESULTING FROM THE USE OF THIS SOFTWARE.
++
++This is freeware.  Except for the modules taken from the other packages,
++(which may be subject to different distributing policy), you may use
++this software for any purpose, commercial or noncommercial, including
++even selling it, without paying anything.
++
++
++
++This is the copyright notice of ifmail-tx:
++
++# Included a lot of code from version 2.8c-JE13JUL1995       #
++# which is copyrighted by Tsuneo Tanaka <tt@efnet.com>       #
++#                                                            #
++# Included code from ifcico-3.0.cm which is copyrighted      #
++# by Christof Meerwald <cmeerw@htl.fh-sbg.ac.at> and under   #
++# the GPL license. that applies to create_freqlist() in      #
++# filelist.c, ifinfo.c, ttyio_cm.h, ifreq.c and the related  #
++# man pages.                                                 #
++# see http://www.cosy.sbg.ac.at/~cmeer/ifcico/ for more      #
++# details on ifcico-3.0.cm                                   #
++#                                                            #
++# The HYDRA protocol is copyrighted by Arjen G. Lentz,       #
++# LENTZ SOFTWARE-DEVELOPMENT and Joaquim H. Homrighausen.    #
++# see the file ifcico/hydra.LICENSE.DOC for the full license #
++#                                                            #
++# conversion code for japanese in charconv_jp.c              #
++# is copyrighted by Ken Lunde <lunde@adobe.com>              #
++# conversion code for chinese in charconv_hz.c               #
++# is copyrighted by Fung F. Lee <lee@umunhum.stanford.edu>   #
++#                                                            #
++# Programs in misc/contrib are copyrighted by their authors  #
++#                                                            #
++# The "tx" versions also includes ideas and patches from     #
++# several other people, see file Credits.TX                  #
++# Other modifications are from me.                           #
++# ( Pablo Saratxaga <srtxg@chanae.alphanet.ch> )             #
++
++Please see /usr/share/common-licenses/GPL-2 for the GPL text.
++
+--- ifmail-2.14tx8.10.orig/debian/ifgate.conffiles
++++ ifmail-2.14tx8.10/debian/ifgate.conffiles
+@@ -0,0 +1,3 @@
++/etc/ifmail/Areas
++/etc/ifmail/aliases
++/etc/news/scripts/fidosend
+--- ifmail-2.14tx8.10.orig/debian/ifgate.links
++++ ifmail-2.14tx8.10/debian/ifgate.links
+@@ -0,0 +1,2 @@
++/usr/lib/ifmail/ifmail /usr/lib/ifmail/ifnews
++/usr/share/man/man8/ifmail.8.gz /usr/share/man/man8/ifnews.8.gz
+--- ifmail-2.14tx8.10.orig/debian/ifgate.dirs
++++ ifmail-2.14tx8.10/debian/ifgate.dirs
+@@ -0,0 +1,6 @@
++/etc/ifmail
++/etc/news/scripts
++/usr/lib/ifmail/maptabs
++/usr/lib/sendmail.cf/mailer
++/usr/share/man/man8
++/usr/share/sendmail/sendmail.cf/mailer
+--- ifmail-2.14tx8.10.orig/debian/ifgate.examples
++++ ifmail-2.14tx8.10/debian/ifgate.examples
+@@ -0,0 +1,4 @@
++md/crontab.news
++md/newsfeeds
++md/sendmail.mc
++md/mailertable
+--- ifmail-2.14tx8.10.orig/debian/ifmail.prerm
++++ ifmail-2.14tx8.10/debian/ifmail.prerm
+@@ -0,0 +1,9 @@
++#!/bin/sh -e
++
++if [ "$1" = "purge" ]; then
++  rm -rf /var/spool/ftn/seq /var/log/ifmail/iflog* \
++    /var/log/ifmail/ifdebug* >/dev/null
++fi
++
++#DEBHELPER#
++
+--- ifmail-2.14tx8.10.orig/debian/ifcico.examples
++++ ifmail-2.14tx8.10/debian/ifcico.examples
+@@ -0,0 +1,6 @@
++misc/FILES
++misc/contrib/ifinfo.pl
++misc/contrib/ifreq
++md/ahbpoll
++md/ifpoll
++md/nlc
+--- ifmail-2.14tx8.10.orig/debian/rules
++++ ifmail-2.14tx8.10/debian/rules
+@@ -0,0 +1,80 @@
++#!/usr/bin/make -f
++# Original version Copyright 1994,1995 by Ian Jackson.
++
++SHELL+= -e
++
++#export DH_VERBOSE=1
++
++build:
++	$(checkdir)
++	make
++	touch build
++
++clean:
++	$(checkdir)
++	-rm -f build
++	-make clean
++	-dh_clean
++
++binary-indep:	binary-all
++	dh_builddeb -i
++	
++binary-arch:	binary-all
++	dh_builddeb -a
++
++binary-all:	checkroot build
++	$(checkdir)
++	-dh_clean -d
++
++	dh_installdirs
++	# compatibility symlink
++	ln -s ftn debian/tmp/var/spool/ifmail
++
++	dh_installdocs
++	dh_installexamples
++	dh_installchangelogs Changelog.TX
++
++	# man pages
++	cd ifcico && cp ifcico.8 ifindex.8 ifinfo.8 nlpatch.8 \
++		../debian/ifcico/usr/share/man/man8/
++	cp ifcico/ifcico.8.fr debian/ifcico/usr/share/man/fr_FR/man8/ifcico.8
++	cd ifgate && cp ifmail.8 iftoss.8 ../debian/ifgate/usr/share/man/man8/
++
++	# copy binaries
++	install --mode=755 md/fido.daily debian/tmp/usr/lib/ifmail/
++	cd ifcico && install --strip ifcico ifindex ifinfo ifreq nlpatch \
++		nlookup ../ifgate/ifstat ../debian/ifcico/usr/lib/ifmail/
++	install --strip ifgate/ifmail ifgate/ifpack ifgate/iftoss \
++		ifgate/ifunpack debian/ifgate/usr/lib/ifmail/
++
++	touch debian/ifgate/etc/ifmail/aliases
++	cp misc/Areas debian/ifgate/etc/ifmail/
++	install --mode=755 md/fidosend debian/ifgate/etc/news/scripts/
++	cp misc/maptabs/[a-z]* debian/ifgate/usr/lib/ifmail/maptabs/
++	cp md/ifmail.m4 debian/ifgate/usr/share/sendmail/sendmail.cf/mailer/
++
++	cd po && make install DESTDIR=../debian/tmp
++	cp misc/config md/ifshellvars debian/tmp/etc/ifmail/
++	dh_installcron
++
++	dh_link
++	dh_strip
++	dh_compress
++	dh_fixperms
++	# suid stuff
++	chown 64000.news debian/ifgate/usr/lib/ifmail/ifmail
++	chmod 4754 debian/ifgate/usr/lib/ifmail/ifmail
++	dh_shlibdeps
++	dh_gencontrol
++	dh_installdeb
++
++define checkdir
++	test -f debian/rules
++endef
++
++binary:	binary-arch binary-indep
++
++checkroot:
++	test root = "`whoami`"
++
++.PHONY: binary binary-arch binary-indep clean checkroot
+--- ifmail-2.14tx8.10.orig/debian/cron.weekly
++++ ifmail-2.14tx8.10/debian/cron.weekly
+@@ -0,0 +1,23 @@
++#!/bin/sh -e
++
++. /etc/ifmail/ifshellvars
++
++cd $IFLOGDIR
++
++# Rotate the logfiles.
++for LOG in ifdebug iflog; do
++  if [ -s $LOG ]; then
++    savelog -u $IFUSER -g adm -m 600 -c 4 $LOG > /dev/null
++  fi
++done
++$IFBIN/fido.daily iflog.0 | mail -s "Ifmail logs report" $IFUSER
++
++# remove old files and directories
++#find $IFSPOOL/ -type f -atime +14 -print0 \
++#	-name '*.sts' \
++#	| xargs --no-run-if-empty --null rm -f
++
++#find $IFSPOOL/ -type d -mtime +30 -print0 \
++#	-name '*.*' -not -name $IFNLDIRNAME\
++#	| xargs --no-run-if-empty --null rmdir
++
+--- ifmail-2.14tx8.10.orig/debian/README.Debian
++++ ifmail-2.14tx8.10/debian/README.Debian
+@@ -0,0 +1,160 @@
++ifmail-tx for DEBIAN
++--------------------
++
++The programs are compiled with the following #defines:
++
++OPTS        = -DTERMAIL_HACK -DTPUT_STATUS_HACK -DADD_PID -DLEVEL=0 \
++		-DDONT_REGATE -DSLAVE_SENDS_NAK_TOO \
++		-DRNEWSB -DJE \
++		-DRESTAMP_OLD_POSTINGS=14 -DBELEIVE_ZFIN=1 \
++		-DHAS_TCP -DAREAS_HACKING \
++		-DRESTAMP_FUTURE_POSTINGS -DFSCHTML -DMACHIGAI \
++		-DALLOW_RETURNPATH -DGATEBAU_MSGID \
++		-DDIRTY_CHRS \
++		-DAREAS_NUMERAL_COMMENTS
++
++You will probably want to add ftn to the dialout group:
++# adduser ftn dialout
++
++
++IMPORTANT: Debian specific patches
++----------------------------------
++
++The new config option "restampolder" can be used to configure the number
++of days after which echomail is restamped.
++
++The new config option "paranoid" makes iftoss refuse tossing packets
++with wrong packet password.
++
++The first character of the argument of the new config option "sentmode"
++will be used as the transfert mode in ?lo files ("^" is the default).
++
++rnews logs each article submitted so innreport can count them.
++
++Messages with an unparseable date field will have a X-Bad-Date header
++in Usenet and a WARNING kludge when gated back.
++
++The config options ModemHangup and ModemAfterCall are ignored because
++linux does not allow I/O on an a TTY after hangup.
++
++setproctitle() in ifcico is enabled and ps will show the state of the
++call.
++
++=============================================================================
++From the dev3 patch:
++
++ifgate/attach.c:
++               Changed transit attach handling. Now transit attached
++               files are always killed after having been sent to a remote
++               system.
++
++iflib/falists.c:
++               Commented out all debug() calls for performance reasons:
++               profiling had shown 50% time spent in debug() calls from
++               falists.c.
++
++
++From the amdk patch (whatever that means...):
++
++# define -DHIDDEN - включает работу Hidden и Override.
++Override z:nnnn/nn <phone | -> [TXY | CM]
++Hidden z:nnnn/nn <phone | -> [TXY | CM]
++
++
++From ifmail-2.14.os-p7:
++
++28. Override UTxy flag - option NoTxy in config. For example:
++    options (address 2:5020/99999) NoTxy
++    options (address 2:5020/99999 & time Any2300-0530,Any0730-1000) Call
++    options (address 2:5020/99999 & time Any0530-0730,Any1000-2300) NoCall
++    (Sergey@p500.f1354.n5020.z2.fidonet.org)
++
++
++The EXPERIMENTAL_EMSI code from ifcico-cm has been merged but is not
++compiled in by default. I never tested it.
++
++=============================================================================
++If you use postfix you just have to add your AKAs to $mydestination and
++enable the transport map by adding to /etc/postfix/main.cf:
++
++transport_maps = hash:$config_directory/transport
++
++Put in /etc/postfix/transport something like:
++
++.z1.fidonet.org		ifmail:f680.n335
++.z2.fidonet.org		ifmail:f680.n335
++.z3.fidonet.org		ifmail:f680.n335
++.z4.fidonet.org		ifmail:f680.n335
++.z5.fidonet.org		ifmail:f680.n335
++.z6.fidonet.org		ifmail:f680.n335
++
++and don't forget to rebuild the database with postmap.
++
++=============================================================================
++If you use exim you can try these lines:
++
++# add ftn to the trusted users list
++trusted_users = mail:list:uucp:ftn
++
++# transport
++ftn:
++  driver = pipe;
++  user = nobody
++  command = "/usr/lib/ifmail/ifmail -r${host} \
++        \"(${original_local_part}@${original_domain})\""
++  return_fail_output = true
++
++# router
++ftnhost:
++  driver = domainlist,
++  transport = ftn;
++  route_file = /etc/exim.ftnhosts
++  search_type = partial-lsearch
++
++Remember to add your your FTN AKAs to local_domains.
++
++=============================================================================
++If you use sendmail and sendmailconfig you will have to run it again after
++ifmail is installed and it will automatically add the new mailers
++"ifmail", "ifmail-h" and "ifmail-c" (for normal, hold and crash mail).
++Then you will have to add to the mailertable some entries like ones in
++examples/mailertable.
++
++You can define FIDO_SMART_HOST in sendmail.mc to route all netmail to a
++single node:
++
++define(`FIDO_SMART_HOST', `f1.n2.z3.fidonet.org')
++
++My rules will try hard to guess which addresses in the fidonet.org domain
++are real internet machines that should be reached via the internet.
++If some addresses are incorrectly sent to ifmail you can write them as
++*.ip.fidonet.org, i.e. if you want to send mail to user@www.n1.z1.fidonet.org
++you have to address it to user@www.n1.z1.ip.fidonet.org.
++
++=============================================================================
++If you use qmail you can try something like that:
++control/virtualdomains:
++.z1.fidonet.org:ifmail-ahb
++.n335.z2.fidonet.org:ifmail-eagle
++f680.n335.z2.fidonet.org:ifmail-direct
++.f680.n335.z2.fidonet.org:ifmail-direct
++.z3.fidonet.org:ifmail-ahb
++.z4.fidonet.org:ifmail-ahb
++.z5.fidonet.org:ifmail-ahb
++.z6.fidonet.org:ifmail-ahb
++
++users/append:
+++ifmail-:ftn:64000:64000:/var/qmail/alias/ifmail:-::
++
++~alias/.qmail-ahb-default:
++| preline -dfr /usr/lib/ifmail/ifmail -r f206.n332 "($EXT2@$HOST)" || exit 100
++
++~alias/.qmail-direct-default:
++| preline -dfr /usr/lib/ifmail/ifmail -r "${HOST#p*.}" "($EXT2@$HOST)"
++
++~alias/.qmail-directp-default:
++| preline -dfr /usr/lib/ifmail/ifmail -r "$HOST" "($EXT2@$HOST)"
++
++The last one is for your points. AHB is the name of my uplink (2:332/206).
++
++=============================================================================
+--- ifmail-2.14tx8.10.orig/debian/ifgate.postrm
++++ ifmail-2.14tx8.10/debian/ifgate.postrm
+@@ -0,0 +1,9 @@
++#!/bin/sh -e
++
++if [ "$1" = "purge" ]; then
++  rm -rf /var/spool/ftn/ifdbm.* /var/spool/ftn/ifmsgids.* \
++    /var/spool/ftn/seq >/dev/null
++fi
++
++#DEBHELPER#
++
+--- ifmail-2.14tx8.10.orig/debian/changelog
++++ ifmail-2.14tx8.10/debian/changelog
+@@ -0,0 +1,236 @@
++ifmail (2.14tx8.10-18) unstable; urgency=medium
++
++  * Switched from libgdbmg1-dev to libgdbm-dev.
++  * Switched from varargs.h to stdarg.h, patch courtesy of Matt Kraai.
++    (Closes: #195439)
++
++ -- Marco d'Itri <md@linux.it>  Sat, 14 Jun 2003 13:47:32 +0200
++
++ifmail (2.14tx8.10-17) unstable; urgency=low
++
++  * Patched flagexp.y and ifcico/Makefile to work with the new flex release
++    (Closes: #191190).
++
++ -- Marco d'Itri <md@linux.it>  Thu,  1 May 2003 13:27:47 +0200
++
++ifmail (2.14tx8.10-16) unstable; urgency=medium
++
++  * Modified flagexp.y to work with the new bison release (Closes: #164230).
++
++ -- Marco d'Itri <md@linux.it>  Thu, 17 Oct 2002 02:22:03 +0200
++
++ifmail (2.14tx8.10-15) unstable; urgency=low
++
++  * Use gdbm-ndbm.h instead of ndbm.h (Closes: #162440).
++
++ -- Marco d'Itri <md@linux.it>  Mon,  7 Oct 2002 21:13:17 +0200
++
++ifmail (2.14tx8.10-14) unstable; urgency=medium
++
++  * Added build depend on debhelper (Closes: #123708).
++  * Added link for ifnews.8.gz (Closes: #92583).
++  * Merged some code from Andrey Smirnov to support KOI8-R.
++
++ -- Marco d'Itri <md@linux.it>  Sun, 30 Dec 2001 18:22:37 +0100
++
++ifmail (2.14tx8.10-13) unstable; urgency=low
++
++  * Added -DDO_NEED_TIME (Closes: #91914).
++
++ -- Marco d'Itri <md@linux.it>  Wed, 28 Mar 2001 00:03:07 +0200
++
++ifmail (2.14tx8.10-12) unstable; urgency=low
++
++  * Added support for the inn2 package.
++  * Added build dependencies (Closes: #58063).
++  * Removed suidregister support.
++
++ -- Marco d'Itri <md@linux.it>  Mon, 26 Mar 2001 16:02:09 +0200
++
++ifmail (2.14tx8.10-11) frozen unstable; urgency=medium
++
++  * Y2K patch (important!).
++  * Porting fixes (Closes: #55252, #57394).
++  * Fixes bug in /usr/doc/ifcico/examples/ifpoll (Closes: #56832).
++  * Added Build-Depends line and updated to last policy.
++
++ -- Marco d'Itri <md@linux.it>  Wed,  9 Feb 2000 12:22:24 +0100
++
++ifmail (2.14tx8.10-10.1) frozen unstable; urgency=low
++
++  * Non-maintainer upload (binary-only) for alpha
++  * For some unclear reason `alpha' was removed from the list of arches...
++  * Some minor patches to help a smooth compile. Diff reported to BTS
++
++ -- Paul Slootman <paul@debian.org>  Tue, 25 Jan 2000 22:29:29 +0100
++
++ifmail (2.14tx8.10-10) unstable; urgency=low
++
++  * Updated the path of ifmail.mc to work with potato sendmail.
++
++ -- Marco d'Itri <md@linux.it>  Sat,  8 Jan 2000 13:38:33 +0100
++
++ifmail (2.14tx8.10-9) unstable; urgency=low
++
++  * New features from ifmail-2.14-dev3.diff.gz: ACLs.
++  * Fixed ndbm.h path with glibc 2.1 (closes: #51385).
++  * Compiled with glibc 2.1 (closes: #44761).
++  * Removed bashisms in debian/rules (closes: #51388).
++
++ -- Marco d'Itri <md@linux.it>  Sun, 28 Nov 1999 12:30:34 +0100
++
++ifmail (2.14tx8.10-8) unstable; urgency=low
++
++  * RELAXED is not #defined anymore. Use -f on the iftoss command line
++    if you need this feature.
++  * PARANOID now is a config file option.
++  * Disabled ModemHangup and ModemAfterCall: they don't work on linux.
++  * ifcico hand patched to cm.alpha-4.1.
++  * Got setproctitle() from netkit-telnet.
++  * New feature from ifmail-2.10.os: sentmode keyword.
++
++ -- Marco d'Itri <md@linux.it>  Mon,  1 Nov 1999 16:35:05 +0100
++
++ifmail (2.14tx8.10-7) unstable; urgency=low
++
++  * Now rnews logs each article submitted.
++  * Messages with an unparseable date field will have a X-Bad-Date header
++    in Usenet and a WARNING kludge when gated back.
++
++ -- Marco d'Itri <md@linux.it>  Sun, 31 Oct 1999 13:22:14 +0100
++
++ifmail (2.14tx8.10-6) unstable; urgency=low
++
++  * Now the package is FHS compliant.
++  * Misc fixes (closes: #42360, #44761).
++
++ -- Marco d'Itri <md@linux.it>  Sun, 17 Oct 1999 12:44:51 +0200
++
++ifmail (2.14tx8.10-5) unstable; urgency=low
++
++  * debian/rules rewritten to separately build binary-arch and binary-indep
++    packages (closes: #42492).
++  * Added powerpc arch (closes: #42119).
++  * Does not add anymore duplicate aliases (closes: 43133). 
++  * Added restampolder configuration option.
++
++ -- Marco d'Itri <md@linux.it>  Sun, 29 Aug 1999 19:59:13 +0200
++
++ifmail (2.14tx8.10-4) unstable; urgency=low
++
++  * ifmail does not depend anymore on news and mail packages (closes: #42354).
++  * Removed bashism from ifmail postinst (closes: #42360).
++
++ -- Marco d'Itri <md@linux.it>  Tue,  3 Aug 1999 11:53:21 +0200
++
++ifmail (2.14tx8.10-3) unstable; urgency=low
++
++  * Now depends on "perl | perl5".
++
++ -- Marco d'Itri <md@linux.it>  Thu, 29 Jul 1999 18:47:09 +0200
++
++ifmail (2.14tx8.10-2) unstable; urgency=low
++
++  * Patched for glibc 2.1 (fixes #38362).
++  * Added postfix configuration info.
++
++ -- Marco d'Itri <md@linux.it>  Tue, 27 Jul 1999 19:39:28 +0200
++
++ifmail (2.14tx8.10-1) unstable; urgency=low
++
++  * New upstream release.
++  * Added exim and postfix tips in README.Debian.
++
++ -- Marco d'Itri <md@linux.it>  Fri,  2 Apr 1999 16:29:49 +0200
++
++ifmail (2.14tx8.9-0) unstable; urgency=low
++
++  * New upstream release.
++
++ -- Marco d'Itri <md@linux.it>  Thu,  3 Sep 1998 19:37:46 +0200
++
++ifmail (2.14tx8.8-2.1) unstable; urgency=low
++
++  * non-maintainer (binary-only) upload for Alpha
++  * patch to disable NEED_TRAP on Alpha. Perhaps NEED_TRAP is overkill
++    for a production package (i.e. debian package) anyway?
++  * 'chown ftn.news' in debian/rules is bogus, as user 'ftn' doesn't exist
++    until the package is installed. ftn replaced with 64000 which is hardwired
++    in postinst.
++
++ -- Paul Slootman <paul@debian.org>  Tue, 25 Aug 1998 19:15:14 +0200
++
++ifmail (2.14tx8.8-2) unstable; urgency=low
++
++  * Applied fix for glibc 2.1 by Hartmut Koptein (fixes Bug#25724)
++
++ -- Marco d'Itri <md@linux.it>  Sat, 15 Aug 1998 03:33:42 +0200
++
++ifmail (2.14tx8.8-1) unstable; urgency=low
++
++  * Applied "modemaftercall" patch from Pablo
++
++ -- Marco d'Itri <md@linux.it>  Thu, 16 Jul 1998 20:16:50 +0200
++
++ifmail (2.14tx8.8) unstable; urgency=low
++
++  * New upstream release
++  * Fixed bug in postinst
++  * Fixed MSGID conversion bug in upstream 2.14tx8.8
++
++ -- Marco d'Itri <md@linux.it>  Sun, 14 Jun 1998 16:36:08 +0200
++
++ifmail (2.13tx8.7-2) frozen unstable; urgency=low
++
++  * Compiled for glibc2 and moved to hamm/comm
++
++ -- Marco d'Itri <md@linux.it>  Tue, 17 Mar 1998 12:45:29 -0800
++
++ifmail (2.13tx8.7-1) unstable; urgency=low
++
++  * Fixed segmentation fault on broken ^AMSGID.
++  * Fixed double ^APID bug.
++
++ -- Marco d'Itri <md@linux.it>  Thu, 12 Mar 1998 19:31:24 +0100
++
++ifmail (2.13tx8.7) unstable; urgency=low
++
++  * New upstream release
++
++ -- Marco d'Itri <md@linux.it>  Mon, 26 Jan 1998 10:52:58 +0100
++
++ifmail (2.12tx8.6-4) unstable; urgency=low
++
++  * Package splitted in ifmail, ifcico and ifgate.
++
++ -- Marco d'Itri <md@linux.it>  Mon, 29 Dec 1997 16:39:25 +0100
++
++ifmail (2.12tx8.6-3) unstable; urgency=low
++
++  * Fixed buggy postinst
++  * Removed from postinst the broken format converter of /etc/ifmail/Areas
++
++ -- Marco d'Itri <md@linux.it>  Sun, 28 Dec 1997 13:58:28 +0100
++
++ifmail (2.12tx8.6-2) unstable; urgency=low
++
++  * Removed old dynamic ftn user for ftn.ftn static user and group (#15155).
++  * Removed changelog from /usr/doc/ftn
++
++ifmail (2.12tx8.6-1) unstable; urgency=low
++
++  * Now NLS support is compiled in
++  * Postinst will automatically convert the format of /etc/ifmail/Areas
++  * New upstream version
++  * Removed my patches to message.c and defined ADD_PID in CONFIG
++
++ -- Marco d'Itri <md@linux.it>  Thu, 9 Oct 1997 23:12:58 +0200
++
++ifmail (2.11tx8.5-1) unstable; urgency=low
++
++  * Patched message.c: at level 0 X-Newsreader is converted to ^APID.
++  * Charset mapping tables are stored in /usr/lib/ifmail/maptabs/.
++  * The full list of configured #defines can be found in README.Debian.
++  * Initial Release.
++
++ -- Marco d'Itri <md@linux.it>  Sun, 3 Aug 1997 20:26:53 +0200
+--- ifmail-2.14tx8.10.orig/debian/ifmail.postrm
++++ ifmail-2.14tx8.10/debian/ifmail.postrm
+@@ -0,0 +1,14 @@
++#!/bin/sh -e
++
++if [ "$1" = "purge" ]; then
++  if grep -q "#-- ifmail begin" /etc/aliases; then
++    cp /etc/aliases /etc/aliases.new
++    sed -e '/#-- ifmail begin/,/#-- ifmail end/d' \
++      </etc/aliases.new >/etc/aliases
++    rm /etc/aliases.new
++    newaliases || echo "newaliases command not available"
++  fi
++fi
++
++#DEBHELPER#
++
+--- ifmail-2.14tx8.10.orig/debian/ifcico.postrm
++++ ifmail-2.14tx8.10/debian/ifcico.postrm
+@@ -0,0 +1,14 @@
++#!/bin/sh -e
++
++update-inetd --remove "^tfido"
++update-inetd --comment-chars "#disabled#" --enable tfido
++update-inetd --remove "^fido"
++update-inetd --comment-chars "#disabled#" --enable fido
++
++if [ "$1" = "purge" ]; then
++  rm -rf /var/spool/ftn/nl.d/index.dir \
++  /var/spool/ftn/nl.d/index.pag  >/dev/null
++fi
++
++#DEBHELPER#
++
+--- ifmail-2.14tx8.10.orig/debian/ifcico.dirs
++++ ifmail-2.14tx8.10/debian/ifcico.dirs
+@@ -0,0 +1,3 @@
++/usr/lib/ifmail
++/usr/share/man/man8
++/usr/share/man/fr_FR/man8
+--- ifmail-2.14tx8.10.orig/debian/ifmail.conffiles
++++ ifmail-2.14tx8.10/debian/ifmail.conffiles
+@@ -0,0 +1,3 @@
++/etc/ifmail/config
++/etc/ifmail/ifshellvars
++/etc/cron.weekly/ifmail
+--- ifmail-2.14tx8.10.orig/debian/control
++++ ifmail-2.14tx8.10/debian/control
+@@ -0,0 +1,31 @@
++Source: ifmail
++Section: comm
++Priority: extra
++Maintainer: Marco d'Itri <md@linux.it>
++Build-Depends: debhelper, gettext, libgdbm-dev, bison, flex
++Standards-Version: 3.5.10
++
++Package: ifmail
++Architecture: all
++Depends: perl
++Suggests: ifcico, ifgate
++Description: Internet to Fidonet gateway
++ The package contains common files needed by ifcico and ifgate packages.
++ This version includes the "tx" patches and other misc patches.
++
++Package: ifgate
++Architecture: any
++Depends: ${shlibs:Depends}, ifmail, exim | mail-transport-agent, inn | news-transport-system
++Description: Internet to Fidonet gateway
++ The program can act as a gateway between email and netmail and Usenet
++ newsgroups and echomail.
++ This version includes the "tx" patches and other misc patches.
++
++Package: ifcico
++Architecture: any
++Depends: ${shlibs:Depends}, ifmail
++Conflicts: suidmanager (<< 0.50)
++Description: Fidonet Technology transport package
++ Ifcico is a FidoTech mailer for connecting to other nodes via the phone
++ or the Internet.
++ This version includes the "tx" patches and other misc patches.
+--- ifmail-2.14tx8.10.orig/debian/ifcico.postinst
++++ ifmail-2.14tx8.10/debian/ifcico.postinst
+@@ -0,0 +1,9 @@
++#!/bin/sh -e
++
++update-inetd --comment-chars "#disabled#" --disable tfido
++update-inetd --group OTHER --add "tfido		stream	tcp	nowait	ftn	/usr/sbin/tcpd	/usr/lib/ifmail/ifcico -r 0 -t"
++update-inetd --comment-chars "#disabled#" --disable fido
++update-inetd --group OTHER --add "fido		stream	tcp	nowait  ftn	/usr/sbin/tcpd	/usr/lib/ifmail/ifcico -r 0"
++
++#DEBHELPER#
++
+--- ifmail-2.14tx8.10.orig/README.access-list
++++ ifmail-2.14tx8.10/README.access-list
+@@ -0,0 +1,52 @@
++This version of ifmail has been patched to support access lists in iftoss.
++There are three access lists, namely packet header one, message header one
++and origin one. They are specified using the following keywords in a main
++ifmail configuration file:
++
++packetacl		<filename>
++messageacl		<filename>
++originacl		<filename>
++
++The three files are of the same format: if a line has a hash ('#') at its
++beginning then it is a comment line; otherwise a line specifies a rule and
++must have four fields delimited by whitespace characters (spaces or tabs).
++The first field specifies the action of the rule: "permit" or "deny".
++Those words must be typed in lowercase. The second field is a pattern for
++areatag. The third and the fourth ones are patterns for source and destination
++addresses, accordingly. The patterns are in the style of Unix shell ones.
++See sh(1), fnmatch(3) or fnmatch(5) for their description. No escaping with
++a backslash ('\') is available.
++
++The destination address pattern field is ignored in the origin access list
++and may be anything, but not empty.
++
++An empty line is considered a error. Use comments to beautify your access
++lists.
++
++If any of the three files is not readable or does not exist at all then
++the according access list is considered empty.
++
++Access list matching is performed in a such way that the first matching rule
++is used. If no matching rules found then the default is to permit anything.
++
++Example (for origin access list):
++#
++# Allow Alex Semenyaka and his points to post to PVT.EXCH areas
++# as he is actually in Msk
++#
++permit	PVT.EXCH.*		2:461/640	*
++permit	PVT.EXCH.*		2:461/640.*	*
++#
++# Deny posts to PVT.EXCH from R46 (on the Moderator's request)
++#
++deny	PVT.EXCH.*		2:46*/*		*
++#
++# Make this jerk and his points read-only in the famous area FOO.BAR
++# because he've got a bang [!] from the Moderator
++#
++deny	FOO.BAR			2:5020/12345	*
++deny	FOO.BAR			2:5020/12345.*	*
++#
++# This is the default action. Placed here for convenience
++#
++permit	*			*		*
+--- ifmail-2.14tx8.10.orig/po/ru.po
++++ ifmail-2.14tx8.10/po/ru.po
+@@ -0,0 +1,177 @@
++# Russian messages for ifmail-tx
++# Copyright (C) 2001 Andrey Smirnov
++#
++#"Content-Type: text/plain; charset=koi8-r\n"
++#"Content-Type: text/plain; charset=ISO-8859-1\n"
++msgid ""
++msgstr ""
++"Date: 2001-04-15 21:53:47+0500\n"
++"Project-Id-Version: ifmail 2.14-tx\n"
++"PO-Revision-Date: 2001-04-15 21:53:47+0500\n"
++"Last-Translator: Andrey Smirnov <amis@convex.ru>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=KOI8-R\n"
++"Content-Transfer-Encoding: 8-bit\n"
++
++#: ../iflib/rdconfig.c:471
++msgid "%s ver. %s of %s; (c) %s\n"
++msgstr "%s ver. %s di %s; (c) %s\n"
++
++#: ../iflib/rdconfig.c:473
++msgid ""
++"    This is free software. You can do what you wish with it\n"
++"    as long as this copyright notice is preserved.\n"
++"\n"
++msgstr ""
++"    Это свободное ПО. Вы можете делать всё что хотите с ним,\n"
++"    если при этом сохраняется эта пометка об авторских правах.\n"
++
++#: ../iflib/rdconfig.c:475
++msgid "usage: %s -h -x<N> -I<file> %s\n"
++msgstr "Использование: %s -h -x<N> -I<file> %s\n"
++
++#: ../iflib/rdconfig.c:476
++msgid "-h\t\tget this help\n"
++msgstr "-h\t\tполучить эту справку\n"
++
++#: ../iflib/rdconfig.c:477
++msgid "-x<arg>\t\tset debug level <arg>\t[%08lx]\n"
++msgstr "-x<arg>\t\tустановить уровень отладки <arg>\t[%08lx]\n"
++
++#: ../iflib/rdconfig.c:479
++msgid "\t\t<arg> may be a number from 0 to 32 to set `on'\n"
++msgstr "\t\t<arg> может быть числом от 0 до 32 для того что бы включить\n"
++
++#: ../iflib/rdconfig.c:480
++msgid "\t\tbits from 1 to number, or a string of letters\n"
++msgstr "\t\tбиты от 1 до числа или строка символов\n"
++
++#: ../iflib/rdconfig.c:481
++msgid "\t\t('a' - bit 1, 'b' - bit 2, e.t.c. up to bit 26)\n"
++msgstr "\t\t('a' - 1й бит, 'b' - 2й бит, и т.д. до 26го бита)\n"
++
++#: ../iflib/rdconfig.c:482
++msgid "-I<file>\tuse config file\t<file>\t[%s]\n"
++msgstr "-I<file>\tиспользовать конфигурационный файл <file>\t[%s]\n"
++
++#: ../ifgate/iftoss.c:53 ../ifgate/iftoss.c:56
++msgid "-N\t\tput messages to %s directory\n"
++msgstr "-N\t\tположить сообщения в каталог %s\n"
++
++#: ../ifgate/iftoss.c:57
++msgid "-f\t\tforce tossing of packets addressed to other nodes\n"
++msgstr "-f\t\tвключить тоссинг пакетов, адресованных другим узлам\n"
++
++#: ../ifgate/ifmail.c:81
++msgid "-N\t\tput packets to %s directory\n"
++msgstr "-N\t\tположить пакеты в каталог %s\n"
++
++#: ../ifgate/ifmail.c:82
++msgid "-o<flavors>\tforce `out' mode for these flavors\n"
++msgstr "-o<tipi>\tвключить режим `out' для указанных флаворов\n"
++
++#: ../ifgate/ifmail.c:83
++msgid "-o+\t\tforce `out' mode for all flavors\n"
++msgstr "-o+\t\tвключить режим `out' для всех флаворов\n"
++
++#: ../ifgate/ifmail.c:84
++msgid "-o-\t\treset `out' mode for all flavors\n"
++msgstr "-o-\t\tсбросить режим `out' для всех флаворов\n"
++
++#: ../ifgate/ifmail.c:85
++msgid "-n\t\tset news mode\n"
++msgstr "-n\t\tустановить режим новостей (`news')\n"
++
++#: ../ifgate/ifmail.c:86
++msgid "-s\t\trun in secure mode (check nodelist)\n"
++msgstr "-s\t\tработать в режиме проверки нодлиста\n"
++
++#: ../ifgate/ifmail.c:87
++msgid "-r<addr>\taddress to route packet\n"
++msgstr "-r<addr>\tадрес, через который роутить почту\n"
++
++#: ../ifgate/ifmail.c:88
++msgid "-g<grade>\t[ n | c | h ] \"flavor\" of packet\n"
++msgstr "-g<grado>\t[ n | c | h ] флавор пакета (Normal, Crash, Hold)\n"
++
++#: ../ifgate/ifmail.c:90
++msgid "-c<charset>\tforce the given charset\n"
++msgstr "-c<charset>\tиспользовать указанную кодировку\n"
++
++#: ../ifgate/ifmail.c:92
++msgid "-l<level>\tforce the given level (default=%d)\n"
++msgstr "-l<level>\tиспользовать данный уровень (по умолчанию - %d)\n"
++
++#: ../ifgate/ifmail.c:93
++msgid "-b\t\tdon't split the messages\n"
++msgstr "-b\t\tне разбивать сообщения\n"
++
++#: ../ifgate/ifmail.c:94
++msgid "<recip>\t\tlist of receipient addresses\n"
++msgstr "<recip>\t\tсписок адресов получателей\n"
++
++#: ../ifgate/ifpack.c:57
++msgid "-N\t\tprocess %s directory\n"
++msgstr "-N\t\tобрабатывать каталог аутбаунда %s\n"
++
++#: ../ifgate/ifpack.c:58
++msgid "-f\t\tpack *.?ut files too\n"
++msgstr "-f\t\tпаковать также и файлы *.?ut\n"
++
++#: ../ifcico/ifcico.c:56
++msgid "-j<num>\t\tdamage every <num> byte\t[%d]\n"
++msgstr "-j<num>\t\tискажать каждый <num>-й байт \t[%d]\n"
++
++#: ../ifcico/ifcico.c:65
++msgid "-r 0|1\t\t1 - master, 0 - slave\t[0]\n"
++msgstr "-r 0|1\t\t1 - исходящий режим (master), 0 - входящий (slave) \t[0]\n"
++
++#: ../ifcico/ifcico.c:66
++msgid "-n<phone>\tforced phone number\n"
++msgstr "-n<tel>\tзвонить по указанному телефону\n"
++
++#: ../ifcico/ifcico.c:67
++msgid "-l<ttydevice>\tforced tty device\n"
++msgstr "-l<ttydevice>\tиспользовать указанное tty-устройство\n"
++
++#: ../ifcico/ifcico.c:69
++msgid "-a<inetaddr>\tuse TCP/IP instead of modem\n"
++msgstr "-a<inetaddr>\tиспользовать TCP/IP заместо модема\n"
++
++#: ../ifcico/ifcico.c:70
++msgid "-t<mode>\t0 - IFC, 1 - telnet\t[0]\n"
++msgstr "-t<mode>\t0 - IFC (обычный режим), 1 - telnet\t[0]\n"
++
++#: ../ifcico/ifcico.c:72
++msgid "  <node>\tshould be in domain form, e.g. f11.n22.z3\n"
++msgstr "  <node>\tдолжна быть в доменной форме, напр. f11.n22.z3\n"
++
++#: ../ifcico/ifcico.c:73
++msgid "\t\t(this implies master mode)\n"
++msgstr "\t\t(включает режим исходящего соединения)\n"
++
++#: ../ifcico/ifcico.c:74
++msgid ""
++"\n"
++" or: %s tsync|yoohoo|**EMSI_INQC816\n"
++msgstr "\n или: %s tsync|yoohoo|**EMSI_INQC816\n"
++
++#: ../ifcico/ifcico.c:75
++msgid "\t\t(this implies slave mode)\n"
++msgstr "\t\t(включает режим входящего соединения)\n"
++
++#: ../ifcico/ifroute.c:27
++msgid "-d<domain>\tspecify top level domain for routing\n"
++msgstr "-d<domain>\tуказать домен верхнего уровня для роутинга\n"
++
++#: ../ifcico/ifroute.c:28
++msgid "-f<boss>\tspecify fallback node\n"
++msgstr "-f<boss>\tуказать узел по умолчанию\n"
++
++#: ../ifcico/ifroute.c:29
++msgid "-n\t\tdo not use nodelist when MX ok\n"
++msgstr "-n\t\tне использовать нодлист, когда \"MX-ok\" (???)\n"
++
++#: ../ifcico/ifroute.c:30
++msgid "  <node>\tin domain form, e.g. f11.n22.z3\n"
++msgstr "  <node>\tв доменной форме, напр.: f11.n22.z3\n"
+--- ifmail-2.14tx8.10.orig/po/Makefile
++++ ifmail-2.14tx8.10/po/Makefile
+@@ -4,8 +4,8 @@
+ 
+ MSGMERGE = msgmerge
+ 
+-PO_FILES = da.po de.po es.po fr.po it.po
+-CATALOGS = da.mo de.mo es.mo fr.mo it.mo
++PO_FILES = da.po de.po es.po fr.po it.po ru.po
++CATALOGS = da.mo de.mo es.mo fr.mo it.mo ru.mo
+ 
+ POTFILES  = ../iflib/rdconfig.c ../ifgate/iftoss.c	\
+ 	    ../ifgate/ifmail.c ../ifgate/ifpack.c	\
+--- ifmail-2.14tx8.10.orig/md/newsfeeds
++++ ifmail-2.14tx8.10/md/newsfeeds
+@@ -0,0 +1,7 @@
++# 332/206 is my boss node.
++# It is the hub, so it has 332/200 in the PATH kludge.
++
++f206.n332/f200.n332\
++	:!*,fido.ita.*,fido.332.*,fido.200.*\
++	:Tf,Wfb:
++
+--- ifmail-2.14tx8.10.orig/md/ahbpoll
++++ ifmail-2.14tx8.10/md/ahbpoll
+@@ -0,0 +1,80 @@
++#!/bin/sh
++# ahbpoll, poll the two lines of my boss node
++#
++# This script is based on the original ifpoll by Rasca Gmelch
++# Copyright (C) 1997 by Marco d'Itri, 2:332/206.10 / md@linux.it
++
++. /etc/ifmail/ifshellvars
++
++# Max number of failed polls
++MaxTry=8
++# delay between outgoing calls in seconds
++DELAY=60
++
++###############################################################################
++# start some tail(1)s and initialize the ^C handler
++{ tail -n0 -f $IFLOG > $INFO_TTY & }; TOKILL=$!
++##{ tail -n0 -f $IFLOG | grep "received" & }; TOKILL="$TOKILL $!"
++##{ tail -n0 -f $IFLOG | grep "sent" & }; TOKILL="$TOKILL $!"
++
++trap "killall -HUP ifcico; kill $TOKILL; echo -e 'Aborted\n'; exit 100;" INT
++
++# let's pack the fido stuff..
++$IFBIN/ifpack
++
++###############################################################################
++# loop until ifcico could connect the node or MaxTry is encountered
++i=1; errlv=1; alternate=0
++while [ $i -le $MaxTry -a $errlv != 0 ]; do
++  if   [ $alternate = 0 ]; then
++    NODE=f206.n332.z2.fidonet.org
++    alternate=1
++  elif [ $alternate = 1 ]; then
++    NODE=f207.n332.z2.fidonet.org
++    alternate=0
++  fi
++
++  echo -n "ahbpoll[$$]: $i. try ($NODE) "
++  $IFBIN/ifcico -r 1 $NODE
++  errlv=$?
++  case "$errlv" in
++  "0")
++      echo "ok :)"
++      ;;
++  "2")
++      echo 'failed: busy (rc 2)'
++      if [ $i != $MaxTry -a $alternate = 0 ]; then sleep $DELAY; fi
++      ;;
++  "3")
++      echo 'failed: system error (rc 3)'
++      ;;
++  "11")
++      echo 'failed: lost carrier (rc 11)'
++      if [ $i != $MaxTry -a $alternate = 0 ]; then sleep $[$DELAY+120]; fi
++      ;;
++  *)
++      echo "failed: ?? (rc $errlv)"
++      if [ $i != $MaxTry -a $alternate = 0 ]; then sleep $DELAY; fi
++      ;;
++  esac
++  let i=i+1
++done
++
++###############################################################################
++# if the poll was ok, unpack
++if [ $errlv = "0" ]; then
++  if [ "`echo $IFSPOOL/inb/0000fff6.*`" != "$IFSPOOL/inb/0000fff6.*" ]; then
++    cp --force --link --preserve \
++       $IFSPOOL/inb/0000fff6.* $IFSPOOL/BAK
++  fi
++  $IFBIN/ifunpack
++  find $IFSPOOL/BAK  -mtime +3 -type f -exec rm -fv \{\} \; >/dev/null
++  find $IFSPOOL/outb -empty    -type f -exec rm -fv \{\} \; >/dev/null
++fi
++
++###############################################################################
++# Kill tail(s)
++kill $TOKILL
++
++# return the errorlevel of ifcico
++exit $errlv
+--- ifmail-2.14tx8.10.orig/md/fidosend
++++ ifmail-2.14tx8.10/md/fidosend
+@@ -0,0 +1,33 @@
++#!/bin/sh
++##  SH script to send fido batches out trought ifmail.
++
++set -e
++
++VERBOSE=false
++if [ -e /usr/lib/news/innshellvars ]; then
++  . /usr/lib/news/innshellvars
++else
++  . /etc/news/innshellvars
++fi
++. /etc/ifmail/ifshellvars
++
++if [ ! -f $SERVERPID ]; then exit ;fi
++
++if [ $# -lt 1 ]; then
++  echo "$0 [$$]: Usage: $0 site"
++  exit 1
++else
++  SITE=$1
++fi
++
++if [ -s $BATCH/$SITE ]; then
++  mv $BATCH/$SITE $BATCH/$SITE.work
++  $NEWSBIN/ctlinnd -s -t30 flush $SITE
++  $NEWSBIN/batcher -b0 -v -p\
++    "$IFBIN/ifnews $2 $3 $4 $5 %s"\
++    $SITE $BATCH/$SITE.work \
++      && rm -f $BATCH/$SITE.work
++else
++  $VERBOSE && echo "$0 [$$]: no articles for $SITE"
++fi
++
+--- ifmail-2.14tx8.10.orig/md/ifmail.m4
++++ ifmail-2.14tx8.10/md/ifmail.m4
+@@ -0,0 +1,74 @@
++PUSHDIVERT(-1)
++ifdef(`IFMAIL_MAILER_PATH',, `define(`IFMAIL_MAILER_PATH', /usr/lib/ifmail/ifmail)')
++ifdef(`IFMAIL_MAILER_FLAGS',, `define(`IFMAIL_MAILER_FLAGS', `')')
++ifdef(`IFMAIL_MAILER_ARGS',, `define(`IFMAIL_MAILER_ARGS', `ifmail -r $h $u')')
++
++POPDIVERT
++#######################################
++###   IFMAIL Mailer specification   ###
++#######################################
++
++VERSIONID(`@(#)ifmail.m4	2.0 (Md) 97/08/23')
++
++Mifmail,	P=IFMAIL_MAILER_PATH, F=CONCAT(8mDFMuCS, IFMAIL_MAILER_FLAGS), S=11, R=21,ifdef(`IFMAIL_MAILER_MAX', ` M=IFMAIL_MAILER_MAX,')
++		_OPTINS(`IFMAIL_MAILER_CHARSET', `C=', `, ')T=X-FTN/RFC822/X-Unix, U=ftn:ftn,
++		A=IFMAIL_MAILER_ARGS
++Mifmail-c,	P=IFMAIL_MAILER_PATH, F=CONCAT(8mDFMuCS, IFMAIL_MAILER_FLAGS), S=11, R=21,ifdef(`IFMAIL_MAILER_MAX', ` M=IFMAIL_MAILER_MAX,')
++		_OPTINS(`IFMAIL_MAILER_CHARSET', `C=', `, ')T=X-FTN/RFC822/X-Unix, U=ftn:ftn,
++		A=IFMAIL_MAILER_ARGS -gc
++Mifmail-h,	P=IFMAIL_MAILER_PATH, F=CONCAT(8mDFMuCS, IFMAIL_MAILER_FLAGS), S=11, R=21,ifdef(`IFMAIL_MAILER_MAX', ` M=IFMAIL_MAILER_MAX,')
++		_OPTINS(`IFMAIL_MAILER_CHARSET', `C=', `, ')T=X-FTN/RFC822/X-Unix, U=ftn:ftn,
++		A=IFMAIL_MAILER_ARGS -gh
++dnl****************************************************************************
++LOCAL_CONFIG`'dnl
++ifdef(`FTN_POINTS',
++`# All our points. Each user must have the same point number on each network
++CD FTN_POINTS
++')dnl
++divert`'dnl
++dnl*
++dnl****************************************************************************
++LOCAL_NET_CONFIG`'dnl
++ifdef(`FTN_POINTS',
++`# Route mail for our fidotech points
++R$* < @ $=D . $=w . >  $*	$#ifmail $@ $2.$3 $: $1 < @ $2 . $3 > $4
++')dnl
++dnl*
++dnl+ Does not works on nodes which run uucp.
++ifdef(`IFMAIL_BOUNCE_UUCP',
++`# Bounce mail sent to the gateway without a To: pseudo header as first line
++RUUCP		$#error $@ 5.1.1 $: "you must provide a To: address"
++')dnl
++dnl*
++# send as normal email and not as netmail
++R$* < @ $+ .ip.fidonet.org. > $*	$: $1 < @ $2 .fidonet.org. > $3
++divert`'dnl
++dnl*
++ifdef(`FIDO_SMART_HOST',
++R$* < @ $+ .z1.fidonet.org . > $*	$#ifmail $@ FIDO_SMART_HOST $: $1 < @ $2 .z1.fidonet.org > $3
++R$* < @ $+ .z2.fidonet.org . > $*	$#ifmail $@ FIDO_SMART_HOST $: $1 < @ $2 .z2.fidonet.org > $3
++R$* < @ $+ .z3.fidonet.org . > $*	$#ifmail $@ FIDO_SMART_HOST $: $1 < @ $2 .z3.fidonet.org > $3
++R$* < @ $+ .z4.fidonet.org . > $*	$#ifmail $@ FIDO_SMART_HOST $: $1 < @ $2 .z4.fidonet.org > $3
++R$* < @ $+ .z5.fidonet.org . > $*	$#ifmail $@ FIDO_SMART_HOST $: $1 < @ $2 .z5.fidonet.org > $3
++R$* < @ $+ .z6.fidonet.org . > $*	$#ifmail $@ FIDO_SMART_HOST $: $1 < @ $2 .z6.fidonet.org > $3
++')dnl
++dnl****************************************************************************
++LOCAL_RULE_0`'dnl
++# trying to guess real internet domains
++C{NotFtn} fidonet ftp www smtp mail ns ns2 whois
++R$* < @ $={NotFtn}.$+.fidonet.org. > $*	$: $1 < @ $2 . $3 .ip.fidonet.org. > $4
++divert
++dnl*
++dnl****************************************************************************
++LOCAL_RULE_3`'
++# canonize fidotech domains.
++R$* < @ $+ .z1.fidonet.org > $*	$: $1 < @ $2 .z1.fidonet.org. > $3
++R$* < @ $+ .z2.fidonet.org > $*	$: $1 < @ $2 .z2.fidonet.org. > $3
++R$* < @ $+ .z3.fidonet.org > $*	$: $1 < @ $2 .z3.fidonet.org. > $3
++R$* < @ $+ .z4.fidonet.org > $*	$: $1 < @ $2 .z4.fidonet.org. > $3
++R$* < @ $+ .z5.fidonet.org > $*	$: $1 < @ $2 .z5.fidonet.org. > $3
++R$* < @ $+ .z6.fidonet.org > $*	$: $1 < @ $2 .z6.fidonet.org. > $3
++#R$* < @ $+ .crash.fidonet.org > $*	$: $1 < @ $2 .crash.fidonet.org. > $3
++R$* < @ $+ .ftn > $*		$: $1 < @ $2 .ftn. > $3
++divert`'dnl
++dnl****************************************************************************
+--- ifmail-2.14tx8.10.orig/md/nlc
++++ ifmail-2.14tx8.10/md/nlc
+@@ -0,0 +1,22 @@
++#!/bin/sh
++# 
++# This script compiles the Italian fidonet nodelist received via TIC
++# Copyright (C) 1996 by Marco d'Itri, 2:332/206.10 / md@linux.it
++
++. /etc/ifmail/ifshellvars
++
++if [ -r $IFSPOOL/inb/region33.zip ]; then
++  unzip -L -o -p $IFSPOOL/inb/region33.zip \
++    | sed "s/^;Zone,2,/Zone,2,/1" > $IFNLD/region.033.NEW
++  { echo -e 'To: ftn\n'
++    diff --unified=0 $IFNLD/region.033 $IFNLD/region.033.NEW; } \
++  | sendmail -t
++  mv $IFNLD/region.033.NEW $IFNLD/region.033
++fi
++tail -f -n0 $IFLOG &
++TOKILL=$!
++$IFBIN/ifindex
++sleep 1
++kill $TOKILL
++mv  $IFSPOOL/inb/region33.zip  $IFSPOOL/inb/region33.OLD
++
+--- ifmail-2.14tx8.10.orig/md/sendmail.mc
++++ ifmail-2.14tx8.10/md/sendmail.mc
+@@ -0,0 +1,21 @@
++divert(-1)
++#
++# This is the m4 setup file for wonderland.linux.it
++# Copyright (C) 1996 by Marco d'Itri <md@linux.it>
++#
++divert(0)
++VERSIONID(`setup for wonderland (ifmail) 96/10/25')
++OSTYPE(debian)dnl
++dnl#
++dnl# fidonet things
++define(`IFMAIL_MAILER_MAX', 100000)dnl
++dnl#
++define(`confTRUSTED_USERS', ftn)dnl
++MAILER(local)dnl
++MAILER(smtp)dnl
++MAILER(ifmail)dnl
++dnl#
++dnl###########################################################################
++LOCAL_CONFIG
++Cwwonderland.linux.it wonderland.ils.org p10.f206.n332.z2.fidonet.org p10.f207.n332.z2.fidonet.org f102.n391.z42.guidenet.ftn
++divert`'dnl
+--- ifmail-2.14tx8.10.orig/md/crontab.news
++++ ifmail-2.14tx8.10/md/crontab.news
+@@ -0,0 +1,3 @@
++# Every 30 minutes send outbound echomail to the gateway
++6,36 * * * *         /etc/news/scripts/fidosend f206.n332
++
+--- ifmail-2.14tx8.10.orig/md/mailertable
++++ ifmail-2.14tx8.10/md/mailertable
+@@ -0,0 +1,18 @@
++# You really need to write there all the six zones.
++.z1.fidonet.org		ifmail:f206.n332
++.z2.fidonet.org		ifmail:f206.n332
++.z3.fidonet.org		ifmail:f206.n332
++.z4.fidonet.org		ifmail:f206.n332
++.z5.fidonet.org		ifmail:f206.n332
++.z6.fidonet.org		ifmail:f206.n332
++
++# This allows sending crashmail and hold mail
++# Do NOT uncomment it if you don't trust your users!
++# .crash.fidonet.org	ifmail-c:%1.fidonet.org
++# .hold.fidonet.org	ifmail-h:%1.fidonet.org
++
++# This is an othernet
++.guidenet.ftn		ifmail:f101.n391.z42
++
++# This is your smarthost
++.			smtp:mail.provider.it
+--- ifmail-2.14tx8.10.orig/md/ifshellvars
++++ ifmail-2.14tx8.10/md/ifshellvars
+@@ -0,0 +1,24 @@
++# user ifmail runs as
++IFUSER=ftn
++
++# where binaries like "ifcico" and "ifpack" reside
++IFBIN=/usr/lib/ifmail
++
++# spool directory for ftn packets where inbound and outbounds reside
++IFSPOOL=/var/spool/ftn
++
++# logfiles directory
++IFLOGDIR=/var/log/ifmail
++
++# logfile of ifcico
++IFLOG=$IFLOGDIR/iflog
++
++# default console for showing the log (used by ifpoll)
++INFO_TTY="/dev/tty24"
++
++# nodelists directory name
++IFNLDIRNAME=nl.d
++
++# nodelists directory
++IFNLD=$IFSPOOL/$IFNLDIRNAME
++
+--- ifmail-2.14tx8.10.orig/md/fido.daily
++++ ifmail-2.14tx8.10/md/fido.daily
+@@ -0,0 +1,136 @@
++#!/usr/bin/perl
++#
++# fido.daily -- resume your ifcico, iftoss, ifmail, and ifnews logs
++#
++# by Joaquim Baptista, px@fct.unl.pt
++#
++# Placed on the public domain.  If you make significant improvements on
++# this script, please send them to me so that I can mantain a "reference"
++# version.  This script works with ifmail28; future versions may break it.
++#
++# Example usage from cron, before rotating the logs:
++#     fido.daily iflog | mail -s 'Daily Fidonet report' sysop
++#
++# v1.1 -- Ignore "@somenet" in addresses like "2:362/42@fidonet" to avoid
++#         multiple entries for the same node.  Add -s option to select
++#         nodes.  Avoid dupplicate lines in the table of messages sent.
++#         Add report of period covered.
++#
++# v1.0 -- First release
++#
++# Modified by kao@linux.it
++#
++
++require "getopts.pl";
++&Getopts("s:") || die "usage: $0 [-s pattern] [file...]\n";
++if ($opt_s ne "") { $opt_s =~ s/([^a-zA-Z0-9\s])/\\$1/g; }
++
++$first="zzz 99";
++$last= "      ";
++while (<>) {
++  if (/^([A-Z][a-z][a-z] [ \d]\d )/) {
++    $date= substr($_,0,15);
++    if ($date lt $first) { $first=$date; }
++    if ($last lt $date ) { $last=$date; }
++  }
++
++  if    (/ifcico\[(\d+)\]: calling\s+([^\s@]+)/ ) {
++    $call{$1}=$2;
++    $attempts{$2}++;
++  }
++  elsif (/ifcico\[(\d+)\]: chat got "CONNECT"/) {
++    $conn{$call{$1}}++;
++  }
++  elsif (/ifcico\[(\d+)\]: chat got "BUSY"/) {
++    $busy{$call{$1}}++;
++  }
++  elsif (/ifcico\[(\d+)\]: chat got "NO CARRIER"/) {
++    $noca{$call{$1}}++;
++  }
++  elsif (/ifcico\[(\d+)\]: received (\d+) bytes in (\d+)/) {
++    $bytes_rcvd{$call{$1}} += $2;
++    $seconds_rcvd{$call{$1}} += $3;
++  }
++  elsif (/ifcico\[(\d+)\]: sent (\d+) bytes in (\d+)/) {
++    $bytes_sent{$call{$1}} += $2;
++    $seconds_sent{$call{$1}} += $3;
++  }
++  elsif (/iftoss\[(\d+)\]: packet from node ([^\s@]+)/) {
++    $toss{$1}= $2;
++  }
++  elsif (/iftoss\[(\d+)\]: No newsgroup for area tag (\S+)/) {
++    $toss_area{$2}++;
++  }
++  elsif (/iftoss\[(\d+)\]: end (\d+) echomail, (\d+)/) {
++    $tosskeys{$toss{$1}} ++;
++    $echomail{$toss{$1}} += $2;
++    $netmail{$toss{$1}}  += $3;
++  }
++  elsif (/ifmail\[(\d+)\]: route: ([^\s@]+)/) {
++    $ifmail{$2}++;
++  }
++  elsif (/ifnews\[(\d+)\]: route: ([^\s@]+)/) {
++    $snews{$1}= $2;
++  } 
++  elsif (/ifnews\[(\d+)\]: end input (\d+)/) {
++    $ifnewskeys{$snews{$1}} ++;
++    $ifnewscount{$snews{$1}} += $2; 
++  }
++  elsif (/ifcico\[(\d+)\]: start inbound/) {
++    $inb{$1} = $1;
++    $inbcount{$1}++;
++  }
++  elsif (/ifcico\[(\d+)\]: remote operator: ([\S ]*)/) { 
++    $inbkeys{$inb{$1}} = $2;
++  }
++  elsif (/ifcico\[(\d+)\]: remote     time: ([\S ]*)/) { 
++    $inbtime{$inb{$1}} = $2;
++  }
++}
++
++print "Report period:\n  From  $first\n  To    $last\n\n";
++
++print "Call-out systems (ifcico):\n";
++print "Attempts Busy NoCa Conn   Time   Received    Sent   System\n";
++for $s (sort keys %attempts) {
++  next  if  ($opt_s ne "") && ($s !~ /$opt_s/o);
++  printf("%7d  %3d  %3d  %3d %s   %6dKb  %4dKb   %s\n",
++         $attempts{$s}, $busy{$s}, $noca{$s}, $conn{$s},
++         &mmss($seconds_rcvd{$s}+$seconds_sent{$s}),
++         $bytes_rcvd{$s}/1024, $bytes_sent{$s}/1024, $s);
++}
++
++print "\n\nMessages received by system (iftoss):\nEchomail Netmail  Route\n";
++for $s (sort keys %tosskeys) {
++  next  if  ($opt_s ne "") && ($s !~ /$opt_s/o);
++  printf("%7d %7d   %s\n", $echomail{$s}, $netmail{$s}, $s);
++}
++
++print "\n\nMessages sent by system (ifnews+ifmail):\nEchomail Netmail  Route\n";
++%aux=(%ifmail, %ifnewskeys);
++for $s (sort (keys %aux)) {
++  next  if  ($opt_s ne "") && ($s !~ /$opt_s/o);
++  printf("%7d %7d   %s\n", $ifnewscount{$s}, $ifmail{$s}, $s);
++}
++
++print "\n\nCall-in systems (ifcico):\n";
++printf("%-20s%s\n","Time","Operator");
++for $s (sort keys %inbcount) {
++  next  if  ($opt_s ne "") && ($s !~ /$opt_s/o);
++  printf("%-20s%s\n",
++         $inbtime{$s}, $inbkeys{$s});
++}
++
++if (%toss_area) {
++  print "\n\nMessages not tossed for lack of area tag (iftoss):\nNumber  Area tag\n";
++  for $a (sort keys %toss_area) {
++    printf("%5d    %s\n", $toss_area{$a}, $a);
++} }
++
++exit 0;
++
++sub mmss {
++  local($s)= @_;
++  sprintf("%4d:%2.2d", $s/60, $s-int($s/60)*60);
++}
++
+--- ifmail-2.14tx8.10.orig/md/ifpoll
++++ ifmail-2.14tx8.10/md/ifpoll
+@@ -0,0 +1,90 @@
++#!/bin/sh
++# ifpoll, poll my boss node or the node given as argument 1
++#
++# This script is based on the original ifpoll by Rasca Gmelch
++# Copyright (C) 1997 by Marco d'Itri, 2:332/206.10 / md@linux.it
++
++. /etc/ifmail/ifshellvars
++
++# my boss node (default address to poll)
++NODE="f206.n332.z2.fidonet.org"
++# Max number of failed polls
++MaxTry=8
++# delay between outgoing calls in seconds
++DELAY=60
++
++# argv[1] is the optional node to call
++if [ "$1" != "" ]; then
++  if [ "$1" = "-?" -o "$1" = "-h" ]; then
++    echo "usage: ifpoll [<node>]"
++    exit 3
++  else
++    NODE=$1
++  fi
++fi
++
++###############################################################################
++# start some tail(1)s and initialize the ^C handler
++if [ -n "$INFO_TTY" ]; then
++  { tail -n0 -f $IFLOG > $INFO_TTY & }; TOKILL=$!
++  ##{ tail -n0 -f $IFLOG | grep "received" & }; TOKILL="$TOKILL $!"
++  ##{ tail -n0 -f $IFLOG | grep "sent" & }; TOKILL="$TOKILL $!"
++
++  trap "killall -HUP ifcico; kill $TOKILL; echo -e 'Aborted\n'; exit 100;" INT
++else
++  trap "killall -HUP ifcico; echo -e 'Aborted\n'; exit 100;" INT
++fi
++
++# let's pack the fido stuff..
++$IFBIN/ifpack
++
++###############################################################################
++# loop until ifcico could connect the node or MaxTry is encountered
++i=1; errlv=1
++while [ $i -le $MaxTry -a $errlv != 0 ]; do
++  echo -n "ifpoll[$$]: $i. try ($NODE) "
++  $IFBIN/ifcico -r 1 $NODE
++  errlv=$?
++  case "$errlv" in
++  "0")
++      echo "ok :)"
++      ;;
++  "2")
++      echo 'failed: busy (rc 2)'
++      if [ $i != $MaxTry ]; then sleep $DELAY; fi
++      ;;
++  "3")
++      echo 'failed: system error (rc 3)'
++      ;;
++  "11")
++      echo 'failed: lost carrier (rc 11)'
++      if [ $i != $MaxTry ]; then sleep $[$DELAY+120]; fi
++      ;;
++  *)
++      echo "failed: ?? (rc $errlv)"
++      if [ $i != $MaxTry ]; then sleep $DELAY; fi
++      ;;
++  esac
++  let i=i+1
++done
++
++###############################################################################
++# if the poll was ok, unpack
++if [ $errlv = "0" ]; then
++  if [ "`echo $IFSPOOL/inb/0000fff6.*`" != "$IFSPOOL/inb/0000fff6.*" ]; then
++    cp --force --link --preserve \
++       $IFSPOOL/inb/0000fff6.* $IFSPOOL/BAK
++  fi
++  $IFBIN/ifunpack
++  find $IFSPOOL/BAK  -mtime +3 -type f -exec rm -fv \{\} \; >/dev/null
++  find $IFSPOOL/outb -empty    -type f -exec rm -fv \{\} \; >/dev/null
++fi
++
++###############################################################################
++# Kill tail(s)
++if [ ! -z "$INFO_TTY" ]; then
++  kill $TOKILL
++fi
++
++# return the errorlevel of ifcico
++exit $errlv
+--- ifmail-2.14tx8.10.orig/CONFIG
++++ ifmail-2.14tx8.10/CONFIG
+@@ -69,8 +69,8 @@
+ 
+ # Directory from which file requests are resolved.
+ # This may be changed from the 'config' file.
+-#PUBDIR      = $(DESTDIR)"/home/ftp/pub"
+-PUBDIR      = $(DESTDIR)"/var/spool/uucppublic"
++PUBDIR      = $(DESTDIR)"/home/ftp/pub"
++#PUBDIR      = $(DESTDIR)"/var/spool/uucppublic"
+ 
+ # News spool directory (to check space only)
+ #NEWSSPOOL   = $(DESTDIR)"/usr/spool/news"
+@@ -92,7 +92,7 @@
+ # the correct References: line
+ # see iflib/ref.c for more complete info
+ #
+-REFERENCES_MSC96 = yes
++#REFERENCES_MSC96 = yes
+ 
+ # use a shared lib for common functions ?
+ # Does not work yet.
+@@ -223,6 +223,10 @@
+ # define -DSELECT_NEED_BSDTYPES_H if #include <bsdtypes.h> needed to
+ # use select()
+ 
++# define -DEXPERIMENTAL_EMSI if you like to live on the edge... :-)
++# It enables experimental EMSI code which should be a bit more standards
++# conforming
++
+ # ### Defines from version 2.8c-JE
+ 
+ # define -DIGNORE_SOFTCR if you need to treat SoftCR (0x8d) as a printable
+@@ -324,15 +328,14 @@
+ 
+ #General options:
+ # These are not machine dependent, and describe only ifmail/ifcico features
+-OPTS        = -DFORCE_REPLYTO -DTERMAIL_HACK -DTPUT_STATUS_HACK \
++OPTS        = -DTERMAIL_HACK -DTPUT_STATUS_HACK -DADD_PID -DLEVEL=0 \
+ 		-DDONT_REGATE -DSLAVE_SENDS_NAK_TOO \
+-		-DPUDDLE_GATE -DPCBOARD_GATE -DRNEWSB -DJE \
+-		-DRESTAMP_OLD_POSTINGS=25 -DBELEIVE_ZFIN=1 \
+-		-DKEEP_MSGID_ON_SPLIT -DIGNORE_SOFTCR \
+-		-DRELAXED -DFORCEINTL -DHAS_TCP -DAREAS_HACKING \
++		-DRNEWSB -DJE \
++		-DRESTAMP_OLD_POSTINGS=14 -DBELEIVE_ZFIN=1 \
++		-DHAS_TCP -DAREAS_HACKING \
+ 		-DRESTAMP_FUTURE_POSTINGS -DFSCHTML -DMACHIGAI \
+ 		-DALLOW_RETURNPATH -DGATEBAU_MSGID \
+-		-DDIRTY_CHRS \
++		-DDIRTY_CHRS -DHIDDEN \
+ 		-DAREAS_NUMERAL_COMMENTS
+ 		
+ #		-DAREAS_NUMERAL_COMPATIBILITY
+@@ -345,8 +348,9 @@
+ OPTS        += -DHAS_STATFS -DSTATFS_IN_VFS_H -DHAS_SETSID -DHAS_NDBM_H \
+ 		-DDONT_HAVE_TM_GMTOFF -DHAS_TERMIOS_H -DASCII_LOCKFILES \
+ 		-DHAS_FSYNC -DHAS_IOCTL_H -DHAS_REGEX_H \
+-		-DHAS_SYSLOG -DNEED_BSY -DNEED_TRAP \
++		-DNEED_BSY -DNO_IO_AFTER_HANGUP -DDO_NEED_TIME \
+ 		-DNEED_FORK -DHAS_BSD_SIGNALS -DHAS_SELECT \
++		-DUSE_SETPROCTITLE \
+ 		-DINT32=long -DINT16=short
+ 
+ # 386BSD, FreeBSD:
+@@ -444,9 +448,9 @@
+ #RANLIB = touch
+ SHELL = /bin/sh
+ ECHO = echo -e
+-CC = gcc
+-#YACC = bison -y
+-YACC = yacc
++CC = cc
++YACC = bison -y
++#YACC = yacc
+ #LEX = flex
+ LEX = lex
+ AWK = awk
+@@ -454,7 +458,7 @@
+ 
+ #CFLAGS = -g -Wall
+ # Linux, 386BSD, FreeBSD, SunOS:
+-CFLAGS = -O2 -Wall
++CFLAGS = -g -O2 -Wall
+ # SVR4:
+ #CFLAGS = -O -Xa
+ # NeXTSTEP
+@@ -472,7 +476,7 @@
+ # Linux
+ # add -lresolv if you use libc6 (aka glibc 2)
+ # remove -lresolv if you use libc5
+-LIBS = -lgdbm -lresolv
++LIBS = -lgdbm -lgdbm_compat -lresolv
+ # SunOS:
+ #LIBS =
+ # 386BSD, FreeBSD:
+@@ -488,7 +492,7 @@
+ # NeXTSTEP
+ #LIBS = -lgdbm -lposix
+ 
+-INCLUDES = -I${INCDIR}
++INCLUDES = -I. -I${INCDIR} -I- -I/usr/include
+ # ISC
+ #INCLUDES = -I/usr/include/rpcsvc -I${INCDIR}
+ 
+@@ -499,7 +503,7 @@
+ #NEEDED = strcasestr.o strncasecmp.o strcasecmp.o rename.o mkdir.o usleep.o \
+ #		regexpr.o strerror.o
+ # Linux
+-NEEDED = strcasestr.o
++#NEEDED = strcasestr.o
+ # SVR4
+ #NEEDED = regexpr.o strcasestr.o
+ # Solaris
+--- ifmail-2.14tx8.10.orig/iflib/charset.c
++++ ifmail-2.14tx8.10/iflib/charset.c
+@@ -22,6 +22,7 @@
+ 	if ((code==CHRS_MACINTOSH) && (toftnchar!=CHRS_NOTSET))
+ 		return toftnchar;
+ 	else if (code==CHRS_MACINTOSH) return CHRS_ISO_8859_1;
++        else if (code==CHRS_KOI8_R) return CHRS_CP866; /* R50 echos are *always* in cp866 - ams */
+ 	else if ((toftnchar!=CHRS_NOTSET) && (code==defaultrfcchar)) 
+ 		return toftnchar;
+ 	else if (code==CHRS_UTF_7||code==CHRS_UTF_8) return CHRS_AUTODETECT;
+@@ -210,6 +211,7 @@
+ 	else if (strncasecmp(p,"CP852",5) == 0) code=CHRS_CP852;
+ 	else if (strncasecmp(p,"CP862",5) == 0) code=CHRS_CP862;
+ 	else if (strncasecmp(p,"CP866",5) == 0) code=CHRS_CP866; /* ??? */
++	else if (strncasecmp(p,"FIDO7",5) == 0) code=CHRS_CP866; /* also used in R50 of Z2 */
+ 	else if (strncasecmp(p,"CP895",5) == 0) code=CHRS_CP895;
+ 	else if (strncasecmp(p,"CP932",5) == 0) code=CHRS_SJIS;
+ 	else if (strncasecmp(p,"CP942",5) == 0) code=CHRS_SJIS;
+--- ifmail-2.14tx8.10.orig/iflib/setproctitle.c
++++ ifmail-2.14tx8.10/iflib/setproctitle.c
+@@ -0,0 +1,159 @@
++/*
++ * setproctitle implementation for linux.
++ * Stolen from sendmail 8.7.4 and bashed around by David A. Holland
++ */
++
++/*
++ * Copyright (c) 1983, 1995 Eric P. Allman
++ * Copyright (c) 1988, 1993
++ *	The Regents of the University of California.  All rights reserved.
++ *
++ * Redistribution and use in source and binary forms, with or without
++ * modification, are permitted provided that the following conditions
++ * are met:
++ * 1. Redistributions of source code must retain the above copyright
++ *    notice, this list of conditions and the following disclaimer.
++ * 2. Redistributions in binary form must reproduce the above copyright
++ *    notice, this list of conditions and the following disclaimer in the
++ *    documentation and/or other materials provided with the distribution.
++ * 3. All advertising materials mentioning features or use of this software
++ *    must display the following acknowledgement:
++ *	This product includes software developed by the University of
++ *	California, Berkeley and its contributors.
++ * 4. Neither the name of the University nor the names of its contributors
++ *    may be used to endorse or promote products derived from this software
++ *    without specific prior written permission.
++ *
++ * THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
++ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
++ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
++ * ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
++ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
++ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
++ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
++ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
++ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
++ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
++ * SUCH DAMAGE.
++ *
++ * From: @(#)conf.c	8.243 (Berkeley) 11/20/95
++ */
++ /*
++ char setproctitle_rcsid[] =
++  "$Id$";
++ */
++
++#ifdef USE_SETPROCTITLE
++
++#include <stdlib.h>
++#include <string.h>
++#include <stdarg.h>
++#include <unistd.h>
++#include <stdio.h>
++
++#include "setproctitle.h"
++/*
++**  SETPROCTITLE -- set process title for ps
++**
++**	Parameters:
++**		fmt -- a printf style format string.
++**		a, b, c -- possible parameters to fmt.
++**
++**	Returns:
++**		none.
++**
++**	Side Effects:
++**		Clobbers argv of our main procedure so ps(1) will
++**		display the title.
++*/
++
++
++/*
++**  Pointers for setproctitle.
++**	This allows "ps" listings to give more useful information.
++*/
++
++static char **Argv = NULL;		/* pointer to argument vector */
++static char *LastArgv = NULL;		/* end of argv */
++static char Argv0[128];			/* program name */
++
++void
++initsetproctitle(int argc, char **argv, char **envp)
++{
++	register int i;
++	char *tmp;
++
++	/*
++        **  Move the environment so setproctitle can use the space at
++	**  the top of memory.
++	*/
++
++	for (i = 0; envp[i] != NULL; i++)
++		continue;
++	__environ = (char **) malloc(sizeof (char *) * (i + 1));
++	for (i = 0; envp[i] != NULL; i++)
++		__environ[i] = strdup(envp[i]);
++	__environ[i] = NULL;
++
++	/*
++	**  Save start and extent of argv for setproctitle.
++	*/
++
++	Argv = argv;
++	if (i > 0)
++		LastArgv = envp[i - 1] + strlen(envp[i - 1]);
++	else
++		LastArgv = argv[argc - 1] + strlen(argv[argc - 1]);
++
++	tmp = strrchr(argv[0], '/');
++	if (!tmp) tmp = argv[0];
++	else tmp++;
++	strncpy(Argv0, tmp, sizeof(Argv0));
++	Argv0[sizeof(Argv0)] = 0;
++}
++
++void
++setproctitle(const char *fmt, ...)
++{
++	register char *p;
++	register int i;
++	static char buf[2048];
++	va_list ap;
++
++	p = buf;
++
++	/* print progname: heading for grep */
++	/* This can't overflow buf due to the relative size of Argv0. */
++	(void) strcpy(p, Argv0);
++	(void) strcat(p, ": ");
++	p += strlen(p);
++
++	/* print the argument string */
++	va_start(ap, fmt);
++	(void) vsnprintf(p, sizeof(buf) - (p - buf), fmt, ap);
++	va_end(ap);
++
++	i = strlen(buf);
++
++	if (i > LastArgv - Argv[0] - 2)
++	{
++		i = LastArgv - Argv[0] - 2;
++		buf[i] = '\0';
++	}
++	(void) strcpy(Argv[0], buf);
++	p = &Argv[0][i];
++	while (p < LastArgv)
++		*p++ = ' ';
++	Argv[1] = NULL;
++}
++
++#else
++
++void initsetproctitle(int argc, char **argv, char **envp)
++{}
++
++void setproctitle(const char *fmt, ...)
++{}
++
++#endif
++
+--- ifmail-2.14tx8.10.orig/iflib/gettime.c
++++ ifmail-2.14tx8.10/iflib/gettime.c
+@@ -8,7 +8,6 @@
+ #include <time.h>
+ #endif	/* defined(DO_NEED_TIME) */
+ #include <sys/time.h>
+-#include "clibrary.h"
+ #include "libinn.h"
+ 
+ int
+--- ifmail-2.14tx8.10.orig/iflib/setproctitle.h
++++ ifmail-2.14tx8.10/iflib/setproctitle.h
+@@ -0,0 +1,4 @@
++/* Call this from main. */
++void initsetproctitle(int argc, char **argv, char **envp);
++
++void setproctitle(const char *fmt, ...);
+--- ifmail-2.14tx8.10.orig/iflib/getopt.h
++++ ifmail-2.14tx8.10/iflib/getopt.h
+@@ -4,4 +4,6 @@
+ extern char *optarg;
+ extern int optind;
+ 
++#else
++#include <getopt.h>
+ #endif
+--- ifmail-2.14tx8.10.orig/iflib/lutil.c
++++ ifmail-2.14tx8.10/iflib/lutil.c
+@@ -4,7 +4,7 @@
+ #include <stdio.h>
+ #include <sys/stat.h>
+ #include <string.h>
+-#include <varargs.h>
++#include <stdarg.h>
+ #include <errno.h>
+ #include <time.h>
+ #ifdef HAS_SYSLOG
+@@ -13,6 +13,8 @@
+ #define LOG_USER 0
+ #endif
+ 
++#include "xutil.h"
++
+ #ifdef HAS_SYSLOG
+ static int syslog_opened=0;
+ #else
+@@ -143,17 +145,14 @@
+ 		syslog(level,"\terrno=%d : %s",\
+                         errno,strerror(errno));
+ 
+-void loginf(va_alist)
+-va_dcl
++void loginf(char *fmt,...)
+ {
+ 	va_list	args;
+-	char	*fmt;
+ #ifndef HAS_SYSLOG
+ 	int	oldmask;
+ #endif
+ 
+-	va_start(args);
+-	fmt=va_arg(args, char*);
++	va_start(args,fmt);
+ 	if (verbose)
+ 	{
+ 		PRINT_DEBUG(fmt,args);
+@@ -183,17 +182,14 @@
+ 	return;
+ }
+ 
+-void logerr(va_alist)
+-va_dcl
++void logerr(char *fmt,...)
+ {
+ 	va_list	args;
+-	char	*fmt;
+ #ifndef HAS_SYSLOG
+ 	int	oldmask;
+ #endif
+ 
+-	va_start(args);
+-	fmt=va_arg(args, char*);
++	va_start(args,fmt);
+ 	if (verbose)
+ 	{
+ 		PRINT_DEBUG(fmt,args);
+@@ -223,16 +219,11 @@
+ 	return;
+ }
+ 
+-void debug(va_alist)
+-va_dcl
++void debug(unsigned long level, char *fmt,...)
+ {
+ 	va_list	args;
+-	unsigned long	level;
+-	char	*fmt;
+ 
+-	va_start(args);
+-	level=va_arg(args, unsigned long);
+-	fmt=va_arg(args, char*);
++	va_start(args,fmt);
+ 
+ 	if ((verbose && (level == 0)) || (verbose & (1 << (level-1))))
+ 	{
+--- ifmail-2.14tx8.10.orig/iflib/rdconfig.c
++++ ifmail-2.14tx8.10/iflib/rdconfig.c
+@@ -58,6 +58,16 @@
+ 
+ dom_trans *domtrans=NULL;
+ 
++#ifdef FBOX
++ fa_list *InBox = NULL;
++ fa_list *OutBox = NULL;
++#endif
++
++#ifdef HIDDEN
++ fa_list *Override = NULL;
++ fa_list *Hidden = NULL;
++#endif
++
+ moderator_list *approve=NULL;
+ 
+ fa_list *whoami=NULL;
+@@ -92,6 +102,11 @@
+ long timeoutreset=2L;
+ long timeoutconnect=75L;
+ long dialdelay=0L;
++#ifdef RESTAMP_OLD_POSTINGS
++long restampolder=RESTAMP_OLD_POSTINGS;
++#endif
++long paranoid=0L;
++char *sentmode="^";
+ 
+ char *oldfilemap=NULL;
+ char maptab[] = {
+@@ -162,6 +177,9 @@
+ int defaultftnchar=CHRS_DEFAULT_FTN;
+ int toftnchar=CHRS_NOTSET;
+ time_t configtime=0L;
++char *pktaclfile=NULL;
++char *msgaclfile=NULL;
++char *orgaclfile=NULL;
+ 
+ 			/* Local */
+ 
+@@ -295,6 +313,18 @@
+ 	{"defaultrfcchar", getdefcode,	(char**)&defaultrfcchar},
+ 	{"defaultftnchar", getdefcode2,	(char**)&defaultftnchar},
+ 	{"toftnchar",	getdefcode2,	(char**)&toftnchar}, 
++#ifdef RESTAMP_OLD_POSTINGS
++	{"restampolder", getlong,	(char**)&restampolder},
++#endif
++	{"paranoid",	getlong,	(char**)&paranoid},
++	{"sentmode",	getstr,		&sentmode},
++	{"packetacl",	getstr,		&pktaclfile},
++	{"messageacl",	getstr,		&msgaclfile},
++	{"originacl",	getstr,		&orgaclfile},
++#ifdef HIDDEN
++	{"override",	getadpw,	(char **)&Override},
++	{"hidden",	getadpw,	(char **)&Hidden},
++#endif
+ 	{NULL,		NULL,		NULL}
+ };
+ 
+--- ifmail-2.14tx8.10.orig/iflib/rfcdate.c
++++ ifmail-2.14tx8.10/iflib/rfcdate.c
+@@ -16,9 +16,9 @@
+ 	if (!now) time(&now);
+ 	ptm=*localtime(&now);
+ 
+-	sprintf(buf,"%s, %02d %s %02d %02d:%02d:%02d %s",
++	sprintf(buf,"%s, %02d %s %d %02d:%02d:%02d %s",
+ 		wdays[ptm.tm_wday],ptm.tm_mday,months[ptm.tm_mon],
+-		ptm.tm_year%100,ptm.tm_hour,ptm.tm_min,ptm.tm_sec,
++		1900+ptm.tm_year,ptm.tm_hour,ptm.tm_min,ptm.tm_sec,
+ 		gmtoffset(now));
+ 	return(buf);
+ }
+--- ifmail-2.14tx8.10.orig/iflib/ref.c
++++ ifmail-2.14tx8.10/iflib/ref.c
+@@ -60,7 +60,7 @@
+ #include <string.h>
+ #ifdef HAS_NDBM_H
+ #include <fcntl.h>
+-#include <ndbm.h>
++#include <gdbm-ndbm.h>
+ #else
+ #include <dbm.h>
+ #endif
+--- ifmail-2.14tx8.10.orig/iflib/falists.c
++++ ifmail-2.14tx8.10/iflib/falists.c
+@@ -5,6 +5,9 @@
+ #include "ftn.h"
+ #include "falists.h"
+ 
++/* these calls are too much time consuming */
++#define	debug(ignored...)
++
+ int in_list(addr,fap)
+ faddr *addr;
+ fa_list **fap;
+--- ifmail-2.14tx8.10.orig/iflib/Makefile
++++ ifmail-2.14tx8.10/iflib/Makefile
+@@ -22,7 +22,7 @@
+ 		rdconfig.o ftn.o packet.o pktname.o bwrite.o \
+ 		bread.o getheader.o scanout.o matchaka.o atoul.o \
+ 		nodelock.o trap.o rfcaddr.o expipe.o callstat.o \
+-		cspace.o setprocn.o \
++		cspace.o setproctitle.o \
+ 		charset.o mime.o \
+ 		lhash.o hash.o falists.o ${NEEDED}
+ 
+@@ -33,7 +33,7 @@
+ 		bread.c getheader.c scanout.c matchaka.c usleep.c \
+ 		execute.c execsh.c signal.c regexpr.c atoul.c \
+ 		nodelock.c trap.c rfcaddr.c expipe.c callstat.c \
+-		cspace.c setprocn.c ref.c \
++		cspace.c setproctitle.c ref.c \
+ 		charset.c mime.c \
+ 		cleanup_ref.c make_new_ref.c tmpfile.c \
+ 		dirent.c lhash.c hash.c falists.c
+--- ifmail-2.14tx8.10.orig/iflib/config.h
++++ ifmail-2.14tx8.10/iflib/config.h
+@@ -139,6 +139,10 @@
+ extern int  defaultftnchar;
+ extern int  toftnchar;
+ 
++extern char *pktaclfile;
++extern char *msgaclfile;
++extern char *orgaclfile;
++
+ int readconfig(void);
+ int confopt(int,char*);
+ void confusage(char*);
+--- ifmail-2.14tx8.10.orig/iflib/parsedate.y
++++ ifmail-2.14tx8.10/iflib/parsedate.y
+@@ -23,6 +23,7 @@
+ /* SUPPRESS 595 on yypvt *//* Automatic variable may be used before set */
+ #include "configdata.h"
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <ctype.h>
+ #include <sys/types.h>
+ #if	defined(DO_NEED_TIME)
+--- ifmail-2.14tx8.10.orig/iflib/lutil.h
++++ ifmail-2.14tx8.10/iflib/lutil.h
+@@ -32,6 +32,8 @@
+ extern int getopt();
+ extern char *optarg;
+ extern int optind;
++#else
++#include <getopt.h>
+ #endif
+ 
+ #if defined(HAS_TCP) || defined(HAS_TERM)
+--- ifmail-2.14tx8.10.orig/iflib/ftn.c
++++ ifmail-2.14tx8.10/iflib/ftn.c
+@@ -370,7 +370,7 @@
+ faddr *a;
+ int fl;
+ {
+-	static char buf[128],*f,*t,*q;
++	static char buf[256],*f,*t,*q;
+ 	dom_trans *dt;
+ 	fa_list *tmpl;
+ 	int skip;
+--- ifmail-2.14tx8.10.orig/ifcico/rdoptions.c
++++ ifmail-2.14tx8.10/ifcico/rdoptions.c
+@@ -27,6 +27,7 @@
+ 	{"Janus",NOJANUS},
+ 	{"Hydra",NOHYDRA},
+ 	{"Tcp",NOTCP},
++	{"Txy",NOTXY},
+ 	{NULL,0}
+ };
+ 
+--- ifmail-2.14tx8.10.orig/ifcico/ftsc.c
++++ ifmail-2.14tx8.10/ifcico/ftsc.c
+@@ -8,6 +8,7 @@
+ #include "ttyio.h"
+ #include "statetbl.h"
+ #include "config.h"
++#include "setproctitle.h"
+ 
+ extern int master;
+ extern int nodelock(faddr*);
+@@ -30,7 +31,6 @@
+ extern int sendbark(void);
+ extern int recvbark(void);
+ extern void rdoptions(node*);
+-extern int setproctitle(char*);
+ 
+ static int rxftsc(void);
+ static int txftsc(void);
+@@ -40,12 +40,10 @@
+ int rx_ftsc(void)
+ {
+ 	int rc;
+-	char cbuf[128];
+ 
+ 	loginf("start inbound ftsc session");
+ 
+-	sprintf(cbuf,"-FTS-0001 (undefined yet) inbound");
+-	setproctitle(cbuf);
++	setproctitle("-FTS-0001 (undefined yet) inbound");
+ 
+ 	session_flags |= SESSION_BARK;
+ 	rc=rxftsc();
+@@ -65,13 +63,11 @@
+ int tx_ftsc(void)
+ {
+ 	int rc;
+-	char cbuf[128];
+ 
+ 	loginf("start outbound ftsc session with %s",
+ 		ascfnode(remote->addr,0x1f));
+ 
+-	sprintf(cbuf,"-FTS-0001 %s outbound",ascfnode(remote->addr,0x1f));
+-	setproctitle(cbuf);
++	setproctitle("-FTS-0001 %s outbound",ascfnode(remote->addr,0x1f));
+ 
+ 	rc=txftsc();
+ 	if (rc)
+@@ -272,7 +268,6 @@
+ 	FILE *fp;
+ 	faddr f,t;
+ 	fa_list **tmpl;
+-	char cbuf[128];
+ 
+ SM_START(recv_packet)
+ 
+@@ -333,9 +328,8 @@
+ 			inbound=listinbound;
+ 		}
+ 
+-		sprintf(cbuf,"-FTS-0001 %s inbound",
++		setproctitle("-FTS-0001 %s inbound",
+ 			ascfnode(remote->addr,0x1f));
+-		setproctitle(cbuf);
+ 
+ 		tosend=create_filelist(remote,ALL_MAIL,1);
+ 		if (rc == 0) {SM_PROCEED(recv_file);}
+--- ifmail-2.14tx8.10.orig/ifcico/call.c
++++ ifmail-2.14tx8.10/ifcico/call.c
+@@ -14,6 +14,7 @@
+ #include "session.h"
+ #include "callstat.h"
+ #include "Txy.h"
++#include "setproctitle.h"
+ 
+ extern int forcedcalls;
+ extern char *forcedphone;
+@@ -39,7 +40,127 @@
+ extern void rdoptions(node*);
+ extern int nodelock(faddr*);
+ extern int nodeulock(faddr*);
+-extern void setproctitle(char*);
++
++#ifdef HIDDEN
++
++extern fa_list *Hidden;
++extern fa_list *Override;
++
++#define MAXLINES 16
++
++struct s_hidden {
++		 char *phone;
++		 char *txy;
++		};
++
++int parsehidden(char *str,struct s_hidden *hidden)
++{
++ char *tmp,*p;
++
++ hidden->phone=NULL;
++ hidden->txy=NULL;
++
++ debug(6,"Hidden string %s\n",str);
++
++ tmp=strdup(str);
++ p=strtok(tmp," ");
++  if(p)
++   {
++     if(p[0]!='-') hidden->phone=strdup(p);
++     p=strtok(NULL," ");
++     if(p) hidden->txy=strdup(p);
++   }
++   free(tmp); 
++   return 1;
++}
++
++int override(faddr *addr,node *nlent,fa_list *FromWhere)
++{
++ int i;
++ static char TXY[3];
++ struct s_hidden hidden;
++
++ hidden.phone=NULL;
++ hidden.txy=NULL;
++
++ parsehidden(FromWhere->addr->name,&hidden);
++ if(hidden.phone) strncpy(nlent->phone,hidden.phone,strlen(nlent->phone));
++  if(hidden.txy)
++    if(strcasecmp(hidden.txy,"CM")==0) nlent->flags |= CM;
++    else
++     {
++      strncpy(TXY,hidden.txy,3);
++      if(nlent->flags & CM)
++       {
++        i=0;while(nlent->uflags[i] && i<MAXUFLAGS) i++;
++        if(i<MAXUFLAGS) nlent->uflags[i]=TXY;
++        if(i+1<MAXUFLAGS) nlent->uflags[i+1]=NULL;
++        nlent->flags&=~CM;
++       }
++      else
++       {
++        i=0;
++        while(nlent->uflags[i] && i<MAXUFLAGS)
++         {
++          if(nlent->uflags[i][0]=='T' ||
++	     (nlent->uflags[i][0]=='U' && nlent->uflags[i][1]=='T'))
++	   {
++	    nlent->uflags[i]=TXY;
++	    i=MAXUFLAGS+1;
++	   }
++	   i++;
++	  }
++	   if(i<=MAXUFLAGS)
++	    {
++	     if(i<MAXUFLAGS) nlent->uflags[i]=TXY;
++	      else loginf("Can't change call time for %s",ascinode(addr,0x1f));
++	      if(i+1<MAXUFLAGS) nlent->uflags[i+1]=NULL;
++            }
++          }
++      } /* Not CM */
++ free(hidden.phone);
++ free(hidden.txy);
++ return 0;
++}
++
++int setline(faddr *addr,node *nlent,callstat *st)
++{
++ fa_list *tmp,*Lines[MAXLINES];
++ int i,TryLine,LineCount=1;
++
++ Lines[0]=NULL;	/* First Line - from nodelist. May be override */
++
++ for (tmp=Override;tmp;tmp=tmp->next)
++  if ((tmp->addr->net == addr->net) &&
++	    (tmp->addr->node == addr->node)) Lines[0]=tmp;
++
++ for (tmp=Hidden;tmp;tmp=tmp->next)
++  if ((tmp->addr->net == addr->net) && (tmp->addr->node == addr->node))
++    if(LineCount<MAXLINES) { Lines[LineCount]=tmp; LineCount++; }
++
++ TryLine = st->tryno % LineCount;
++
++ debug(6,"--- First TryLine = %d from %d lines --- \n", TryLine,LineCount);
++
++ for(i=TryLine;i<LineCount;i++)
++   {
++    nlent=getnlent(addr);
++    if(Lines[i]) override(addr,nlent,Lines[i]);
++    debug(6,"Check Line %d\n",i);
++    if(!not_work_time_now(nlent)) return 1;
++   }
++
++ for(i=0;i<TryLine;i++)
++   {
++    nlent=getnlent(addr);
++    if(Lines[i]) override(addr,nlent,Lines[i]);
++    debug(6,"Check Line %d\n",i);
++    if(!not_work_time_now(nlent)) return 1;
++   }
++ return 0;
++}
++
++#endif
+ 
+ int checkretry(st)
+ callstat *st;
+@@ -56,7 +177,6 @@
+ 	int speed;
+ 	char *portlist,*p,*q;
+ 	callstat *st;
+-	char cbuf[128];
+ 
+ 	if ((nlent=getnlent(addr)) == NULL)
+ 	{
+@@ -67,6 +187,9 @@
+ 	}
+ 
+ 	st=getstatus(addr);
++#ifdef HIDDEN
++        setline(addr,nlent,st);
++#endif	
+ 	if (!forcedcalls) {
+ 		if ((rc=checkretry(st))) {
+ 			loginf("cannot call %s: %s",
+@@ -89,7 +212,7 @@
+ 
+ 	inbound=protinbound; /* master sessions are secure */
+ 
+-	sprintf(cbuf,"ifcico calling %s (%s %s)",
++	setproctitle("ifcico calling %s (%s %s)",
+ 		ascfnode(&(nlent->addr),0x1f),
+ #if defined(HAS_TCP) || defined(HAS_TERM)
+ 		inetaddr?"addr":"phone",
+@@ -99,7 +222,6 @@
+ #endif
+ 			forcedphone?forcedphone:
+ 				nlent->phone?nlent->phone:"<none>");
+-	setproctitle(cbuf);
+ 
+ 	if ((nlent->phone || forcedphone
+ #if defined(HAS_TCP) || defined(HAS_TERM)
+@@ -108,7 +230,8 @@
+ 							) &&
+ 	    (forcedcalls || 
+ 	     (((nlent->pflag & (NL_DUMMY|NL_DOWN|NL_HOLD|NL_PVT)) == 0) && 
+-	      ((localoptions & NOCALL) == 0) && !not_work_time_now(nlent))))
++	      ((localoptions & NOCALL) == 0) && !not_work_time_now(nlent) ||
++		(localoptions & NOTXY))))
+ 	{
+ #if defined(HAS_TCP) || defined(HAS_TERM)
+ 		loginf("calling %s (%s, %s %s)",
+@@ -231,8 +354,10 @@
+ #endif
+ 		{
+ 			localport();
++#ifndef NO_IO_AFTER_HANGUP
+ 			hangup(nlent);
+ 			aftercall(nlent);
++#endif
+ 			closeport();
+ 		}
+ 	}
+--- ifmail-2.14tx8.10.orig/ifcico/flagexp.y
++++ ifmail-2.14tx8.10/ifcico/flagexp.y
+@@ -45,7 +45,7 @@
+ timestring	: TIMESTR
+ 			{debug(13,"timelem %d",$1);$$ = $1;}
+ 		| TIMESTR COMMA timestring
+-			{debug(13,"log.expr %d %d %d",$1,OR,$3);$$ = logic($1,OR,$3);}
++			{debug(13,"log.expr %d %d %d",$1,OR,$3);$$ = logic($1,OR,$3);};
+ %%
+ 
+ #include "flaglex.c"
+--- ifmail-2.14tx8.10.orig/ifcico/zmrecv.c
++++ ifmail-2.14tx8.10/ifcico/zmrecv.c
+@@ -444,7 +444,6 @@
+ char *name;
+ {
+ 	char *openmode, *p;
+-	static dummy;
+ 	char ctt[32];
+ 
+ 	debug(11,"proheader \"%s\"",printable(name,0));
+@@ -461,9 +460,8 @@
+ 	Bytesleft = DEFBYTL; Filemode = 0; Modtime = 0L;
+ 
+ 	p = name + 1 + strlen(name);
+-	sscanf(p, "%ld%lo%o%lo%d%ld%d%d",
+-	  &Bytesleft, &Modtime, &Filemode,
+-	  &dummy, &dummy, &dummy, &dummy, &dummy);
++	sscanf(p, "%ld%lo%o%*o%*d%*d%*d%*d",
++	  &Bytesleft, &Modtime, &Filemode);
+ 	strcpy(ctt,date(Modtime));
+ 	loginf("zmodem receive: \"%s\" %ld bytes dated %s mode %o",
+ 	  name, Bytesleft, ctt, Filemode);
+--- ifmail-2.14tx8.10.orig/ifcico/emsi.c
++++ ifmail-2.14tx8.10/ifcico/emsi.c
+@@ -11,6 +11,7 @@
+ #include "emsi.h"
+ #include "nodelist.h"
+ #include "version.h"
++#include "setproctitle.h"
+ 
+ #ifdef HAS_TCP
+ #define LOCAL_PROTOS (PROT_ZMO | PROT_ZAP | PROT_HYD | PROT_TCP)
+@@ -28,7 +29,6 @@
+ extern int txwazoo(void);
+ extern unsigned INT16 crc16(char*,int);
+ extern void rdoptions(node *);
+-extern void setproctitle(char*);
+ 
+ static int rxemsi(void);
+ static int txemsi(void);
+@@ -52,7 +52,6 @@
+ 	fa_list *tmp,*tmr;
+ 	int denypw=0;
+ 	node *nlent=NULL;
+-	char cbuf[128];
+ 
+ 	loginf("start inbound EMSI session");
+ 	emsi_local_lcodes=LCODE_RH1;
+@@ -147,8 +146,7 @@
+ 				"no common protocols");
+ 		return 0;
+ 	}
+-	sprintf(cbuf,"-EMSI %s inbound",ascfnode(remote->addr,0x1f));
+-	setproctitle(cbuf);
++	setproctitle("-EMSI %s inbound",ascfnode(remote->addr,0x1f));
+ 	if ((emsi_remote_opts & OPT_NRQ) == 0) session_flags |= SESSION_WAZOO;
+ 	else session_flags &= ~SESSION_WAZOO;
+ #ifdef HAS_TCP
+@@ -164,7 +162,6 @@
+ char* data;
+ {
+ 	int rc;
+-	char cbuf[128];
+ 
+ 	loginf("start outbound EMSI session");
+ 	emsi_local_lcodes=LCODE_PUA | LCODE_RH1;
+@@ -215,8 +212,7 @@
+ 			emsi_remote_protos?"traffic held":"no common protos");
+ 		return 0;
+ 	}
+-	sprintf(cbuf,"-EMSI %s outbound",ascfnode(remote->addr,0x1f));
+-	setproctitle(cbuf);
++	setproctitle("-EMSI %s outbound",ascfnode(remote->addr,0x1f));
+ 	emsi_local_protos &= emsi_remote_protos;
+ 	if ((emsi_remote_opts & OPT_NRQ) == 0) session_flags |= SESSION_WAZOO;
+ 	else session_flags &= ~SESSION_WAZOO;
+@@ -229,6 +225,380 @@
+ 	else return txwazoo();
+ }
+ 
++#ifdef EXPERIMENTAL_EMSI
++
++SM_DECL(rxemsi,"rxemsi")
++SM_STATES
++	sendnak, resettimer, waitpkt, waitchar, getdat, getdatchar, checkdat
++SM_NAMES
++	"sendnak", "resettimer", "waitpkt", "waitchar", "getdat", "getdatchar",
++	"checkdat"
++SM_EDECL
++
++	int c=0;
++	unsigned short lcrc,rcrc;
++	int len = 0;
++	int standby=0,tries=0;
++	char buf[13], *p = buf;
++	char *databuf=NULL;
++
++	tries = 0;
++	SETTIMER(0, 20);
++	SETTIMER(1, 60);
++
++SM_START(sendnak)
++
++SM_STATE(sendnak)
++
++	++tries;
++	if (tries > 6)
++	{
++		loginf("too many tries waiting for EMSI handshake");
++		SM_ERROR;
++	}
++	if (!caller)
++	{
++		PUTSTR("**EMSI_REQA77E\r\021");
++		SM_PROCEED(resettimer);
++	}
++	if (tries > 1)
++	{
++		PUTSTR("**EMSI_NAKEEC3\r\021");
++		SM_PROCEED(resettimer);
++	}
++
++	SM_PROCEED(waitpkt);
++
++
++SM_STATE(resettimer)
++
++	SETTIMER(0, 20);
++	SM_PROCEED(waitpkt);
++
++
++SM_STATE(waitpkt)
++
++	len = 0;
++	standby = 0;
++	p = buf;
++	SM_PROCEED(waitchar);
++
++
++SM_STATE(waitchar)
++
++	c = GETCHAR(-1);
++
++	if (c == TIMEOUT)
++	{
++		if (EXPIRED(1))
++		{
++			loginf("timeout waiting for EMSI handshake");
++			SM_ERROR;
++		}
++		if (EXPIRED(0))
++		{
++			SM_PROCEED(sendnak);
++		}
++	}
++	else if (c < 0)
++	{
++		SM_ERROR;
++	}
++	else if ((c >= ' ') && (c <= '~'))
++	{
++		if (c == '*')
++		{
++			if (len)
++			{
++				standby = 1;
++				len = 0;
++			}
++			else
++			{
++				++standby;
++				debug(DBG_HANDSHAKE, "set standby=%d",
++				      standby);
++			}
++		}
++		else if (standby >= 2)
++		{
++			*p++ = c;
++			len++;
++			debug(DBG_HANDSHAKE, "set len=%d", len);
++
++			if (len == 12)
++			{
++				*p = 0;
++				standby = 0;
++				p = buf;
++				len = 0;
++
++				if (!strncasecmp(buf, "EMSI_DAT", 8))
++				{
++					SM_PROCEED(getdat);
++				}
++				else if (!strncasecmp(buf, "EMSI_HBT", 8))
++				{
++					lcrc=crc16(buf,8);
++					sscanf(buf+8,"%04hx",&rcrc);
++
++					if (lcrc == rcrc)
++					{
++						SM_PROCEED(resettimer);
++					}
++					else
++					{
++						debug(DBG_HANDSHAKE,
++						      "ignoring 'EMSI_HBT' with invalid CRC");
++					}
++				}
++				else if (!strncasecmp(buf, "EMSI_", 5))
++				{
++					debug(DBG_HANDSHAKE,
++					      "ignoring packet '%s'", buf);
++				}
++			}
++
++		}
++	}
++	else
++	{
++		debug(DBG_HANDSHAKE, "ignoring '%c'", printablec(c));
++	}
++
++	/* SM_PROCEED(waitchar); */
++
++
++SM_STATE(getdat)
++
++	debug(DBG_HANDSHAKE,"try get emsi_dat packet starting with \"%s\"",
++	      buf);
++
++	if (sscanf(buf+8,"%04x",&len) != 1)
++	{
++		SM_PROCEED(sendnak);
++	}
++
++	len += 16; /* strlen("EMSI_DATxxxxyyyy"), include CRC */
++	if (databuf) free(databuf);
++	databuf=xmalloc(len+1);
++	strcpy(databuf,buf);
++	p=databuf+strlen(databuf);
++
++	SM_PROCEED(getdatchar);
++
++SM_STATE(getdatchar)
++
++	c = GETCHAR(-1);
++
++	if (c == TIMEOUT)
++	{
++		if (EXPIRED(1))
++		{
++			loginf("timeout waiting for EMSI handshake");
++			SM_ERROR;
++		}
++
++		SM_PROCEED(sendnak);
++	}
++	else if (c < 0)
++	{
++		loginf("error while reading EMSI_DAT packet");
++		SM_ERROR;
++	}
++
++	*p++ = c;
++
++	if ((p - databuf) == len)
++	{
++		SM_PROCEED(checkdat);
++	}
++
++	/* SM_PROCEED(getdatchar); */
++
++
++SM_STATE(checkdat)
++
++	databuf[len] = '\0';
++	sscanf(databuf + len - 4, "%04hx", &rcrc);
++	lcrc = crc16(databuf, len - 4);
++	if (lcrc != rcrc)
++	{
++		loginf("got EMSI_DAT packet \"%s\" with bad crc: %04x/%04x",
++		       printable(databuf,0),lcrc,rcrc);
++		SM_PROCEED(sendnak);
++	}
++
++	PUTSTR("**EMSI_ACKA490\r\021");
++	PUTSTR("**EMSI_ACKA490\r\021");
++
++	if (scanemsidat(databuf + 12) == 0)
++	{
++		SM_SUCCESS;
++	}
++	else
++	{
++		SM_ERROR;
++	}
++
++SM_END
++
++
++	if (databuf)
++	{
++		free(databuf);
++	}
++
++	RESETTIMERS();
++
++SM_RETURN
++
++
++SM_DECL(txemsi,"txemsi")
++SM_STATES
++	senddata, resettimer, waitpkt, waitchar
++SM_NAMES
++	"senddata", "resettimer", "waitpkt", "waitchar"
++SM_EDECL
++
++	int c;
++	unsigned short lcrc,rcrc;
++	int len = 0;
++	int standby=0,tries=0;
++	char buf[13], *p = buf;
++	char trailer[8];
++
++	SETTIMER(0, 60);
++
++
++SM_START(senddata)
++
++SM_STATE(senddata)
++
++	p=mkemsidat(caller);
++	PUTCHAR('*');
++	PUTCHAR('*');
++	PUTSTR(p);
++	sprintf(trailer,"%04X\r\021",crc16(p,strlen(p)));
++	PUTSTR(trailer);
++	free(p);
++
++	++tries;
++	if (tries > 6)
++	{
++		loginf("too many tries sending EMSI");
++		SM_ERROR;
++	}
++
++	SM_PROCEED(resettimer);
++
++
++SM_STATE(resettimer)
++
++	SETTIMER(1, 20);
++	SM_PROCEED(waitpkt);
++
++
++SM_STATE(waitpkt)
++
++	len = 0;
++	standby = 0;
++	p = buf;
++	SM_PROCEED(waitchar);
++
++
++SM_STATE(waitchar)
++
++	c = GETCHAR(-1);
++
++	if (c == TIMEOUT)
++	{
++		if (EXPIRED(0))
++		{
++			loginf("timeout waiting for EMSI handshake");
++			SM_ERROR;
++		}
++		if (EXPIRED(1))
++		{
++			SM_PROCEED(senddata);
++		}
++	}
++	else if (c < 0)
++	{
++		SM_ERROR;
++	}
++	else if ((c >= ' ') && (c <= '~'))
++	{
++		if (c == '*')
++		{
++			if (len)
++			{
++				standby = 1;
++				len = 0;
++			}
++			else
++			{
++				++standby;
++				debug(DBG_HANDSHAKE, "set standby=%d",
++				      standby);
++			}
++		}
++		else if (standby >= 2)
++		{
++			*p++ = c;
++			len++;
++			debug(DBG_HANDSHAKE, "set len=%d", len);
++
++			if (len == 12)
++			{
++				*p = 0;
++				standby = 0;
++				p = buf;
++				len = 0;
++
++				if (!strncasecmp(buf, "EMSI_REQ", 8))
++				{
++					SM_PROCEED(waitpkt);
++				}
++				else if (!strncasecmp(buf, "EMSI_ACK", 8))
++				{
++					lcrc=crc16(buf,8);
++					sscanf(buf+8,"%04hx",&rcrc);
++
++					if (lcrc == rcrc)
++					{
++						SM_SUCCESS;
++					}
++					else
++					{
++						debug(DBG_HANDSHAKE,
++						      "ignoring 'EMSI_ACK' with invalid CRC");
++					}
++				}
++				else
++				{
++					SM_PROCEED(senddata);
++				}
++			}
++
++		}
++	}
++	else
++	{
++		debug(DBG_HANDSHAKE, "ignoring '%c'", printablec(c));
++	}
++
++	/* SM_PROCEED(waitchar); */
++
++
++SM_END
++
++	RESETTIMERS();
++
++SM_RETURN
++
++#else  /* EXPERIMENTAL_EMSI */
++
+ SM_DECL(rxemsi,"rxemsi")
+ SM_STATES
+ 	waitpkt,waitchar,checkemsi,getdat,checkpkt,checkdat,
+@@ -580,3 +950,5 @@
+ 
+ SM_END
+ SM_RETURN
++
++#endif /* EXPERIMENTAL_EMSI */
+--- ifmail-2.14tx8.10.orig/ifcico/openport.c
++++ ifmail-2.14tx8.10/ifcico/openport.c
+@@ -330,7 +330,9 @@
+ 	debug(18,"closing port \"%s\"",S(openedport));
+ 	fflush(stdin);
+ 	fflush(stdout);
++#ifndef NO_IO_AFTER_HANGUP
+ 	tty_cooked();
++#endif
+ #ifdef HAS_DIAL
+ 	close(1);
+ 	undial(0);
+--- ifmail-2.14tx8.10.orig/ifcico/nodelist.c
++++ ifmail-2.14tx8.10/ifcico/nodelist.c
+@@ -208,7 +208,7 @@
+ 	debug(20,"getnlent: phone	%s",nodebuf.phone);
+ 	debug(20,"getnlent: speed	%u",nodebuf.speed);
+ 	debug(20,"getnlent: flags	0x%lx",nodebuf.flags);
+-	for (j=0;nodebuf.uflags[j];j++)
++	for (j=0; (j < MAXUFLAGS) && (nodebuf.uflags[j]); j++)
+ 		debug(20,"getnlent: uflag	%s",nodebuf.uflags[j]);
+ 
+ 	return &nodebuf;
+--- ifmail-2.14tx8.10.orig/ifcico/nlindex.h
++++ ifmail-2.14tx8.10/ifcico/nlindex.h
+@@ -6,7 +6,7 @@
+ #define INDEX "index"
+ 
+ #ifdef HAS_NDBM_H
+-#include <ndbm.h>
++#include <gdbm-ndbm.h>
+ extern DBM *nldb;
+ #else
+ #include <dbm.h>
+--- ifmail-2.14tx8.10.orig/ifcico/ifinfo.c
++++ ifmail-2.14tx8.10/ifcico/ifinfo.c
+@@ -102,7 +102,7 @@
+ 
+       /* get user nodelist flags */
+       flagbuf[0] = 0;
+-      for (i = 0; nlent->uflags[i]; i++)
++      for (i = 0; (i < MAXUFLAGS) && (nlent->uflags[i]); i++)
+       {
+ 	sprintf(flagbuf + strlen(flagbuf), "%s,", nlent->uflags[i]);
+       }
+--- ifmail-2.14tx8.10.orig/ifcico/recvbark.c
++++ ifmail-2.14tx8.10/ifcico/recvbark.c
+@@ -1,4 +1,5 @@
+ #include <stdio.h>
++#include <string.h>
+ #include "lutil.h"
+ #include "ttyio.h"
+ #include "session.h"
+--- ifmail-2.14tx8.10.orig/ifcico/respfreq.c
++++ ifmail-2.14tx8.10/ifcico/respfreq.c
+@@ -18,7 +18,7 @@
+ #include "lutil.h"
+ #include "config.h"
+ #ifndef NOFREQREPORT
+-#include <varargs.h>
++#include <stdarg.h>
+ #include "ftnmsg.h"
+ #endif
+ #include "version.h"
+@@ -44,7 +44,7 @@
+ 
+ #ifndef NOFREQREPORT
+ static void attach_report(file_list**);
+-static void add_report();
++static void add_report(char*,...);
+ static char *report_text=NULL;
+ static unsigned long report_total=0L;
+ #endif
+@@ -612,15 +612,12 @@
+ 	report_text=NULL;
+ }
+ 
+-static void add_report(va_alist)
+-va_dcl
++static void add_report(char *fmt, ...)
+ {
+ 	va_list args;
+-	char *fmt;
+ 	char buf[1024];
+ 
+-	va_start(args);
+-	fmt=va_arg(args,char*);
++	va_start(args,fmt);
+ 
+ 	if (report_text == NULL)
+ 	{
+--- ifmail-2.14tx8.10.orig/ifcico/ifcico.c
++++ ifmail-2.14tx8.10/ifcico/ifcico.c
+@@ -19,6 +19,7 @@
+ #include "config.h"
+ #include "version.h"
+ #include "needed.h"
++#include "setproctitle.h"
+ 
+ #if defined(SHORT_PID_T)
+ #define pid_t short
+@@ -43,7 +44,6 @@
+ int answer(char *);
+ void mkdirs(char*);
+ void setargspace(char**,char**);
+-void setproctitle(char*);
+ 
+ void usage(void)
+ {
+@@ -90,7 +90,7 @@
+ 	int status;
+ #endif
+ 
+-	setargspace(argv,envp);
++	initsetproctitle(argc, argv, envp);
+ 
+ #if defined(HAS_SYSLOG) && defined(CICOLOG)
+ 	logfacility=CICOLOG;
+@@ -204,6 +204,14 @@
+ 	p=xstrcat(p,"/tmp/");
+ 	mkdirs(p);
+ 	free(p);
++	p=xstrcpy(listinbound);
++	p=xstrcat(p,"/tmp/");
++	mkdirs(p);
++	free(p);
++	p=xstrcpy(protinbound);
++	p=xstrcat(p,"/tmp/");
++	mkdirs(p);
++	free(p);
+ 
+ 	maxrc=0;
+ 	if (master)
+--- ifmail-2.14tx8.10.orig/ifcico/session.h
++++ ifmail-2.14tx8.10/ifcico/session.h
+@@ -59,6 +59,7 @@
+ #define NOJANUS  0x0100
+ #define NOHYDRA  0x0200
+ #define NOTCP    0x0400
++#define NOTXY    0x0800
+ 
+ extern int session(faddr*,node*,int,int,char*);
+ extern int tx_ftsc(void);
+--- ifmail-2.14tx8.10.orig/ifcico/yoohoo.c
++++ ifmail-2.14tx8.10/ifcico/yoohoo.c
+@@ -11,6 +11,7 @@
+ #include "emsi.h"
+ #include "nodelist.h"
+ #include "version.h"
++#include "setproctitle.h"
+ 
+ /*------------------------------------------------------------------------*/
+ /* YOOHOO<tm> CAPABILITY VALUES                                           */
+@@ -43,7 +44,6 @@
+ extern int txdietifna(void);
+ extern void rdoptions(node*);
+ extern int nodelock(faddr*);
+-extern void setproctitle(char*);
+ 
+ static int rxyoohoo(void);
+ static int txyoohoo(void);
+@@ -86,7 +86,6 @@
+ 	char *pwd;
+ 	fa_list *tmp;
+ 	node *nlent;
+-	char cbuf[128];
+ 
+ 	loginf("start inbound WaZOO session");
+ 
+@@ -153,8 +152,7 @@
+ 	}
+ 	if (rc) return rc;
+ 
+-	sprintf(cbuf,"-WaZOO %s inbound",ascfnode(remote->addr,0x1f));
+-	setproctitle(cbuf);
++	setproctitle("-WaZOO %s inbound",ascfnode(remote->addr,0x1f));
+ 
+ 	session_flags |= SESSION_WAZOO;
+ 	if (localcaps & DOES_HYDRA) return hydra(0);
+@@ -176,7 +174,6 @@
+ 	unsigned short capabilities;
+ 	char *pwd;
+ 	fa_list *tmp;
+-	char cbuf[128];
+ 
+ 	loginf("start outbound WaZOO session");
+ 
+@@ -211,8 +208,7 @@
+ 	}
+ 	if (rc) return rc;
+ 
+-	sprintf(cbuf,"-WaZOO %s outbound",ascfnode(remote->addr,0x1f));
+-	setproctitle(cbuf);
++	setproctitle("-WaZOO %s outbound",ascfnode(remote->addr,0x1f));
+ 
+ 	session_flags |= SESSION_WAZOO;
+ 	if (capabilities & DOES_HYDRA) return hydra(1);
+--- ifmail-2.14tx8.10.orig/ifcico/Makefile
++++ ifmail-2.14tx8.10/ifcico/Makefile
+@@ -46,7 +46,7 @@
+ 		ftscprod.090 mkprod.awk \
+ 		ifcico.8 ifcico.8.fr ifindex.8 ifinfo.8 ifroute.8 nlpatch.8 \
+ 		ifreq.8
+-ALL = ifcico ifindex ifinfo ifreq ifroute nlpatch nlookup
++ALL = ifcico ifindex ifinfo ifreq nlpatch nlookup #ifroute
+ 
+ ifeq (yes,${SHARED})
+ UTLIB =
+@@ -59,6 +59,7 @@
+ else
+ UTLIB = ../iflib/utlib.a
+ endif
++LIBS += -lfl
+ 
+ .c.o:
+ 	${CC} -c ${CFLAGS} ${INCLUDES} ${DEFINES} $<
+--- ifmail-2.14tx8.10.orig/ifcico/hydra.c
++++ ifmail-2.14tx8.10/ifcico/hydra.c
+@@ -48,6 +48,7 @@
+ extern unsigned long crc32ccitt(char *, int);
+ extern file_list *respond_wazoo(char *);
+ extern file_list *create_freqlist(fa_list *al);
++extern char *xtodos(char*);
+ 
+ 
+ static int put_binbyte(char *outbuf, char c);
+@@ -1382,6 +1383,8 @@
+ 	  if ((strlen(rxbuf + 40) + 41) < rxlen)
+ 	  {
+ 	    name = rxbuf + strlen(rxbuf + 40) + 41;
++	    loginf("Hydra receive: real filename \"%s\", DOS filename \"%s\"",
++		   name, dosname);
+ 
+ 	    /*
+ 	     * use DOS-filename if real- and DOS-name only differ in
+--- ifmail-2.14tx8.10.orig/ifcico/flaglex.l
++++ ifmail-2.14tx8.10/ifcico/flaglex.l
+@@ -8,7 +8,7 @@
+ static char *yyPTR = NULL;
+ static int yyBUFL;
+ 
+-#ifndef yywrap
++#if defined NEED_YYWRAP_MACRO && !defined yywrap
+ #define yywrap() 1
+ #endif
+ 
+--- ifmail-2.14tx8.10.orig/ifcico/emsidat.c
++++ ifmail-2.14tx8.10/ifcico/emsidat.c
+@@ -205,6 +205,12 @@
+ 	default:	*q++=*p;
+ 			break;
+ 	}
++
++	/* closing brace not found... */
++	logerr("ignoring garbage at end of EMSI_DAT packet");
++	save = p;
++	return NULL;
++
+ exit:
+ 	return s;
+ }
+--- ifmail-2.14tx8.10.orig/ifgate/msgidbm.c
++++ ifmail-2.14tx8.10/ifgate/msgidbm.c
+@@ -5,7 +5,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <sys/stat.h>
+-#include <ndbm.h>
++#include <gdbm-ndbm.h>
+ #include <fcntl.h>
+ #include "lutil.h"
+ #include "xutil.h"
+--- ifmail-2.14tx8.10.orig/ifgate/mkrfcmsg.c
++++ ifmail-2.14tx8.10/ifgate/mkrfcmsg.c
+@@ -37,6 +37,9 @@
+ #include "ref_interface.h"
+ extern ref_private_t *ref_dbase;
+ #endif
++#ifdef RESTAMP_OLD_POSTINGS
++extern long restampolder;
++#endif
+ 
+ #define BOUNDARY 79
+ #define MAXPATH 73
+@@ -338,6 +341,9 @@
+ 	if (p == NULL) p=hdr("CODEPAGE",kmsg);
+ 	if (p) outcode=readchrs(p);
+ 	else
++#ifdef STUPID_CHRS_DETECT
++                outcode=defaultftnchar;
++#else
+ 	{
+ 		p=hdr("Content-Type",msg);
+ 		if (p == NULL) p=hdr("RFC-Content-Type",kmsg);
+@@ -359,6 +365,7 @@
+ 		else outcode=defaultftnchar;
+ #endif
+ 	}
++#endif
+ #ifdef TERMAIL_HACK
+ 	p=hdr("PID",kmsg);
+ 	if ((p) && (!strncmp(p,"TerMail",7)) && (outcode==defaultrfcchar))
+@@ -396,6 +403,9 @@
+ 	else newsmode=0;
+ 	debug(5,"Got %s message",newsmode?"echo":"netmail");
+ 	if (outcode==CHRS_NOTSET)
++#ifdef STUPID_CHRS_DETECT
++                outcode=defaultftnchar;
++#else
+ 	{
+ 		if ((hdr("Message-ID",msg)) ||
+ 		    (hdr("RFC-Message-ID",kmsg)) ||
+@@ -409,8 +419,9 @@
+ 		     (!chkftnmsgid(rfcmsgid(hdr("MSGID",kmsg),bestaka)))))
+ #endif
+ 			outcode=defaultrfcchar;
+-		 else outcode=defaultftnchar;
++		else outcode=defaultftnchar;
+ 	}
++#endif
+ 	if (pgpsigned) incode=outcode;
+ 	else if (incode==CHRS_NOTSET) incode=getincode(outcode);
+ 
+@@ -522,7 +533,12 @@
+ 			fprintf(nb,"#!/bin/sh\n%s <<__EOF__\n",S(rnews));
+ #endif
+ 		}
+-		else nb=expipe(rnews,NULL,NULL);
++		else
++		{
++			setenv("UU_MACHINE",ascinode(&pktfrom,0x0f),1);
++			nb=expipe(rnews,NULL,NULL);
++			unsetenv("UU_MACHINE");
++		}
+ 		if (nb == NULL)
+ 		{
+ 			logerr("$Could non open (pipe) output for news");
+@@ -794,8 +810,13 @@
+ 		} else
+ #endif
+ #ifdef RESTAMP_OLD_POSTINGS
++		if(mdate < 31532400) {	/* 1971/1/1 */
++		    loginf("Bad date from %s", ascfnode(f,0x3f));
++		    fprintf(pip,"Date: %s\n", rfcdate(now));
++		    fprintf(pip,"X-Bad-Date: ignored\n");
++		} else
+ 		if((mdate < time(&now)-14*24*60*60) &&
+-		   (mdate > time(&now)-RESTAMP_OLD_POSTINGS*24*60*60)) {
++		   (mdate > time(&now)-restampolder*24*60*60)) {
+ 			loginf("Article too old, restamped: %s", rfcdate(mdate));
+ 			fprintf(pip,"Date: %s\n", rfcdate(now));
+ 			fprintf(pip,"X-Origin-Date: %s\n", rfcdate(mdate));
+--- ifmail-2.14tx8.10.orig/ifgate/nlindex.c
++++ ifmail-2.14tx8.10/ifgate/nlindex.c
+@@ -6,11 +6,6 @@
+ #include <fcntl.h>
+ #include "directory.h"
+ #include <sys/stat.h>
+-#ifdef HAS_NDBM_H
+-#include <ndbm.h>
+-#else
+-#include <dbm.h>
+-#endif
+ #include "xutil.h"
+ #include "lutil.h"
+ #include "ftn.h"
+--- ifmail-2.14tx8.10.orig/ifgate/nodecheck.c
++++ ifmail-2.14tx8.10/ifgate/nodecheck.c
+@@ -7,9 +7,6 @@
+ #include <sys/stat.h>
+ #ifdef HAS_NDBM_H
+ #include <fcntl.h>
+-#include <ndbm.h>
+-#else
+-#include <dbm.h>
+ #endif
+ #include "directory.h"
+ 
+--- ifmail-2.14tx8.10.orig/ifgate/iftoss.c
++++ ifmail-2.14tx8.10/ifgate/iftoss.c
+@@ -18,6 +18,7 @@
+ #include "ftn.h"
+ #include "getheader.h"
+ #include "trap.h"
++#include "acl.h"
+ #ifdef DIRTY_CHRS
+ #include "charset.h"
+ int dirtyoutcode;
+@@ -41,6 +42,9 @@
+ extern int exclose(FILE *);
+ 
+ extern int num_echo,num_mail;
++extern long paranoid;
++
++acl *packet_acl, *message_acl, *origin_acl;
+ 
+ int usetmp=1; /* to tell bgets that we do not use batch mode */
+ int notransports=0;
+@@ -113,23 +117,34 @@
+ #endif
+ 	if (aliasfile) readalias(aliasfile);
+ 
++	packet_acl=read_acl(pktaclfile);
++	message_acl=read_acl(msgaclfile);
++	origin_acl=read_acl(orgaclfile);
++
+ 	if (notransports)
+ 	{
+ 		mkdir(FAKEDIR,0777);
+ 		loginf("messages/newsbatches will go to %s",FAKEDIR);
+ 	}
+ 
+-#ifdef PARANOID
+-	if (((rc=getheader(&from,&to,stdin)) != 0) &&
+-	    ((rc != 3) || (!relaxed)))
+-#else
+-	if (((rc=getheader(&from,&to,stdin)) != 0) &&
+-	    ((rc != 3) || (!relaxed)) &&
+-	    (rc != 4))
+-#endif
+-	{
+-		logerr("%s, aborting",(rc==3)?"packet not to this node":
+-			(rc==4)?"bad password":"bad packet");
++	switch ((rc=getheader(&from,&to,stdin))) {
++	    case 0:
++		break;
++	    case 2:
++		logerr("bad packet, aborting");
++		exit(rc);
++	    case 3:
++		if (relaxed)
++		    break;
++		logerr("packet not to this node, aborting");
++		exit(rc);
++	    case 4:
++		if (!paranoid)
++		    break;
++		logerr("bad password, aborting");
++		exit(rc);
++	    default:
++		logerr("can't happen: getheader returned %d", rc);
+ 		exit(rc);
+ 	}
+ #ifdef AREAS_HACKING
+--- ifmail-2.14tx8.10.orig/ifgate/getmessage.c
++++ ifmail-2.14tx8.10/ifgate/getmessage.c
+@@ -20,6 +20,7 @@
+ #include "config.h"
+ #include "crc.h"
+ #include "charset.h"
++#include "acl.h"
+ 
+ #define KWDCHARS "ABCDEFGHIJKLMNOPQRSTUVWXYZ" \
+ 		"abcdefghijklmnopqrstuvwxyz" \
+@@ -30,6 +31,8 @@
+ 
+ int pgpsigned;
+ 
++extern acl *packet_acl, *message_acl, *origin_acl;
++
+ static time_t parsefdate(char *,void *);
+ static time_t parsefdate(str,now)
+ char *str;
+@@ -59,6 +62,7 @@
+ 	rfcmsg *kmsg=NULL,**tmsg;
+ 	int tmp,rc,maxrc=0;
+ 	faddr f,t,*o;
++	faddr m_from, m_to;
+ 	int flags;
+ 	int waskluge,badkludge;
+ 	time_t mdate=0L;
+@@ -153,6 +157,10 @@
+ 	debug(5,"message subj \"%s\"",S(subj));
+ 	debug(5,"message date \"%s\"",rfcdate(mdate));
+ 
++	/* We need only numeric fields */
++	m_from=f;
++	m_to=t;
++
+ 	tear_off=0L;
+ 	orig_off=0L;
+ 	via_off=0L;
+@@ -336,11 +344,37 @@
+ 	if ((via_off) && (via_off < endmsg_off)) endmsg_off=via_off;
+ 	debug(5,"end message offset %ld",(long)endmsg_off);
+ 	
++
++	if (kmsg && !strcmp(kmsg->key,"AREA"))
++	{
++		if (match_acl(kmsg->val, p_from, p_to, packet_acl) == DENY) 
++		{
++			loginf("message from %s in area %s denied by packet header filter",
++			    ascfnode(p_from, 0xf), kmsg->val);
++			goto skip;
++		}
++		if (match_acl(kmsg->val, &m_from, &m_to, message_acl) == DENY)
++		{
++			loginf("message from %s in area %s denied by message header filter",
++			    ascfnode(&m_from, 0xf), kmsg->val);
++			goto skip;
++		}
++
++		if (match_acl(kmsg->val, &f, NULL, origin_acl) == DENY)
++		{
++			loginf("message from %s in area %s denied by origin filter",
++			    ascfnode(&f, 0xf), kmsg->val);
++			goto skip;
++		}
++
++	}
++
+ 	rewind(fp);
+ 	rc=mkrfcmsg(&f,&t,subj,orig,mdate,flags,fp,endmsg_off,kmsg);
+ 	if (rc) rc+=10;
+ 	if (rc > maxrc) maxrc=rc;
+ 
++skip:
+ 	fclose(fp);
+ 	tidyrfc(kmsg);
+ 	if(f.name) free(f.name); f.name=NULL;
+--- ifmail-2.14tx8.10.orig/ifgate/ifdbm.c
++++ ifmail-2.14tx8.10/ifgate/ifdbm.c
+@@ -10,7 +10,7 @@
+ #include <sys/stat.h>
+ #ifdef HAS_NDBM_H
+ #include <fcntl.h>
+-#include <ndbm.h>
++#include <gdbm-ndbm.h>
+ #else
+ #include <dbm.h>
+ #endif
+--- ifmail-2.14tx8.10.orig/ifgate/nlindex.h
++++ ifmail-2.14tx8.10/ifgate/nlindex.h
+@@ -6,8 +6,10 @@
+ #define INDEX "index"
+ 
+ #ifdef HAS_NDBM_H
+-#include <ndbm.h>
++#include <gdbm-ndbm.h>
+ extern DBM *nldb;
++#else
++#include <dbm.h>
+ #endif
+ extern int openstatus;
+ 
+--- ifmail-2.14tx8.10.orig/ifgate/ifmail.c
++++ ifmail-2.14tx8.10/ifgate/ifmail.c
+@@ -283,7 +283,10 @@
+         p=hdr("Content-Type",msg);
+         if (p) incode=readcharset(p);
+         if (incode == CHRS_NOTSET)
+-        {
++#ifdef STUPID_CHRS_DETECT
++		incode=defaultrfcchar;
++#else
++	{
+                 p=hdr("X-FTN-CHRS",msg);
+                 if (p == NULL) p=hdr("X-FTN-CHARSET",msg);
+ 		if (p == NULL) p=hdr("X-FTN-CODEPAGE",msg);
+@@ -300,6 +303,7 @@
+ 			else incode=defaultrfcchar;
+ 		}
+         }
++#endif
+ 	if ((p=hdr("Content-Type",msg)) && 
+ 		((strcasestr(p,"multipart/signed")) ||
+ 		 (strcasestr(p,"application/pgp"))))
+@@ -312,7 +316,11 @@
+ 		outcode=dirtyoutcode;
+ #endif
+ #ifdef JE
++#ifdef STUPID_CHRS_DETECT
++	else outcode=getoutcode(incode); /* news should be converted too! */
++#else
+ 	else if (!newsmode) outcode=getoutcode(incode);
++#endif
+ #else
+ 	else outcode=getoutcode(incode);
+ #endif 
+--- ifmail-2.14tx8.10.orig/ifgate/charconv.h
++++ ifmail-2.14tx8.10/ifgate/charconv.h
+@@ -39,6 +39,7 @@
+ #define CP862__ISO_8859_8	"cp862__iso-8859-8"
+ #define CP866__ISO_8859_5	"mik__iso-8859-5"
+ #define CP866__KOI8		"cp866__koi8"
++#define CP866__KOI8_R		"cp866__koi8-r"
+ #define CP895__CP437            "cp895__cp437"
+ #define CP895__ISO_8859_2       "cp895__iso-8859-2"
+ #define FIDOMAZOVIA__CP852	"fidomazovia__cp852"
+@@ -58,6 +59,7 @@
+ #define ISO_8859_8__CP424	"iso-8859-8__cp424"
+ #define ISO_8859_8__CP862	"iso-8859-8__cp862"
+ #define KOI8__CP866		"koi8__cp866"
++#define KOI8_R__CP866		"koi8-r__cp866"
+ #define KOI8__ISO_8859_5	"koi8__iso-8859-5"
+ #define KOI8__MIK_CYR		"koi8__mik"
+ #define MACINTOSH__CP437	"mac__cp437"
+--- ifmail-2.14tx8.10.orig/ifgate/acl.h
++++ ifmail-2.14tx8.10/ifgate/acl.h
+@@ -0,0 +1,19 @@
++#ifndef _ACL_H_
++#define _ACL_H_
++
++#define PERMIT		0
++#define DENY		1
++
++typedef struct _acl {
++	int action;
++	char *etag;
++	char *from;
++	char *to;
++	struct _acl *next;
++} acl;
++
++void	tidy_acl(acl *);
++acl *	read_acl(char *);
++int	match_acl(char *, faddr *, faddr *, acl *);
++
++#endif
+--- ifmail-2.14tx8.10.orig/ifgate/ifpack.c
++++ ifmail-2.14tx8.10/ifgate/ifpack.c
+@@ -42,6 +42,7 @@
+ 
+ extern char *logname;
+ extern int fakeoutbound;
++extern char *sentmode;
+ 
+ static int each1(faddr*,char,int,char*);
+ static int each2(faddr*,char,int,char*);
+@@ -435,7 +436,7 @@
+ 				}
+ 				if (dosoutbound)
+ 				{
+-					fprintf(fp,"#%s",dosoutbound);
++					fprintf(fp,"%c%s",sentmode[0],dosoutbound);
+ 					if (*(dosoutbound+
+ 						strlen(dosoutbound)-1) != '\\')
+ 						fputc('\\',fp);
+@@ -446,7 +447,7 @@
+ 					fputc('\r',fp);
+ 					fputc('\n',fp);
+ 				}
+-				else fprintf(fp,"#%s\n",arcfn);
++				else fprintf(fp,"%c%s\n",sentmode[0],arcfn);
+ 				needadd=0;
+ 			}
+ 		}
+--- ifmail-2.14tx8.10.orig/ifgate/attach.c
++++ ifmail-2.14tx8.10/ifgate/attach.c
+@@ -108,7 +108,9 @@
+ 				S(pn),ascfnode(addr,0x1f));
+ 
+ 			fseek(flo,0L,SEEK_END);
+-			if (i > 0) /* only received files can be killed */
++			if (i == 1) /* transit files must be killed */
++				fprintf(flo,"^");
++			else if (i > 1) /* public files must not be killed */
+ 			switch (mode)
+ 			{
+ 			case 0:	break;
+--- ifmail-2.14tx8.10.orig/ifgate/Makefile
++++ ifmail-2.14tx8.10/ifgate/Makefile
+@@ -18,7 +18,7 @@
+ 		charconv.o charconv_jp.o charconv_hz.o charconv_utf.o
+ OBJTOSS = version.o iftoss.o areas.o \
+ 		getmessage.o mkrfcmsg.o rfcmsg.o batchrd.o \
+-		ifdbm.o backalias.o msgflags.o \
++		ifdbm.o backalias.o msgflags.o acl.o \
+ 		charconv.o charconv_jp.o charconv_hz.o charconv_utf.o
+ OBJUNPACK = version.o ifunpack.o unpacker.o flock.o
+ OBJPACK = version.o ifpack.o flock.o
+@@ -28,10 +28,10 @@
+ 		iftoss.c getmessage.c mkrfcmsg.c \
+ 		nlindex.c nodecheck.c \
+ 		ifunpack.c unpacker.c ifpack.c flock.c \
+-		backalias.c msgidbm.c attach.c ifstat.c lastmtime.c \
++		backalias.c msgidbm.c attach.c ifstat.c lastmtime.c acl.c \
+ 		body.c charconv.c charconv_jp.c charconv_hz.c charconv_utf.c
+ HDRS = areas.h mkrfcmsg.h mkftnhdr.h nlindex.h nodecheck.h \
+-		charconv.h charconv_jp.h charconv_hz.h
++		charconv.h charconv_jp.h charconv_hz.h acl.h
+ OTHER = README Makefile testmail newsin pkt ifmail.8 iftoss.8
+ ALL = ifmail ifnews iftoss ifunpack ifpack ifstat
+ 
+--- ifmail-2.14tx8.10.orig/ifgate/charconv.c
++++ ifmail-2.14tx8.10/ifgate/charconv.c
+@@ -162,7 +162,7 @@
+       case CHRS_CP866 :
+ 	switch (outcode) {
+ 	  case CHRS_ISO_8859_5 : eight2eight(in,out,CP866__ISO_8859_5); break;
+-          case CHRS_KOI8_R :
++	  case CHRS_KOI8_R :	 eight2eight(in,out,CP866__KOI8_R); break;
+           case CHRS_KOI8_U :	 eight2eight(in,out,CP866__KOI8); break;
+           default :		 noconv(in,out); break;
+         }
+@@ -321,6 +321,13 @@
+         }
+         break;
+       case CHRS_KOI8_R :
++        switch (outcode) {
++          case CHRS_CP866 :	 eight2eight(in,out,KOI8_R__CP866); break;
++          case CHRS_ISO_8859_5 : eight2eight(in,out,KOI8__ISO_8859_5); break;
++          case CHRS_MIK_CYR :	 eight2eight(in,out,KOI8__MIK_CYR); break;
++          default :		 noconv(in,out); break;
++	}
++        break;
+       case CHRS_KOI8_U :
+         switch (outcode) {
+           case CHRS_CP866 :	 eight2eight(in,out,KOI8__CP866); break;
+--- ifmail-2.14tx8.10.orig/ifgate/acl.c
++++ ifmail-2.14tx8.10/ifgate/acl.c
+@@ -0,0 +1,146 @@
++#include <errno.h>
++#include <fnmatch.h>
++#include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
++
++#include "ftn.h"
++#include "acl.h"
++#include "lutil.h"
++#include "xutil.h"
++
++int acl_default_action = PERMIT;
++
++void tidy_acl(aclp)
++	acl *aclp;
++{
++	acl *taclp;
++
++	while (aclp != NULL) {
++		if (aclp->etag != NULL) free(aclp->etag);
++		if (aclp->from != NULL) free(aclp->from);
++		if (aclp->to != NULL) free(aclp->to);
++		taclp = aclp->next;
++		free(aclp);
++		aclp = taclp;
++	}
++}
++
++acl *read_acl(filename)
++	char *filename;
++{
++	int action;
++	int linecount;
++	FILE *fp;
++	acl *aclp, *taclp;
++	char action_s[256], etag_s[256], from_s[256], to_s[256];
++	char buf[1024];
++
++	if (filename == NULL) return NULL;
++
++	if ((fp = fopen(filename, "r")) == NULL) {
++		if (errno != ENOENT)
++			logerr("$cannot open access list \"%s\"", filename);
++		return NULL;
++	}
++
++	linecount = 1;
++	aclp = taclp = NULL;
++
++	while (fgets(buf, sizeof(buf)-1, fp) != NULL) {
++		if (buf[0] == '#') continue;
++
++		if (sscanf(buf, "%s%s%s%s",
++		    action_s, etag_s, from_s, to_s) != 4) {
++			logerr("error in access list \"%s\", line %d",
++			    filename, linecount);
++			continue;
++		}
++
++		if (strcmp(action_s, "deny") == 0)
++			action = DENY;
++		else if (strcmp(action_s, "permit") == 0)
++			action = PERMIT;
++		else {
++			logerr("bad action in access list \"%s\", line %d",
++			    filename, linecount);
++			continue;
++		}
++
++		if (taclp == NULL)
++			aclp = taclp = (acl *)xmalloc(sizeof(acl));
++		else {
++			taclp->next = (acl *)xmalloc(sizeof(acl));
++			taclp = taclp->next;
++		}
++			
++		taclp->action = action;
++		taclp->etag = xstrcpy(etag_s);
++		taclp->from = xstrcpy(from_s);
++		taclp->to = xstrcpy(to_s);
++		taclp->next = NULL;
++	}
++
++	fclose(fp);
++	return aclp;
++}
++
++int match_acl(etag, from, to, aclp)
++	char *etag;
++	faddr *from;
++	faddr *to;
++	acl *aclp;
++{
++	int action = acl_default_action;
++	char *etag_s = NULL, *from_s = NULL, *to_s = NULL;
++
++	if (etag != NULL) {
++		etag_s = xstrcpy(etag);
++		if (etag_s[strlen(etag)-1] == '\n')
++			etag_s[strlen(etag)-1] = '\0';
++	}
++
++	if (from != NULL)
++		from_s = xstrcpy(ascfnode(from, 0x0f));
++		
++	if (to != NULL)
++		to_s = xstrcpy(ascfnode(to, 0x0f));
++		
++
++	for (; aclp != NULL; aclp = aclp->next)
++		if ((etag == NULL ||
++		    fnmatch(aclp->etag, etag_s, FNM_NOESCAPE) == 0) &&
++		    (from == NULL ||
++		    fnmatch(aclp->from, from_s, FNM_NOESCAPE) == 0) &&
++		    (to == NULL ||
++		    fnmatch(aclp->to, to_s, FNM_NOESCAPE) == 0)) {
++			action = aclp->action;
++			break;
++		}
++
++	if (etag_s != NULL) free(etag_s);
++	if (from_s != NULL) free(from_s);
++	if (to_s != NULL) free(to_s);
++
++	return action;
++}
++
++#ifdef DEBUG
++
++int main(int argc, char **argv)
++{
++	int i;
++	acl *aclp;
++
++	aclp = read_acl(argv[1]);
++
++	/*for (i=0; i<1000000; i++)
++		match_acl(argv[2], argv[3], argv[4], aclp);
++	*/
++
++	printf("%d\n", match_acl(argv[2], argv[3], argv[4], aclp));
++
++	return 0;
++}
++
++#endif
+--- ifmail-2.14tx8.10.orig/ifgate/message.c
++++ ifmail-2.14tx8.10/ifgate/message.c
+@@ -674,6 +674,14 @@
+ 			}
+ 		}
+ 
++		if (hdr("X-Bad-Date", msg))
++		{
++			p=ascfnode(fmsg->from,0x0f);
++			hdrsize += 53+strlen(p);
++			fprintf(pkt,
++	"\1WARNING: message with bad date field restamped by %s\r", p);
++		}
++
+ 		hdrsize += 15;
+ 		writechrs(outcode,pkt,1);
+ 

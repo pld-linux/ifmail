@@ -1,0 +1,76 @@
+--- ifmail-2.14tx8.10.orig/ifcico/Makefile.orig	2003-12-18 20:17:04.000000000 +0100
++++ ifmail-2.14tx8.10.orig/ifcico/Makefile	2003-12-18 20:27:00.000000000 +0100
+@@ -88,13 +88,12 @@
+ flaglex.o:	flaglex.c flagexp.c
+ 
+ install: all
+-	${INSTALL} -s -o ${OWNER} -g ${GROUP} -m ${SMODE} ifcico ${BINDIR}/ifcico
+-	${INSTALL} -s -o ${OWNER} -g ${GROUP} -m ${MODE} ifindex ${BINDIR}/ifindex
+-	${INSTALL} -s -o ${OWNER} -g ${GROUP} -m ${MODE} ifinfo ${BINDIR}/ifinfo
+-	${INSTALL} -s -o ${OWNER} -g ${GROUP} -m ${MODE} ifreq ${BINDIR}/ifreq
+-	${INSTALL} -s -o ${OWNER} -g ${GROUP} -m ${MODE} ifroute ${BINDIR}/ifroute
+-	${INSTALL} -s -o ${OWNER} -g ${GROUP} -m ${MODE} nlpatch ${BINDIR}/nlpatch
+-	${INSTALL} -s -o ${OWNER} -g ${GROUP} -m ${MODE} nlookup ${BINDIR}/nlookup
++	${INSTALL} -s -m ${SMODE} ifcico ${BINDIR}/ifcico
++	${INSTALL} -s -m ${MODE} ifindex ${BINDIR}/ifindex
++	${INSTALL} -s -m ${MODE} ifinfo ${BINDIR}/ifinfo
++	${INSTALL} -s -m ${MODE} ifreq ${BINDIR}/ifreq
++	${INSTALL} -s -m ${MODE} nlpatch ${BINDIR}/nlpatch
++	${INSTALL} -s -m ${MODE} nlookup ${BINDIR}/nlookup
+ 
+ tryc:	ifcico
+ 	>/var/log/ifmail/ifdebug
+@@ -149,17 +148,16 @@
+ 	>filelist
+ 
+ man:	man.lang
+-	${INSTALL} -o ${MANOWNER} -g ${MANGROUP} -m ${MANMODE} ifcico.8 ${MANDIR}/man8/ifcico.8
+-	${INSTALL} -o ${MANOWNER} -g ${MANGROUP} -m ${MANMODE} ifindex.8 ${MANDIR}/man8/ifindex.8
+-	${INSTALL} -o ${MANOWNER} -g ${MANGROUP} -m ${MANMODE} ifinfo.8 ${MANDIR}/man8/ifinfo.8
+-	${INSTALL} -o ${MANOWNER} -g ${MANGROUP} -m ${MANMODE} ifreq.8 ${MANDIR}/man8/ifreq.8
+-	${INSTALL} -o ${MANOWNER} -g ${MANGROUP} -m ${MANMODE} ifroute.8 ${MANDIR}/man8/ifroute.8
+-	${INSTALL} -o ${MANOWNER} -g ${MANGROUP} -m ${MANMODE} nlpatch.8 ${MANDIR}/man8/nlpatch.8
++	${INSTALL} -m ${MANMODE} ifcico.8 ${MANDIR}/man8/ifcico.8
++	${INSTALL} -m ${MANMODE} ifindex.8 ${MANDIR}/man8/ifindex.8
++	${INSTALL} -m ${MANMODE} ifinfo.8 ${MANDIR}/man8/ifinfo.8
++	${INSTALL} -m ${MANMODE} ifreq.8 ${MANDIR}/man8/ifreq.8
++	${INSTALL} -m ${MANMODE} nlpatch.8 ${MANDIR}/man8/nlpatch.8
+ 
+ man.lang:
+ 	if [ "${LANG}" != "" ]; then \
+ 	case "${LANG}" in \
+-		fr*) ${INSTALL} -o ${MANOWNER} -g ${MANGROUP} -m ${MANMODE} ifcico.8.fr ${MANDIR}/fr/man8/ifcico.8 ;; \
++		fr*) ${INSTALL} -m ${MANMODE} ifcico.8.fr ${MANDIR}/fr/man8/ifcico.8 ;; \
+ 	esac ; fi
+ 
+ config:
+--- ifmail-2.14tx8.10.orig/ifgate/Makefile.orig	2003-12-18 20:17:04.000000000 +0100
++++ ifmail-2.14tx8.10.orig/ifgate/Makefile	2003-12-18 20:22:52.000000000 +0100
+@@ -53,11 +53,11 @@
+ all:	${ALL}
+ 
+ install: all
+-	${INSTALL} -s -o ${OWNER} -g ${GROUP} -m ${SMODE} ifstat ${BINDIR}/ifstat
+-	${INSTALL} -s -o ${OWNER} -g ${GROUP} -m ${MODE} ifpack ${BINDIR}/ifpack
+-	${INSTALL} -s -o ${OWNER} -g ${GROUP} -m ${MODE} ifunpack ${BINDIR}/ifunpack
+-	${INSTALL} -s -o ${OWNER} -g ${GROUP} -m ${MODE} iftoss ${BINDIR}/iftoss
+-	${INSTALL} -s -o ${OWNER} -g ${GROUP} -m ${SMODE} ifmail ${BINDIR}/ifmail
++	${INSTALL} -s -m ${SMODE} ifstat ${BINDIR}/ifstat
++	${INSTALL} -s -m ${MODE} ifpack ${BINDIR}/ifpack
++	${INSTALL} -s -m ${MODE} ifunpack ${BINDIR}/ifunpack
++	${INSTALL} -s -m ${MODE} iftoss ${BINDIR}/iftoss
++	${INSTALL} -s -m ${SMODE} ifmail ${BINDIR}/ifmail
+ 	rm -f ${BINDIR}/ifnews
+ 	ln ${BINDIR}/ifmail ${BINDIR}/ifnews
+ 
+@@ -116,8 +116,8 @@
+ 	>filelist
+ 
+ man:
+-	${INSTALL} -o ${MANOWNER} -g ${MANGROUP} -m ${MANMODE} ifmail.8 ${MANDIR}/man8/ifmail.8
+-	${INSTALL} -o ${MANOWNER} -g ${MANGROUP} -m ${MANMODE} iftoss.8 ${MANDIR}/man8/iftoss.8
++	${INSTALL} -m ${MANMODE} ifmail.8 ${MANDIR}/man8/ifmail.8
++	${INSTALL} -m ${MANMODE} iftoss.8 ${MANDIR}/man8/iftoss.8
+ 	echo ".so man8/ifmail.8" > ${MANDIR}/man8/ifnews.8
+ 
+ config:

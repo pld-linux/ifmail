@@ -1,0 +1,60 @@
+diff -Naur ifmail-2.14tx8.10.orig/ifcico/nlindex.h ifmail-2.14tx8.10.orig.2/ifcico/nlindex.h
+--- ifmail-2.14tx8.10.orig/ifcico/nlindex.h	2003-12-18 19:49:32.000000000 +0100
++++ ifmail-2.14tx8.10.orig.2/ifcico/nlindex.h	2003-12-18 19:52:18.000000000 +0100
+@@ -6,7 +6,7 @@
+ #define INDEX "index"
+ 
+ #ifdef HAS_NDBM_H
+-#include <gdbm-ndbm.h>
++#include <ndbm.h>
+ extern DBM *nldb;
+ #else
+ #include <dbm.h>
+diff -Naur ifmail-2.14tx8.10.orig/ifgate/ifdbm.c ifmail-2.14tx8.10.orig.2/ifgate/ifdbm.c
+--- ifmail-2.14tx8.10.orig/ifgate/ifdbm.c	2003-12-18 19:49:32.000000000 +0100
++++ ifmail-2.14tx8.10.orig.2/ifgate/ifdbm.c	2003-12-18 19:52:13.000000000 +0100
+@@ -10,7 +10,7 @@
+ #include <sys/stat.h>
+ #ifdef HAS_NDBM_H
+ #include <fcntl.h>
+-#include <gdbm-ndbm.h>
++#include <ndbm.h>
+ #else
+ #include <dbm.h>
+ #endif
+diff -Naur ifmail-2.14tx8.10.orig/ifgate/msgidbm.c ifmail-2.14tx8.10.orig.2/ifgate/msgidbm.c
+--- ifmail-2.14tx8.10.orig/ifgate/msgidbm.c	2003-12-18 19:49:32.000000000 +0100
++++ ifmail-2.14tx8.10.orig.2/ifgate/msgidbm.c	2003-12-18 19:52:07.000000000 +0100
+@@ -5,7 +5,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <sys/stat.h>
+-#include <gdbm-ndbm.h>
++#include <ndbm.h>
+ #include <fcntl.h>
+ #include "lutil.h"
+ #include "xutil.h"
+diff -Naur ifmail-2.14tx8.10.orig/ifgate/nlindex.h ifmail-2.14tx8.10.orig.2/ifgate/nlindex.h
+--- ifmail-2.14tx8.10.orig/ifgate/nlindex.h	2003-12-18 19:49:32.000000000 +0100
++++ ifmail-2.14tx8.10.orig.2/ifgate/nlindex.h	2003-12-18 19:52:02.000000000 +0100
+@@ -6,7 +6,7 @@
+ #define INDEX "index"
+ 
+ #ifdef HAS_NDBM_H
+-#include <gdbm-ndbm.h>
++#include <ndbm.h>
+ extern DBM *nldb;
+ #else
+ #include <dbm.h>
+diff -Naur ifmail-2.14tx8.10.orig/iflib/ref.c ifmail-2.14tx8.10.orig.2/iflib/ref.c
+--- ifmail-2.14tx8.10.orig/iflib/ref.c	2003-12-18 19:49:32.000000000 +0100
++++ ifmail-2.14tx8.10.orig.2/iflib/ref.c	2003-12-18 19:51:56.000000000 +0100
+@@ -60,7 +60,7 @@
+ #include <string.h>
+ #ifdef HAS_NDBM_H
+ #include <fcntl.h>
+-#include <gdbm-ndbm.h>
++#include <ndbm.h>
+ #else
+ #include <dbm.h>
+ #endif
