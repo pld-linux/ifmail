@@ -1,9 +1,11 @@
 Summary:	FIDO <=> INTERNET Gateway
+Summary(pl):	Bramka FIDO <=> INTERNET
 Name:		ifmail
 Version:	2.15
 Release:	1
 License:	GPL
 Group:		Networking
+Group(de):	Netzwerkwesen
 Group(pl):	Sieciowe
 Source0:	%{name}-%{version}.tar.gz
 Source1:	%{name}-config
@@ -13,14 +15,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Buildrequires:	bison
 
 %description
-FIDO <=> INTERNET Gateway
+FIDO <=> INTERNET Gateway.
 
 %prep
 %setup -q
 %patch -p1
 
 %build
-%{__make} CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -41,7 +43,7 @@ touch $RPM_BUILD_ROOT/var/log/%{name}/ifdebug
 gzip -9nf misc/{FAQ,README}
 
 %pre
-if [ $1 = 1 ]; then
+if [ "$1" = "1" ]; then
 	%{_sbindir}/useradd -g uucp -d /usr/lib/ifmail -u 63 -s /bin/true ifmail 2> /dev/null
 fi
 
