@@ -7,6 +7,7 @@ Release:	0.2
 License:	GPL
 Group:		Networking
 Source0:	http://dl.sourceforge.net/ifmail/%{name}-%{version}.tar.gz
+# Source0-md5:	6f94afe5499e2fb91ed341048e14d90b
 Source1:	%{name}-config
 Source2:	%{name}-Areas
 URL:		http://www.average.org/ifmail/
