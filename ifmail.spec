@@ -5,10 +5,6 @@ Version:	2.15
 Release:	1
 License:	GPL
 Group:		Networking
-Group(de):	Netzwerkwesen
-Group(es):	Red
-Group(pl):	Sieciowe
-Group(pt_BR):	Rede
 Source0:	http://prdownloads.sourceforge.net/ifmail/%{name}-%{version}.tar.gz
 Source1:	%{name}-config
 Source2:	%{name}-Areas
