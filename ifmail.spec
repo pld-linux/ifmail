@@ -1,21 +1,30 @@
 # TODO: standardize %pre
+
+%define txver 8.10
+
 Summary:	FIDO <=> INTERNET Gateway
 Summary(pl):	Bramka FIDO <=> INTERNET
 Name:		ifmail
-Version:	3.03
-Release:	0.2
+Version:	2.14tx%{txver}
+Release:	0.1
+Epoch:		0
 License:	GPL
 Group:		Networking
-Source0:	http://dl.sourceforge.net/ifmail/%{name}-%{version}.tar.gz
-# Source0-md5:	6f94afe5499e2fb91ed341048e14d90b
+Source0:	ftp://ftp.debian.org/debian/pool/main/i/ifmail/ifmail_%{version}.orig.tar.gz
+# Source0-md5:	2e1563ff2f370dfa95d23b8331a3a0eb
 Source1:	%{name}-config
 Source2:	%{name}-Areas
+# from:	ftp://ftp.debian.org/debian/pool/main/i/ifmail/ifmail_%{version}-18.diff.gz
+Patch0:		%{name}-debian.patch
+Patch1:		%{name}-ndbm.patch
+Patch2:		%{name}-install.patch
 URL:		http://www.average.org/ifmail/
 BuildRequires:	flex
 BuildRequires:	gdbm-devel
 BuildRequires:	mawk
 Requires(pre):	/usr/sbin/useradd
 Requires(postun):	/usr/sbin/userdel
+Obsoletes:	ifmail
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,27 +34,31 @@ FIDO <=> INTERNET Gateway.
 Bramka FIDO <=> INTERNET.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}.orig
+%patch0 -p1 
+%patch1 -p1 
+%patch2 -p1
 
 %build
-%configure2_13 --libexecdir=%{_libexecdir}/%{name}
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_libdir}/%{name},%{_sysconfdir}/%{name},/var/log/%{name}}
 install -d $RPM_BUILD_ROOT/var/spool/%{name}/{inb,outb}
-install -d $RPM_BUILD_ROOT%{_datadir}/%{name}
+install -d $RPM_BUILD_ROOT%{_datadir}/%{name}/maptabs
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install misc/inouttabs/*	$RPM_BUILD_ROOT%{_datadir}/%{name}/
+install misc/maptabs/*	$RPM_BUILD_ROOT%{_datadir}/%{name}/maptabs/
 install %{SOURCE1}	$RPM_BUILD_ROOT%{_sysconfdir}/%{name}/config
 install %{SOURCE2}	$RPM_BUILD_ROOT%{_sysconfdir}/%{name}/Areas
 
 touch $RPM_BUILD_ROOT%{_sysconfdir}/%{name}/passwd
 touch $RPM_BUILD_ROOT/var/log/%{name}/ifmail
 touch $RPM_BUILD_ROOT/var/log/%{name}/ifdebug
+
+%find_lang %{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -60,15 +73,18 @@ if [ "$1" = "0" ]; then
 	%{_sbindir}/userdel ifmail 2> /dev/null
 fi
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
+%doc ifcico/{README.mxlookup,hydra.LICENSE.DOC}
 %doc misc/{FAQ,README,DEBUG}
-%attr(4755,ifmail,uucp) %{_bindir}/ifstat
+%doc md/{ifmail.m4,fidosend,ifpoll,mailertable,newsfeeds,fido.daily}
 %attr(4755,ifmail,uucp) %{_libexecdir}/%{name}/*
-%attr(644,ifmail,uucp) %{_datadir}/%{name}/*
-%attr(644,ifmail,uucp) %{_sysconfdir}/%{name}/config
-%attr(644,ifmail,uucp) %{_sysconfdir}/%{name}/Areas
-%attr(644,ifmail,uucp) %ghost %{_sysconfdir}/%{name}/passwd
+%attr(644,ifmail,uucp) %config %{_sysconfdir}/%{name}/config
+%attr(644,ifmail,uucp) %config %{_sysconfdir}/%{name}/Areas
+%attr(644,ifmail,uucp) %config %{_sysconfdir}/%{name}/passwd
+%attr(755,ifmail,uucp) %dir %{_datadir}/%{name}
+%attr(755,ifmail,uucp) %dir %{_datadir}/%{name}/maptabs/
+%attr(644,ifmail,uucp) %{_datadir}/%{name}/maptabs/*
 %attr(755,ifmail,uucp) %dir /var/spool/%{name}
 %attr(755,ifmail,uucp) %dir /var/spool/%{name}/inb
 %attr(755,ifmail,uucp) %dir /var/spool/%{name}/outb
