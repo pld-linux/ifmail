@@ -9,7 +9,7 @@ Source: 	%{name}-%{version}.tar.gz
 Source1: 	%{name}-config
 Source2: 	%{name}-Areas
 Patch:		%{name}-makefile.patch
-Buildroot: 	/tmp/%{name}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Buildrequires:	bison
 
 %description
