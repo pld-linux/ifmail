@@ -2,13 +2,13 @@ Summary:	FIDO <=> INTERNET Gateway
 Name:		ifmail
 Version:	2.15
 Release:	1
-Copyright:	GPL
+License:	GPL
 Group:		Networking
 Group(pl):	Sieciowe
-Source: 	%{name}-%{version}.tar.gz
-Source1: 	%{name}-config
-Source2: 	%{name}-Areas
-Patch:		%{name}-makefile.patch
+Source0:	%{name}-%{version}.tar.gz
+Source1:	%{name}-config
+Source2:	%{name}-Areas
+Patch0:		%{name}-makefile.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Buildrequires:	bison
 
@@ -23,8 +23,9 @@ FIDO <=> INTERNET Gateway
 make CFLAGS="$RPM_OPT_FLAGS"
 
 %install
-install -d		$RPM_BUILD_ROOT{%{_libdir}/%{name},%{_sysconfdir}/%{name},/var/log/%{name}}
-install -d		$RPM_BUILD_ROOT/var/spool/%{name}/{inb,outb}
+rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_libdir}/%{name},%{_sysconfdir}/%{name},/var/log/%{name}}
+install -d $RPM_BUILD_ROOT/var/spool/%{name}/{inb,outb}
 
 make install DESTDIR=$RPM_BUILD_ROOT
 
@@ -41,12 +42,12 @@ gzip -9nf misc/{FAQ,README}
 
 %pre
 if [ $1 = 1 ]; then
-%{_sbindir}/useradd -g uucp -d /usr/lib/ifmail -u 63 -s /bin/true ifmail 2> /dev/null
+	%{_sbindir}/useradd -g uucp -d /usr/lib/ifmail -u 63 -s /bin/true ifmail 2> /dev/null
 fi
 
 %postun
-if [ $1 = 0 ]; then
-%{_sbindir}/userdel ifmail 2> /dev/null
+if [ "$1" = "0" ]; then
+	%{_sbindir}/userdel ifmail 2> /dev/null
 fi
 
 %clean
@@ -56,11 +57,11 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc misc/{FAQ,README}.gz
 
-%attr(4711,ifmail,uucp) %{_libdir}/%{name}/ifcico
-%attr(4711,ifmail,uucp) %{_libdir}/%{name}/ifindex
-%attr(4711,ifmail,uucp) %{_libdir}/%{name}/nlpatch
-%attr(4711,ifmail,uucp) %{_libdir}/%{name}/ifstat
-%attr(4711,ifmail,uucp) %{_libdir}/%{name}/ifmail
+%attr(4755,ifmail,uucp) %{_libdir}/%{name}/ifcico
+%attr(4755,ifmail,uucp) %{_libdir}/%{name}/ifindex
+%attr(4755,ifmail,uucp) %{_libdir}/%{name}/nlpatch
+%attr(4755,ifmail,uucp) %{_libdir}/%{name}/ifstat
+%attr(4755,ifmail,uucp) %{_libdir}/%{name}/ifmail
 
 %attr(755,ifmail,uucp) %{_libdir}/%{name}/ifpack
 %attr(755,ifmail,uucp) %{_libdir}/%{name}/ifunpack
