@@ -1,4 +1,3 @@
-# $Revision: 1.1 $
 Summary:	FIDO <=> INTERNET Gateway
 Name:		ifmail
 Version:	2.15
@@ -21,7 +20,7 @@ FIDO <=> INTERNET Gateway
 %patch -p1
 
 %build
-make
+make CFLAGS="$RPM_OPT_FLAGS"
 
 %install
 install -d		$RPM_BUILD_ROOT{%{_libdir}/%{name},%{_sysconfdir}/%{name},/var/log/%{name}}
