@@ -1,0 +1,10 @@
+SU.GENERAL		relcom.talk		fido7
+REC.RADIO.SHORTWAVE	rec.radio.shortwave	world
+PVT.SYSOP		general			local
+ALT.FAN.TOLKIEN		alt.fan.tolkien		world
+REC.ARTS.BOOKS.TOLKIEN	rec.arts.books.tolkien	world
+RU.UNIX			fido7.unix		fido7
+FIDO.ANYWHERE		fido7.fido-anywhere	fido7
+*			junk.*			local
+BAD.*			*
+*			*			world

@@ -1,0 +1,127 @@
+diff -Nur ifmail-2.15.orig/CONFIG ifmail-2.15/CONFIG
+--- ifmail-2.15.orig/CONFIG	Fri Jul 16 23:26:29 1999
++++ ifmail-2.15/CONFIG	Sun Oct 10 13:27:12 1999
+@@ -3,19 +3,19 @@
+ VERSION     = "2.15"
+ 
+ # Main configuration file. This default may be overwritten by -I key.
+-CONFIGFILE  = "/etc/ifmail/config"
++CONFIGFILE  = $(DESTDIR)/etc/ifmail/config
+ 
+ # Debug messages turned on by -x key are written here.
+ # Some error messages may occationally appear here too.
+ # This may be changed in the 'config' file.
+-DEBUGFILE   = "/var/log/ifmail/ifdebug"
++DEBUGFILE   = $(DESTDIR)/var/log/ifmail/ifdebug
+ 
+ # Procession log. Usually gets several lines for each invocation.
+ # Also look for error diagnostics here.  If HAS_SYSLOG defined,
+ # only stdout and stderr from the packers and unpackers go to this
+ # file, while actual logging is done via syslog() calls.
+ # This may be changed in the 'config' file.
+-LOGFILE     = "/var/log/ifmail/iflog"
++LOGFILE     = $(DESTDIR)/var/log/ifmail/iflog
+ 
+ # Use syslog() facility codes for mail gate, news gate and ifcico.
+ # Define -DHAS_SYSLOG (see below)
+@@ -28,12 +28,12 @@
+ 
+ # Directory where UUCP lock files reside.
+ #LOCKDIR     = "/var/spool/uucp"
+-LOCKDIR     = "/var/lock"
++LOCKDIR     = $(DESTDIR)/var/lock
+ 
+ # Directory from which file requests are resolved.
+ # This may be changed from the 'config' file.
+-#PUBDIR      = "/home/ftp/pub"
+-PUBDIR      = "/var/spool/uucppublic"
++PUBDIR      = "/home/ftp/pub"
++#PUBDIR      = "/var/spool/uucppublic"
+ 
+ # News spool directory (to check space only)
+ #NEWSSPOOL   = "/usr/spool/news"
+@@ -222,7 +222,7 @@
+ #		-DNEED_BSY -DSLAVE_SENDS_NAK_TOO -DINT32=int -DINT16=short
+ 
+ # for make install, where to put binaries and what owner to set
+-BINDIR = /usr/lib/ifmail
++BINDIR = $(DESTDIR)/usr/lib/ifmail
+ OWNER = ifmail
+ GROUP = uucp
+ MODE = 0711
+@@ -234,8 +234,8 @@
+ SHELL = /bin/sh
+ ECHO = echo -e
+ CC = gcc
+-#YACC = bison -y
+-YACC = yacc
++YACC = bison -y
++#YACC = yacc
+ #LEX = flex
+ LEX = lex
+ AWK = awk
+@@ -243,7 +243,7 @@
+ 
+ #CFLAGS = -g -Wall
+ # Linux, 386BSD, SunOS:
+-CFLAGS = -g -O2 -Wall
++CFLAGS = -g -O2 -Wall 
+ # SVR4:
+ #CFLAGS = -O -Xa
+ # NeXTSTEP
+@@ -253,7 +253,7 @@
+ #CFLAGS= -migrate -O5 -ifo -g0
+ #LDFLAGS = -s
+ 
+-LDFLAGS =
++LDFLAGS = -s
+ 
+ # For LIBS, you may need to add "-lfl" if you are using flex 2.4.x
+ # If you need TERM also add e.g. "/usr/src/term112/client.a"
+@@ -277,7 +277,7 @@
+ # NeXTSTEP
+ #LIBS = -lgdbm -lposix
+ 
+-INCLUDES = -I${INCDIR}
++INCLUDES = -I${INCDIR} -I/usr/include/db1
+ # ISC
+ #INCLUDES = -I/usr/include/rpcsvc -I${INCDIR}
+ 
+diff -Nur ifmail-2.15.orig/ifcico/Makefile ifmail-2.15/ifcico/Makefile
+--- ifmail-2.15.orig/ifcico/Makefile	Wed Feb 10 23:33:52 1999
++++ ifmail-2.15/ifcico/Makefile	Sun Oct 10 13:23:28 1999
+@@ -65,10 +65,10 @@
+ flaglex.o:	flaglex.c flagexp.c
+ 
+ install: all
+-	${INSTALL} -o ${OWNER} -g ${GROUP} -m ${SMODE} ifcico ${BINDIR}/ifcico
+-	${INSTALL} -o ${OWNER} -g ${GROUP} -m ${SMODE} ifindex ${BINDIR}/ifindex
+-	${INSTALL} -o ${OWNER} -g ${GROUP} -m ${SMODE} ifroute ${BINDIR}/ifroute
+-	${INSTALL} -o ${OWNER} -g ${GROUP} -m ${SMODE} nlpatch ${BINDIR}/nlpatch
++	${INSTALL} ifcico ${BINDIR}/ifcico
++	${INSTALL} ifindex ${BINDIR}/ifindex
++	${INSTALL} ifroute ${BINDIR}/ifroute
++	${INSTALL} nlpatch ${BINDIR}/nlpatch
+ 
+ tryc:	ifcico
+ 	>/var/log/ifmail/ifdebug-slave
+diff -Nur ifmail-2.15.orig/ifgate/Makefile ifmail-2.15/ifgate/Makefile
+--- ifmail-2.15.orig/ifgate/Makefile	Wed Feb 10 23:33:49 1999
++++ ifmail-2.15/ifgate/Makefile	Sun Oct 10 13:23:41 1999
+@@ -36,11 +36,11 @@
+ all:	${ALL}
+ 
+ install: all
+-	${INSTALL} -o ${OWNER} -g ${GROUP} -m ${SMODE} ifstat ${BINDIR}/ifstat
+-	${INSTALL} -o ${OWNER} -g ${GROUP} -m ${MODE} ifpack ${BINDIR}/ifpack
+-	${INSTALL} -o ${OWNER} -g ${GROUP} -m ${MODE} ifunpack ${BINDIR}/ifunpack
+-	${INSTALL} -o ${OWNER} -g ${GROUP} -m ${MODE} iftoss ${BINDIR}/iftoss
+-	${INSTALL} -o ${OWNER} -g ${GROUP} -m ${SMODE} ifmail ${BINDIR}/ifmail
++	${INSTALL} ifstat ${BINDIR}/ifstat
++	${INSTALL} ifpack ${BINDIR}/ifpack
++	${INSTALL} ifunpack ${BINDIR}/ifunpack
++	${INSTALL} iftoss ${BINDIR}/iftoss
++	${INSTALL} ifmail ${BINDIR}/ifmail
+ 	rm -f ${BINDIR}/ifnews
+ 	ln ${BINDIR}/ifmail ${BINDIR}/ifnews
+ 
