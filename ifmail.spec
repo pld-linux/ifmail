@@ -43,14 +43,10 @@ touch $RPM_BUILD_ROOT/var/log/%{name}/ifdebug
 gzip -9nf misc/{FAQ,README}
 
 %pre
-if [ "$1" = "1" ]; then
-	%{_sbindir}/useradd -g uucp -d /usr/lib/ifmail -u 63 -s /bin/true ifmail 2> /dev/null
-fi
+UID=63; GROUP=uucp; HOMEDIR=/usr/lib/ifmail; %useradd
 
 %postun
-if [ "$1" = "0" ]; then
-	%{_sbindir}/userdel ifmail 2> /dev/null
-fi
+%userdel
 
 %clean
 rm -rf $RPM_BUILD_ROOT
