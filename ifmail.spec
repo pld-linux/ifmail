@@ -6,16 +6,22 @@ Release:	1
 License:	GPL
 Group:		Networking
 Group(de):	Netzwerkwesen
+Group(es):	Red
 Group(pl):	Sieciowe
-Source0:	%{name}-%{version}.tar.gz
+Group(pt_BR):	Rede
+Source0:	http://prdownloads.sourceforge.net/ifmail/%{name}-%{version}.tar.gz
 Source1:	%{name}-config
 Source2:	%{name}-Areas
 Patch0:		%{name}-makefile.patch
+URL:		http://www.average.org/ifmail/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Buildrequires:	bison
 
 %description
 FIDO <=> INTERNET Gateway.
+
+%description -l pl
+Bramka FIDO <=> INTERNET.
 
 %prep
 %setup -q
@@ -42,6 +48,9 @@ touch $RPM_BUILD_ROOT/var/log/%{name}/ifdebug
 
 gzip -9nf misc/{FAQ,README}
 
+%clean
+rm -rf $RPM_BUILD_ROOT
+
 %pre
 if [ "$1" = "1" ]; then
 	%{_sbindir}/useradd -g uucp -d /usr/lib/ifmail -u 63 -s /bin/true ifmail 2> /dev/null
@@ -51,9 +60,6 @@ fi
 if [ "$1" = "0" ]; then
 	%{_sbindir}/userdel ifmail 2> /dev/null
 fi
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
