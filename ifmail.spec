@@ -7,7 +7,7 @@ Summary(pl):	Bramka FIDO <=> INTERNET
 Name:		ifmail
 Version:	2.14tx%{txver}
 Release:	0.1
-Epoch:		0
+Epoch:		1
 License:	GPL
 Group:		Networking
 Source0:	ftp://ftp.debian.org/debian/pool/main/i/ifmail/ifmail_%{version}.orig.tar.gz
