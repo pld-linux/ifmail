@@ -17,7 +17,7 @@ BuildRequires:	mawk
 Requires(pre):	/usr/sbin/useradd
 Requires(postun):	/usr/sbin/userdel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-	
+
 %description
 FIDO <=> INTERNET Gateway.
 
