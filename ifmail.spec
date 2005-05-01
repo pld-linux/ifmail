@@ -22,7 +22,7 @@ URL:		http://www.average.org/ifmail/
 BuildRequires:	flex
 BuildRequires:	gdbm-devel
 BuildRequires:	mawk
-BuildRequires:	rpmbuild(macros) >= 1.159
+buildrequires:	rpmbuild(macros) >= 1.202
 Requires(pre):	/bin/id
 Requires(pre):	/usr/sbin/useradd
 Requires(postun):	/usr/sbin/userdel
@@ -67,14 +67,7 @@ touch $RPM_BUILD_ROOT/var/log/%{name}/ifdebug
 rm -rf $RPM_BUILD_ROOT
 
 %pre
-if [ -n "`/bin/id -u ifmail 2>/dev/null`" ]; then
-	if [ "`/bin/id -u ifmail`" != 110 ]; then
-		echo "Error: user ifmail doesn't have uid=110. Correct this before installing ifmail" 1>&2
-		exit 1
-	fi
-else
-	/usr/sbin/useradd -g uucp -d /usr/lib/ifmail -u 110 -s /bin/true ifmail
-fi
+%useradd -g uucp -d /usr/lib/ifmail -u 110 -s /bin/true ifmail
 
 %postun
 if [ "$1" = "0" ]; then
