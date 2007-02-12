@@ -3,7 +3,7 @@
 %define txver 8.10
 
 Summary:	FIDO <=> INTERNET Gateway
-Summary(pl):	Bramka FIDO <=> INTERNET
+Summary(pl.UTF-8):   Bramka FIDO <=> INTERNET
 Name:		ifmail
 Version:	2.14tx%{txver}
 Release:	0.1
@@ -33,7 +33,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 FIDO <=> INTERNET Gateway.
 
-%description -l pl
+%description -l pl.UTF-8
 Bramka FIDO <=> INTERNET.
 
 %prep
