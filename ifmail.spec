@@ -22,7 +22,7 @@ URL:		http://www.average.org/ifmail/
 BuildRequires:	flex
 BuildRequires:	gdbm-devel
 BuildRequires:	mawk
-buildrequires:	rpmbuild(macros) >= 1.202
+BuildRequires:	rpmbuild(macros) >= 1.202
 Requires(pre):	/bin/id
 Requires(pre):	/usr/sbin/useradd
 Requires(postun):	/usr/sbin/userdel
