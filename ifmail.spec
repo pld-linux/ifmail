@@ -10,7 +10,7 @@ Release:	0.1
 Epoch:		1
 License:	GPL
 Group:		Networking
-Source0:	ftp://ftp.debian.org/debian/pool/main/i/ifmail/ifmail_%{version}.orig.tar.gz
+Source0:	ftp://ftp.debian.org/debian/pool/main/i/ifmail/%{name}_%{version}.orig.tar.gz
 # Source0-md5:	2e1563ff2f370dfa95d23b8331a3a0eb
 Source1:	%{name}-config
 Source2:	%{name}-Areas
@@ -23,9 +23,9 @@ BuildRequires:	flex
 BuildRequires:	gdbm-devel
 BuildRequires:	mawk
 BuildRequires:	rpmbuild(macros) >= 1.202
+Requires(postun):	/usr/sbin/userdel
 Requires(pre):	/bin/id
 Requires(pre):	/usr/sbin/useradd
-Requires(postun):	/usr/sbin/userdel
 Provides:	user(ifmail)
 Obsoletes:	ifmail
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -38,8 +38,8 @@ Bramka FIDO <=> INTERNET.
 
 %prep
 %setup -q -n %{name}-%{version}.orig
-%patch0 -p1 
-%patch1 -p1 
+%patch0 -p1
+%patch1 -p1
 %patch2 -p1
 
 %build
@@ -79,7 +79,7 @@ fi
 %doc ifcico/{README.mxlookup,hydra.LICENSE.DOC}
 %doc misc/{FAQ,README,DEBUG}
 %doc md/{ifmail.m4,fidosend,ifpoll,mailertable,newsfeeds,fido.daily}
-%attr(4755,ifmail,uucp) %{_libexecdir}/%{name}/*
+%attr(4755,ifmail,uucp) %{_libexecdir}/%{name}/* # FIXME no globs for suid/sgid files
 %attr(644,ifmail,uucp) %config %{_sysconfdir}/%{name}/config
 %attr(644,ifmail,uucp) %config %{_sysconfdir}/%{name}/Areas
 %attr(644,ifmail,uucp) %config %{_sysconfdir}/%{name}/passwd
