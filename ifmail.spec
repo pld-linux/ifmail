@@ -10,11 +10,11 @@ Release:	0.1
 Epoch:		1
 License:	GPL
 Group:		Networking
-Source0:	ftp://ftp.debian.org/debian/pool/main/i/ifmail/%{name}_%{version}.orig.tar.gz
+Source0:	http://ftp.debian.org/debian/pool/main/i/ifmail/%{name}_%{version}.orig.tar.gz
 # Source0-md5:	2e1563ff2f370dfa95d23b8331a3a0eb
 Source1:	%{name}-config
 Source2:	%{name}-Areas
-# from:	ftp://ftp.debian.org/debian/pool/main/i/ifmail/ifmail_%{version}-18.diff.gz
+# from:	http://ftp.debian.org/debian/pool/main/i/ifmail/ifmail_%{version}-18.diff.gz
 Patch0:		%{name}-debian.patch
 Patch1:		%{name}-ndbm.patch
 Patch2:		%{name}-install.patch
